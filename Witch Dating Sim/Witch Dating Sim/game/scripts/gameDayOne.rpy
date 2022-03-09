@@ -1,6 +1,3 @@
-from unittest import result
-
-
 label start:
 python:
     name = renpy.input("Before we begin our journey, what is your name?")
@@ -29,8 +26,8 @@ label quiz:
 "Before further embarking on this magical journey, I'd like to know a few things about you."
 
 label q1:
+"Where you do draw your strength?"
 menu:
-    "Where you do draw your strength?"
         "My kindness":
             $ summerAP += 1
             jump q2
@@ -42,8 +39,8 @@ menu:
             jump q2
 
 label q2:
+"You need to clear your head after a long day. What do you do?"
 menu:
-    "You need to clear your head after a long day. What do you do?"
         "Walk through the gardens":
             $ summerAP += 1
             jump q3
@@ -55,8 +52,8 @@ menu:
             jump q3
 
 label q3:
+"What is most important to you?"
 menu:
-    "What is most important to you?"
         "Community":
             $ elunaAP += 1
             jump q4
@@ -68,28 +65,28 @@ menu:
             jump q4
 
 label q4:
+"You come across an ancient altar. What do you offer to it?"
 menu:
-    "You come across an ancient altar. What do you offer to it?"
         "Tea imbued with leaves that have healing properties":
             $ summerAP += 1
             jump q5
         "A candle that, when lighted, never burns out":
             $ elunaAP += 1
             jump q5
-        "The quill, made from a phoenix feather, used to write tomes"
+        "The quill, made from a phoenix feather, used to write tomes":
             $ celesteAP += 1
             jump q5
 
 label q5:
+"What do you fear the most?"
 menu:
-    "What do you fear the most?"
         "Isolation":
             $ elunaAP += 1
             jump quizEnd
-        "Darkness" (Celeste)
+        "Darkness":
             $ celesteAP += 1
             jump quizEnd
-        "Destruction" (Summer)
+        "Destruction":
             $ summerAP += 1
             jump quizEnd
 
@@ -108,12 +105,12 @@ elif summerAP >= 3:
 elif celesteAP >= 3:
     jump houseStella
 
-elif elunaAP == summerAP:
-    $ SLrandom = renpy.random.choice(['solis', 'luna'])
-        if solis:
-            jump houseSolis
-        if luna:
-            jump houseLuna
+#elif elunaAP == summerAP:
+#    $ SLrandom = renpy.random.choice(['solis', 'luna'])
+#        if solis:
+#            jump houseSolis
+#        if luna:
+#            jump houseLuna
 
 
 label houseSolis:
