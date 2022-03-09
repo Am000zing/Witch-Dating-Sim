@@ -25,6 +25,8 @@ label quiz:
 "Thank you. A name is important for witches, as names may hold great power."
 "Before further embarking on this magical journey, I'd like to know a few things about you."
 
+#scene
+
 label q1:
 "Where you do draw your strength?"
 menu:
@@ -105,19 +107,26 @@ elif summerAP >= 3:
 elif celesteAP >= 3:
     jump houseStella
 
-#elif elunaAP == summerAP:
-#    $ SLrandom = renpy.random.choice(['solis', 'luna'])
-#        if solis:
-#            jump houseSolis
-#        if luna:
-#            jump houseLuna
+elif elunaAP == summerAP:
+    $ SLrandom = renpy.random.choice(['solis', 'luna'])
+        if solis:
+            jump houseSolis
+        if luna:
+            jump houseLuna
 
 
 label houseSolis:
 "House Solis!"
+jump intro
 
 label houseLuna:
 "House Luna!"
+jump intro
 
 label houseStella:
 "House Stella!"
+jump intro
+
+
+label intro:
+"nice."
