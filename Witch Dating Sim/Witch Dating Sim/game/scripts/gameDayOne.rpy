@@ -28,7 +28,7 @@ label quiz:
 #scene
 
 label q1:
-"Where you do draw your strength?"
+"Where do you draw your strength?"
 menu:
         "My kindness":
             $ summerAP += 1
