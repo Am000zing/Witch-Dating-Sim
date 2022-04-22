@@ -6,7 +6,7 @@ label day1Solis:
     "Through the mist, a tall, stone door grows in front of me."
     "On it, the crest of the Sun is engraved into it."
     "Stepping forward, I push the door open."
-    ##scene Schoolgrounds
+    ##scene Schoolgrounds with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
 ##    "The main hall of the school is lined with portraits of witches renown through the land."
     "I won't take this opportunity for granted..."
@@ -76,7 +76,7 @@ label continuing1:
     s "Let's head over to our dormitory!"
     "I follow Summer down the main hall into a living area."
     ##hide summerNeutral with dissolve
-    ##hide Schoolgrounds
+    ##hide Schoolgrounds with Fade(1.0,0.0,1.0)
     ##scene Commons with Fade(2.0,0,2.0)
     ##show summerNeutral with dissolve
     s "Welcome to the Commons!"
@@ -127,8 +127,9 @@ label summerAsk:
     s "Sorry... I won't let you listen to me ramble the evening away."
     s "We have a lot to do tomorrow, so we need as much rest as possible!"
     s "Night night, [name]."
-    ##fade summerNeutral with dissolve
+    ##hide summerNeutral with dissolve
     "She disappears into a room next to mine."
     "I wonder what we'll be doing tomorrow..."
+    ##hide Commons with Fade(1.0,1.0,1.0) 
 
 ##jump dayTwoSolis
