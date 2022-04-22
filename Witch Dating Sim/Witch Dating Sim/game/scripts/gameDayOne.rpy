@@ -3,6 +3,7 @@ python:
     name = renpy.input("Before we begin our journey, what is your name?")
     name.strip()
 
+define introQuizMusic = "Witch Dating Sim\Witch Dating Sim\game\20220421_GAMESPAWN_LUMINOIRE_INTRO_QUIZ_V1.3_FINAL.mp3"
 #if name == "Leilia" or name == "leilia":
 #    $ name = "Master"
 #    menu:
@@ -19,7 +20,7 @@ menu:
     "No":
         jump start
 
-
+play music introQuizMusic
 
 label quiz:
 "Thank you. A name is important for witches, as names may hold great power."
