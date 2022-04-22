@@ -11,7 +11,7 @@ label day1Stella:
     "I won't take this opportunity for granted..."
     "I'm going to make the most of my time at Luminoire Academy!"
 
-    "[[Circe enter]"
+    #"[[Circe enter]"
     k "Greetings! You wouldn't happen to be [name]?"
     char "No way! You're Professor Circe."
 
@@ -30,7 +30,7 @@ label StellaGood1:
 
 label continuingStella1:
     k "I'd like to introduce you to my protégeé."
-    "[[Celeste enters]"
+    #"[[Celeste enters]"
     c "Hello. I'm Celeste. Congratulations on your enrollment."
     "She seems so... static."
     k "Celeste here is one of the brightest students in Luminoire."
@@ -40,7 +40,7 @@ label continuingStella1:
     k "I'll see you two tomorrow to discuss preparations for the Moonlight Ritual."
     k "Celeste, please show [name] to the Commons."
     c "Of course, ma'am."
-    "[[Circe leaves]"
+    #"[[Circe leaves]"
 
     "Celeste gestures for me to follow her down the main hall."
     "She stares down the hallway without turning to check if I'm following her."
