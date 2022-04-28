@@ -3,22 +3,23 @@ define t = Character('Tasha', color='#ba1230')
 define char = Character("name", dynamic=True, color='#f933ff')
 
 label day1Solis:
-    "Through the mist, a tall, stone door grows in front of me."
-    "On it, the crest of the Sun is engraved into it."
-    "Stepping forward, I push the door open."
+    "Through the mist, a tall, stone door appears in front of me."
+    "The crest of the Sun is engraved into it."
+    "Stepping forward, I push the door open..."
     ##scene Schoolgrounds with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
+    "A grand facade beneath an even taller tree stands before me."
 ##    "The main hall of the school is lined with portraits of witches renown through the land."
     "I won't take this opportunity for granted..."
-    "I'm going to make the most of my time at Luminoire Academy!"
+    "I'm going to make the most of my time here at Luminoire Academy!"
 
     t "Salutations! You must be [name]."
     ##show tashaNeutral with dissolve
-    "This tall woman approaches and circles me as though I were a new specimen."
+    "This tall woman approaches me, circling around me as if I were a new specimen for her to study."
     char "Dr. Tasha. It's an honor to meet you."
 
     menu:
-        "Luminoire Academy has made so many accomplishments thanks to your research in alchemy." :
+        "Luminoire Academy has accomplished so much thanks to your research in alchemy." :
             jump Schoice1neutral
         "I'm really looking forward to alchemy in the Greenhouse - I'm excited to see what your lab has to offer." :
             jump Schoice1good
@@ -27,7 +28,7 @@ label Schoice1neutral:
     ##hide tashaNeutral
     ##show tashaUpset
     "Tasha sighs, almost disappointed at the response."
-    t "Those are only stepping stones to a real {i}"accomplishment."{/i}"
+    t "Those are merely stepping stones to the real {i}\"accomplishment.\"{/i}"
     ##hide tashaUpset
     ##show tashaNeutral
     jump continuing1
@@ -36,7 +37,7 @@ label Schoice1good:
     ##hide tashaNeutral
     ##show tashaSmile
     t "Very interesting..."
-    t "Choose your words carefully, otherwise my expectations of you will grow."
+    t "Choose your words carefully, otherwise my expectations of you will grow steeper."
     ##hide tashaSmile
     ##show tashaNeutral
     jump continuing1
@@ -49,9 +50,9 @@ label continuing1:
     s "Hi there! I'm Summer."
     ##hide summerSmile
     ##show summerNeutral at right
-    "Wow... As soon as she spoke, it was like she radiated kindness."
+    "Wow… from the moment she first spoke, she felt as if she was just radiating kindness."
     s "[name], you'll be working with House Solis on a big project this week, so keep your head up, okay?"
-    t "Despite being a first-year like you, she has made quite an impression."
+    t "Despite being a first-year, much like you, she has already made quite an impression."
     t "I've hand-picked her for her sharp eye for botany and animal-handling."
     ##hide summerNeutral
     ##show summerSmile at right
@@ -73,7 +74,7 @@ label continuing1:
     ##show summerNeutral at center with move
     s "Hope you don't mind it just being the two of us."
     "I definitely do not mind..."
-    s "Let's head over to our dormitory!"
+    s "Great! Then let's head over to our dormitory!"
     "I follow Summer down the main hall into a living area."
     ##hide summerNeutral with dissolve
     ##hide Schoolgrounds with Fade(1.0,0.0,1.0)
@@ -84,6 +85,7 @@ label continuing1:
     ##show summerSmile
     s "Get comfy, because we'll be here all year."
     ##hide summerSmile
+    s "Each term can get real intense from the get-go..."
     ##show summerNeutral
     jump summerAsk
 
@@ -97,8 +99,8 @@ label summerAsk:
             ##hide summerSmile
             ##show summerNeutral
             s "I always brew myself a cup after a hard day's work with Dr. Tasha."
-            "I notice a stove in the commons area."
-            s "I see you've noticed the gas stove."
+            "My attention is directed to a stove in the commons area."
+            s "Ah! I see you've noticed the gas stove."
             ##hide summerNeutral
             ##show summerSmile
             s "If you ever want to join me for tea, let me know!"
@@ -108,10 +110,10 @@ label summerAsk:
             ##hide summerNeutral
             ##show summerSmile
             s "For real?"
-            s "Then you should come to my family's farm sometime!"
+            s "You should come to my family's farm sometime, then!"
             ##hide summerSmile
             ##show summerNeutral
-            s "Unfortunately pets aren't allowed unless they're familiars."
+            s "Pets aren't allowed here unless they're familiars, unfortunately."
             ##hide summerNeutral
             ##show summerUpset
             s "I wish I could bring all of my babies to school..."
@@ -120,11 +122,11 @@ label summerAsk:
             ##hide summerNeutral
             ##show summerSmile
             s "No way, you can cook, too?!"
-            s "We need to exchange recipes. I'd love to try yours, sometime."
+            s "We need to exchange recipes then! I'd love to try yours sometime."
             ##hide summerSmile
 ##    "Summer blushes and plays with her right braid."
     ##show summerNeutralBlush
-    s "Sorry... I won't let you listen to me ramble the evening away."
+    s "Sorry... I shouldn't let you listen to me ramble the evening away."
     s "We have a lot to do tomorrow, so we need as much rest as possible!"
     s "Night night, [name]."
     ##hide summerNeutral with dissolve
