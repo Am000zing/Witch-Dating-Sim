@@ -6,6 +6,7 @@ label day1Luna:
     "Through the mist, a tall, stone door grows in front of me."
     "On it, the crest of the Sun is engraved into it."
     "Stepping forward, I push the door open."
+    ##scene schoolExterior
     "I'm finally here... a new witch at Luminoire Academy!"
     "The main hall of the school is lined with portraits of witches renown through the land."
     "I won't take this opportunity for granted..."
@@ -73,4 +74,32 @@ label day1Luna:
     ##show elunaNeutral
     e "Let me show you to the Commons now..."
     ##hide elunaNeutral
+    ##scene Commons with Fade(2.0, 1.0, 2.0)
+    ##with Pause(2.0)
+    ##show elunaNeutral
+    e "So, [name], what do you do in your spare time?"
+    menu:
+        "Making weekend plans with my friends":
+            e "That sounds really fun."
+            e "It's definitely important to maintain the relationships around you."
+            e "You never know when you might be in a pinch and need help."
+        "Writing serenades for... well...":
+            e "Oh?"
+            e "For whom I wonder."
+            char "Oh, uh, I mean- it's not-"
+            ##show elunaSmile
+            e "I won't pry."
+        "Dancing alone in my room.":
+            e "There's nothing quite like the comfort of being in your own space."
+            e "I enjoy being House Luna's primary student representative-"
+            ##show elunaUpset
+            e "-but it can be hard to keep things secretive when it comes to news about me."
+    ##show elunaNeutral
+    e "Here we are at the Commons by the way."
+    ##e "I'm afraid I never introduced myself formally."
+    ##e "I'm Eluna, representative of House Luna."
+    e "If you ever need assistance, I'd be more than happy to help."
+    char "Sounds great, thank you!"
+    e "I'll see you at the Amphitheater tomorrow."
+    ##hide elunaNeutral with dissolve
     ##jump dayTwoLuna
