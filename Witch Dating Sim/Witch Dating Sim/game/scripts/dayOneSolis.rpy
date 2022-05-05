@@ -25,20 +25,16 @@ label day1Solis:
             jump Schoice1good
 
 label Schoice1neutral:
-    ##hide tashaNeutral
     ##show tashaUpset
     "Tasha sighs, almost disappointed at the response."
     t "Those are merely stepping stones to the real {i}\"accomplishment.\"{/i}"
-    ##hide tashaUpset
     ##show tashaNeutral
     jump continuing1
 
 label Schoice1good:
-    ##hide tashaNeutral
     ##show tashaSmile
     t "Very interesting..."
     t "Choose your words carefully, otherwise my expectations of you will grow steeper."
-    ##hide tashaSmile
     ##show tashaNeutral
     jump continuing1
 
@@ -46,28 +42,22 @@ label continuing1:
     t "I look forward to seeing you in class, [name]."
     t "I'd like for you to meet my lab assistant."
     ##show tashaNeutral at left with move
-    ##show summerSmile at right
+    ##show summerSmile at right with dissolve
     s "Hi there! I'm Summer."
-    ##hide summerSmile
     ##show summerNeutral at right
     "Wow… from the moment she first spoke, she felt as if she was just radiating kindness."
     s "[name], you'll be working with House Solis on a big project this week, so keep your head up, okay?"
     t "Despite being a first-year, much like you, she has already made quite an impression."
     t "I've hand-picked her for her sharp eye for botany and animal-handling."
-    ##hide summerNeutral
     ##show summerSmile at right
     s "Aww, Doctor. You don't have to flatter me like that."
-    ##hide summerSmile
     ##show summerNeutral at right
     s "It's like you always say:"
     s "Great magic comes from the world around us. We just have to tap into it."
-    ##hide tashaNeutral
     ##show tashaSmile at left
     t "Well put, Summer."
-    ##hide tashaSmile
     ##show tashaNeutral at left
     t "Unfortunately, I have research to attend to at the moment, so Summer will give you the Luminoire tour."
-    ##hide tashaNeutral
     ##show tashaSmile at left
     t "I'll see you in the Greenhouse soon, young alchemists!"
     ##hide tashaSmile with dissolve
@@ -81,10 +71,8 @@ label continuing1:
     ##scene Commons with Fade(2.0,0,2.0)
     ##show summerNeutral with dissolve
     s "Welcome to the Commons!"
-    ##hide summerNeutral
     ##show summerSmile
     s "Get comfy, because we'll be here all year."
-    ##hide summerSmile
     s "Each term can get real intense from the get-go..."
     ##show summerNeutral
     jump summerAsk
@@ -93,37 +81,27 @@ label summerAsk:
     s "Hey, [name]. What's something you do to decompress?"
     menu:
         "I would brew a hot cup of tea.":
-            ##hide summerNeutral
             ##show summerSmile
             s "Dang... Are you reading my mind or something?"
-            ##hide summerSmile
             ##show summerNeutral
             s "I always brew myself a cup after a hard day's work with Dr. Tasha."
             "My attention is directed to a stove in the commons area."
             s "Ah! I see you've noticed the gas stove."
-            ##hide summerNeutral
             ##show summerSmile
             s "If you ever want to join me for tea, let me know!"
-            ##hide summerSmile
         "Take care of animals, big and small.":
 ##            "Summer's face lights up."
-            ##hide summerNeutral
             ##show summerSmile
             s "For real?"
             s "You should come to my family's farm sometime, then!"
-            ##hide summerSmile
             ##show summerNeutral
             s "Pets aren't allowed here unless they're familiars, unfortunately."
-            ##hide summerNeutral
             ##show summerUpset
             s "I wish I could bring all of my babies to school..."
-            ##hide summerUpset
         "I love to cook, especially with home-grown ingredients!":
-            ##hide summerNeutral
             ##show summerSmile
             s "No way, you can cook, too?!"
             s "We need to exchange recipes then! I'd love to try yours sometime."
-            ##hide summerSmile
 ##    "Summer blushes and plays with her right braid."
     ##show summerNeutralBlush
     s "Sorry... I shouldn't let you listen to me ramble the evening away."
