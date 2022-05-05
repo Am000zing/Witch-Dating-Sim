@@ -18,6 +18,56 @@ menu:
     "No":
         jump start
 
+if name == "Gamespawn" or name == "gamespawn":
+    $ name = "Great Grandmaster"
+    menu:
+        "Luna House":
+            jump lunaHouseOptions
+        "Stella House":
+            jump stellaHouseOptions
+        "Solis House":
+            jump solisHouseOptions
+
+
+label lunaHouseOptions:
+    menu:
+        "1 Luna":
+            jump dayOneLuna
+        "2 Luna":
+            jump dayTwoLuna
+        "3 Luna":
+            jump dayThreeLuna
+        "4 Luna":
+            jump dayFourLuna
+        "5 Luna":
+            jump dayFiveLuna
+
+label stellaHouseOptions:
+    menu:
+        "1 Stella":
+            jump dayOneStella
+        "2 Stella":
+            jump dayTwoStella
+        "3 Stella":
+            jump dayThreeStella
+        "4 Stella":
+            jump dayFourStella
+        "5 Stella":
+            jump dayFiveStella
+
+label solisHouseOptions:
+    menu:
+        "1 Solis":
+            jump dayOneSolis
+        "2 Solis":
+            jump dayTwoSolis
+        "3 Solis":
+            jump dayThreeSolis
+        "4 Solis":
+            jump dayFourSolis
+        "5 Solis":
+            jump dayFiveSolis
+
 label quiz:
 play music introQuizMusic volume 0.5
 "Thank you. A name is important for witches, as names may hold great power."
