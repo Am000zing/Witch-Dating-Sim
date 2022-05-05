@@ -6,7 +6,7 @@ label day1Luna:
     "Through the mist, a tall, stone door grows in front of me."
     "On it, the crest of the Sun is engraved into it."
     "Stepping forward, I push the door open."
-    ##scene schoolExterior
+    ##scene schoolExterior with Fade (1.0, 0.0, 1.0)
     "I'm finally here... a new witch at Luminoire Academy!"
     "The main hall of the school is lined with portraits of witches renown through the land."
     "I won't take this opportunity for granted..."
@@ -73,7 +73,7 @@ label day1Luna:
     e "I'm sorry about that."
     ##show elunaNeutral
     e "Let me show you to the Commons now..."
-    ##hide elunaNeutral
+    ##hide elunaNeutral with dissolve
     ##scene Commons with Fade(2.0, 1.0, 2.0)
     ##with Pause(2.0)
     ##show elunaNeutral
