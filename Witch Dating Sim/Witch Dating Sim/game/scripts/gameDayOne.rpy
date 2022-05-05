@@ -32,41 +32,41 @@ if name == "Gamespawn" or name == "gamespawn":
 label lunaHouseOptions:
     menu:
         "1 Luna":
-            jump dayOneLuna
+            jump day1Luna
         "2 Luna":
-            jump dayTwoLuna
+            jump day2Luna
         "3 Luna":
-            jump dayThreeLuna
+            jump day3Luna
         "4 Luna":
-            jump dayFourLuna
+            jump day4Luna
         "5 Luna":
-            jump dayFiveLuna
+            jump day5Luna
 
 label stellaHouseOptions:
     menu:
         "1 Stella":
-            jump dayOneStella
+            jump day1Stella
         "2 Stella":
-            jump dayTwoStella
+            jump day2Stella
         "3 Stella":
-            jump dayThreeStella
+            jump day3Stella
         "4 Stella":
-            jump dayFourStella
+            jump day4Stella
         "5 Stella":
-            jump dayFiveStella
+            jump day5Stella
 
 label solisHouseOptions:
     menu:
         "1 Solis":
-            jump dayOneSolis
+            jump day1Solis
         "2 Solis":
-            jump dayTwoSolis
+            jump day2Solis
         "3 Solis":
-            jump dayThreeSolis
+            jump day3Solis
         "4 Solis":
-            jump dayFourSolis
+            jump day4Solis
         "5 Solis":
-            jump dayFiveSolis
+            jump day5Solis
 
 label quiz:
 play music introQuizMusic volume 0.5
