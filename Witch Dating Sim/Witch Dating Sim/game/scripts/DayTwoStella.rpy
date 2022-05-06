@@ -1,8 +1,4 @@
-define c = Character('Celeste', color='#ca950d')
-define k = Character('Circe', color='#6eb474')
-define char = Character("name", dynamic=True, color='#f933ff')
-
-label day1Stella:
+label day2Stella:
     "Through the mist, a tall, stone door grows in front of me."
     "On it, the crest of the Star is engraved into it."
     "Stepping forward, I push the door open."
@@ -108,4 +104,4 @@ label continuingStella1:
     "She waves goodnight and enters the room across from mine."
     "I'm thankful that I made a decent first impression."
     "Hopefully I'll make a better one after a good night's rest."
-    jump day2Stella
+    ##jump dayTwoStella
