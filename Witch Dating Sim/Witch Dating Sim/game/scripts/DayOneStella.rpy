@@ -6,7 +6,7 @@ label day1Stella:
     "Through the mist, a tall, stone door grows in front of me."
     "On it, the crest of the Star is engraved into it."
     "Stepping forward, I push the door open."
-    ##scene schoolExterior with Fade (1.0, 0.0, 1.0)
+    ##scene schoolExterior with Fade(1.0, 0.0, 1.0)
     "I'm finally here... a new witch at Luminoire Academy!"
     "The main hall of the school is lined with portraits of witches renown through the land."
     "I won't take this opportunity for granted..."
@@ -35,8 +35,8 @@ label continuingStella1:
     ##show circeNeutral
     k "I'd like to introduce you to my protégeé."
     #"[[Celeste enters]"
-    ##show circeNeutral at left
-    ##show celesteNeutral at right
+    ##show circeNeutral at left with move
+    ##show celesteNeutral at right with dissolve
     c "Hello. I'm Celeste. Congratulations on your enrollment."
     "She seems so... static."
     k "Celeste here is one of the brightest students in Luminoire."
