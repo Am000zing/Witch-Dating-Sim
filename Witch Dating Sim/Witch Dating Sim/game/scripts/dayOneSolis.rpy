@@ -112,4 +112,4 @@ label summerAsk:
     "I wonder what we'll be doing tomorrow..."
     ##hide Commons with Fade(1.0,1.0,1.0) 
 
-##jump dayTwoSolis
+jump day2Solis
