@@ -4,7 +4,7 @@ define char = Character("name", dynamic=True, color='#f933ff')
 
 label day1Luna:
     "Through the mist, a tall, stone door grows in front of me."
-    "On it, the crest of the Sun is engraved into it."
+    "On it, the crest of the Moon is engraved into it."
     "Stepping forward, I push the door open."
     ##scene schoolExterior with Fade (1.0, 0.0, 1.0)
     "I'm finally here... a new witch at Luminoire Academy!"
@@ -23,7 +23,7 @@ label day1Luna:
     "I can already feel my knees buckling from the pressure of even standing in the same hall as this great witch."
     menu:
         "I bend over and take a deep bow before her. \"I apologize! You are an inspiration to a generation of witches like me!\"":
-            "After about five seconds of my issued apology, I peak up at her for approval."
+            "After about five seconds of my issued apology, I peek up at her for approval."
             "Her face looks puffed up, as though holding back her amusement."
             ##show morganaSmile
             m "Stand up, child. I should apologize."
@@ -43,7 +43,7 @@ label day1Luna:
     m "Eluna, not everyone can be as talented as my star pupil."
     m "Everyone just needs a little push."
     ##show morganaUpset at left
-    "Morgana turns to me."
+    "Morgana turns to me and stares me down menacingly."
     m "[name], this is Eluna."
     m "Think of her as your superior from now on."
     ##show elunaUpset at right
@@ -55,11 +55,10 @@ label day1Luna:
     e "Thank you, Professor Morgana."
     "Eluna steps between me and Professor Morgana."
     ##show elunaNeutral at right
-    e "As the head witch for the Luna house, I feel it's my responsibility to serve as a role model for my junior witches."
-    ##"Eluna turns to me and winks."
-    ##show elunaSmile at right
-    m "..."
-    e "... "
+    e "As the head witch for the Luna house I feel it's my responsibility to..."
+    "Eluna turns to me and winks."
+    ##show elunaSmile at right  #not entirely sure where to put this part (before or after the wink)
+    e "...serve as a role model for my junior witches."
     "Morgana sighs and places her hands on Eluna's shoulders as a proud parent would."
     ##show morganaSmile at left
     m "Then I won't stand in your way either."
@@ -68,7 +67,7 @@ label day1Luna:
     m "I'll see the both of you tomorrow at the amphitheater."
     ##hide morganaUpset with dissolve
     "She lifts her hands and walks down the hall."
-    "As soon as the professor turns the corner, Eluna lets out a soft, exasperated groan."
+    "As soon as the professor turns the corner, Eluna lets out a soft, exasperated groan." #mindmup stops here
     ##show elunaUpset at center with move
     e "I'm sorry about that."
     ##show elunaNeutral
