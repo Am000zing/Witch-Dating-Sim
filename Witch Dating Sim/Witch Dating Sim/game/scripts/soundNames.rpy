@@ -1,1 +1,1 @@
-define introQuizMusic = "..//20220421_GAMESPAWN_LUMINOIRE_INTRO_QUIZ_V1.3_FINAL.mp3"
+define introQuizMusic = "..//audio//MUSIC//IntroQuiz.mp3"
