@@ -181,4 +181,5 @@ jump intro
 
 label intro:
 "nice."
+jump day1Solis
 jump day1Luna
