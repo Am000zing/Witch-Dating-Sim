@@ -223,7 +223,7 @@ style choice_button_text is button_text
 
 style choice_vbox:
     xalign 0.5
-    ypos 270
+    ypos 405
     yanchor 0.5
 
     spacing gui.choice_spacing
@@ -252,6 +252,7 @@ screen quick_menu():
 
             xalign 0.5
             yalign 1.0
+            spacing 100
 
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
@@ -498,32 +499,32 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
-    bottom_padding 30
-    top_padding 120
+    bottom_padding 45
+    top_padding 180
 
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 280
+    xsize 420
     yfill True
 
 style game_menu_content_frame:
-    left_margin 40
-    right_margin 20
-    top_margin 10
+    left_margin 60
+    right_margin 30
+    top_margin 15
 
 style game_menu_viewport:
-    xsize 920
+    xsize 1380
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
 
 style game_menu_side:
-    spacing 10
+    spacing 15
 
 style game_menu_label:
-    xpos 50
-    ysize 120
+    xpos 75
+    ysize 180
 
 style game_menu_label_text:
     size gui.title_text_size
@@ -533,7 +534,7 @@ style game_menu_label_text:
 style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
-    yoffset -30
+    yoffset -45
 
 
 ## About screen ################################################################
