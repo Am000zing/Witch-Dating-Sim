@@ -166,20 +166,14 @@ elif elunaAP == summerAP:
 label houseSolis:
 "House Solis!"
 $ solis = true
-jump intro
+jump day1Solis
 
 label houseLuna:
 "House Luna!"
 $ luna = true
-jump intro
+jump day1Luna
 
 label houseStella:
 "House Stella!"
 $ stella = true
-jump intro
-
-
-label intro:
-"nice."
-jump day1Solis
-jump day1Luna
+jump day1Stella
