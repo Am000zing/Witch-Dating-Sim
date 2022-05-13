@@ -11,6 +11,17 @@ python:
 #            "Day Two":
 #                jump dayTwo
 
+if name == "Gamespawn" or name == "gamespawn":
+    $ name = "Great Grandmaster"
+    menu:
+        "Which path do you want to jump to?"
+        "Luna House":
+            jump lunaHouseOptions
+        "Stella House":
+            jump stellaHouseOptions
+        "Solis House":
+            jump solisHouseOptions
+
 menu:
     "Your name is [name], correct?"
     "Yes":
@@ -18,15 +29,6 @@ menu:
     "No":
         jump start
 
-if name == "Gamespawn" or name == "gamespawn":
-    $ name = "Great Grandmaster"
-    menu:
-        "Luna House":
-            jump lunaHouseOptions
-        "Stella House":
-            jump stellaHouseOptions
-        "Solis House":
-            jump solisHouseOptions
 
 
 label lunaHouseOptions:
@@ -69,7 +71,7 @@ label solisHouseOptions:
             jump day5Solis
 
 label quiz:
-play music introQuizMusic volume 0.5
+#play music introQuizMusic volume 0.5
 "Thank you. A name is important for witches, as names may hold great power."
 "Before further embarking on this magical journey, I'd like to know a few things about you."
 
@@ -157,10 +159,10 @@ elif celesteAP >= 3:
 
 elif elunaAP == summerAP:
     $ SLrandom = renpy.random.choice(['solis', 'luna'])
-        if SLrandom = solis:
-            jump houseSolis
-        if luna:
-            jump houseLuna
+        #if SLrandom = solis:
+        #    jump houseSolis
+        #if luna:
+        #    jump houseLuna
 
 
 label houseSolis:

@@ -1,7 +1,3 @@
-define s = Character('Summer', color='#f7c039')
-define t = Character('Tasha', color='#ba1230')
-define char = Character("name", dynamic=True, color='#f933ff')
-
 label day1Solis:
     "Through the mist, a tall, stone door appears in front of me."
     "The crest of the Sun is engraved into it."

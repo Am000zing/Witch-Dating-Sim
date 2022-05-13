@@ -1,6 +1,6 @@
-define e = Character('Eluna', color='#f7c039')
-define m = Character('Morganna', color='#ba1230')
-define char = Character("name", dynamic=True, color='#f933ff')
+#define e = Character('Eluna', color='#f7c039')
+#define m = Character('Morganna', color='#ba1230')
+#define char = Character("name", dynamic=True, color='#f933ff')
 
 label day2Luna:
     "The reality of being at Luminoire Academy is really starting to hit me."

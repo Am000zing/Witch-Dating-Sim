@@ -1,19 +1,16 @@
-define e = Character('Eluna', color='#f7c039')
-define m = Character('Morganna', color='#ba1230')
-define char = Character("name", dynamic=True, color='#f933ff')
-
 label day1Luna:
     "Through the mist, a tall, stone door grows in front of me."
+    scene lunaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Moon is engraved into it."
     "Stepping forward, I push the door open..."
-    ##scene schoolExterior with Fade (1.0, 0.0, 1.0)
+    scene schoolExterior with Fade (1.0, 0.0, 1.0)
     "I'm finally here... a new witch at Luminoire Academy!"
     "A grand facade beneath an even taller tree stands before me."
     "I won't take this opportunity for granted..."
     "I'm going to make the most of my time at Luminoire Academy!"
 
     m "Excuse me, witchling."
-    ##show morganaNeutral with dissolve
+    show morganaNeutral with dissolve
     "The door that you entered through has disappeared."
     "Instead, a witch emanating raw magical power towers over you."
     m "You're in my way."
@@ -25,17 +22,17 @@ label day1Luna:
         "I bend over and take a deep bow before her. \"I apologize! You are an inspiration to a generation of witches like me!\"":
             "After about five seconds of my issued apology, I peek up at her for approval."
             "Her face looks puffed up, as though holding back her amusement."
-            ##show morganaSmile
+            show morganaSmile
             m "Stand up, child. I should apologize."
             m "I should be kinder to the next generation if they're ever going to be as great as mine."
         "I correct my posture and compose myself. \"It's an honor to stand beside great witches like you, professor.\"":
-            ##show morganaUpset
+            show morganaUpset
             ##"An annoyed look streaks across her face."
             "She looks down at me. My legs shake in spite of my best efforts to stay calm."
             "She utters under her breath."
             m "If you knew anything about this academy, you'd know that I'm the only \"great witch\" here."
     e "Please excuse our beloved professor."
-    ##show morganaNeutral at left with move
+    show morganaNeutral at left with move
     ##show elunaNeutral at right with move
     "A gorgeous girl walks up from behind Professor Morgana."
     "Her energy, while as intoxicating as Morgana's, is as calming as it is energizing."
