@@ -157,10 +157,10 @@ elif celesteAP >= 3:
 
 elif elunaAP == summerAP:
     $ SLrandom = renpy.random.choice(['solis', 'luna'])
-        if SLrandom = solis:
-            jump houseSolis
-        if luna:
-            jump houseLuna
+    if SLrandom == solis:
+        jump houseSolis
+    if SLrandom == luna:
+        jump houseLuna
 
 
 label houseSolis:
