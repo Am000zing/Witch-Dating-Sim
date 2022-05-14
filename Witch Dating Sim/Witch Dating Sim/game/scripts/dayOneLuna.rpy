@@ -19,24 +19,28 @@ label day1Luna:
     "She's a major part in the reason I enrolled in Luminoire."
     "I can already feel my knees buckling from the pressure of even standing in the same hall as this great witch..."
     menu:
-        "I bend over and take a deep bow before her. \"I apologize! You are an inspiration to a generation of witches like me!\"":
+        "I bend over and take a deep bow before her.":
+            "I apologize! You are an inspiration to a generation of witches like me!"
             "After about five seconds of my issued apology, I peek up at her for approval."
             "Her face looks puffed up, as though holding back her amusement."
             show morganaSmile
             m "Stand up, child. I should apologize."
             m "I should be kinder to the next generation if they're ever going to be as great as mine."
-        "I correct my posture and compose myself. \"It's an honor to stand beside great witches like you, professor.\"":
+        "I correct my posture and compose myself.":
+            "It's an honor to stand beside great witches like you, professor."
             show morganaUpset
             ##"An annoyed look streaks across her face."
             "She looks down at me. My legs shake in spite of my best efforts to stay calm."
             "She utters under her breath."
             m "If you knew anything about this academy, you'd know that I'm the only \"great witch\" here."
-    e "Please excuse our beloved professor."
-    show morganaNeutral at left with move
-    ##show elunaNeutral at right with move
+    unknown "Please excuse our beloved professor."
     "A gorgeous girl walks up from behind Professor Morgana."
+    hide morganaSmile
+    hide morganaUpset
+    show morganaNeutral at left with move
+    show elunaNeutral at right with move
     "Her energy, while as intoxicating as Morgana's, is as calming as it is energizing."
-    e "She gets a kick out of keeping the students on their toes."
+    unknown "She gets a kick out of keeping the students on their toes."
     m "Eluna, not everyone can be as talented as my star pupil."
     m "Everyone just needs a little... push."
     ##show morganaUpset at left
@@ -98,4 +102,4 @@ label day1Luna:
     char "Sounds great, thank you!"
     e "I'll see you at the Amphitheater tomorrow."
     ##hide elunaNeutral with dissolve
-    ##jump dayTwoLuna
+    jump dayTwoLuna
