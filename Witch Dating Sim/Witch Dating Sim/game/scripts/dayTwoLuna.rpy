@@ -1,7 +1,3 @@
-#define e = Character('Eluna', color='#f7c039')
-#define m = Character('Morganna', color='#ba1230')
-#define char = Character("name", dynamic=True, color='#f933ff')
-
 label day2Luna:
     "The reality of being at Luminoire Academy is really starting to hit me."
     "I'm not sure whether or not I got off the wrong foot with Professor Morgana, but surely I can still make a good impression!"

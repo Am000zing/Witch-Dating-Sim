@@ -136,7 +136,7 @@ style window:
     yalign gui.textbox_yalign
     ysize gui.textbox_height
 
-    background Image("gui/textbox.png", xalign=0.5, yalign=1.0)
+    background Frame("gui/textbox2.png", xalign=0.5, yalign=1.2)
 
 style namebox:
     xpos gui.name_xpos
@@ -295,8 +295,9 @@ screen navigation():
     vbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        #xpos gui.navigation_xpos
+        xalign 0.5
+        yalign 0.7
 
         spacing gui.navigation_spacing
 
@@ -345,6 +346,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    xalign 0.5
 
 
 ## Main Menu screen ############################################################
@@ -390,7 +392,7 @@ style main_menu_frame:
     xsize 280
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    #background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -535,6 +537,7 @@ style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
     yoffset -45
+
 
 
 ## About screen ################################################################
