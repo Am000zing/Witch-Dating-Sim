@@ -42,20 +42,23 @@ label day1Luna:
     show elunaNeutral at right with move
     "Her energy, while as intoxicating as Morgana's, is as calming as it is energizing."
     unknown "She gets a kick out of keeping the students on their toes."
+    show morganaNeutral at left
     m "Eluna, not everyone can be as talented as my star pupil."
     m "Everyone just needs a little... push."
+    hide morganaNeutral
     show morganaUpset at left
     "Morgana turns to me and stares me down menacingly."
     m "[name], this is Eluna."
     m "Think of her as your superior from now on."
-    show elunaUpset at right
+    show elunaUpset at left
     "Eluna rolls her eyes, just out of the professor's view."
     "Morgana continues to glare at me as I hold my breath nervously."
-    show morganaNeutral at left
     m "She is this class's pride and joy..."
     m "...so she can't be held back supporting witchlings such as you —"
     e "Thank you, Professor Morgana."
     "Eluna steps between me and Professor Morgana."
+    hide morganaUpset
+    show morganaNeutral at left
     show elunaNeutral at right
     e "As the head witch for the Luna house I feel it's my responsibility to..."
     "Eluna turns to me and winks."
@@ -68,9 +71,13 @@ label day1Luna:
     show morganaUpset at left
     "Morgana shoots a piercing glance at me."
     m "I'll see the both of you tomorrow at the amphitheater."
+    hide morganaNeutral
+    hide morganaSmile
     hide morganaUpset with dissolve
     "She lifts her hands and walks down the hall."
     "As soon as the professor turns the corner, Eluna lets out a soft, exasperated groan." #mindmup stops here
+    hide elunaNeutral
+    hide elunaSmile
     show elunaUpset at center with move
     e "I'm sorry about that."
     show elunaNeutral
@@ -79,6 +86,8 @@ label day1Luna:
     scene Commons with Fade(2.0, 1.0, 2.0)
     with Pause(2.0)
     show elunaNeutral
+    "We walk quietly into the Commons."
+    "She hasn't really said a word to me after Professor Morgana's encounter."
     e "..."
     e "So, [name], what do you do in your spare time?"
     menu:
@@ -102,5 +111,7 @@ label day1Luna:
     e "If you ever need assistance, I'd be more than happy to help."
     char "Sounds great, thank you!"
     e "I'll see you at the Amphitheater tomorrow."
+    hide elunaUpset
+    hide elunaSmile
     hide elunaNeutral with dissolve
     jump day2Luna

@@ -11,7 +11,14 @@ image lunaDoor = "BackgroundCG/lunaDoor.png"
 image solisDoor = "BackgroundCG/solisDoor.png"
 image stellaDoor = "BackgroundCG/stellaDoor.png"
 image schoolExterior = "BackgroundCG/schoolExterior.PNG"
+image greenhouse = "BackgroundCG/greenhouse.png"
+image amphitheater1 = "BackgroundCG/dayAmphitheater.png"
+image amphitheater2 = "BackgroundCG/nightAmphitheater.png"
+image amphitheater3 = "BackgroundCG/night2Amphitheater.png"
+
 image morganaNeutral = im.Scale("Morgana/morganaNeutral.png", 1000, 1000)
+#image morganaNeutral_inactive = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
+
 image morganaSmile = im.Scale("Morgana/morganaSmile.png", 1000, 1000)
 image morganaUpset = im.Scale("Morgana/morganaUpset.png", 1000, 1000)
 image tashaNeutral = im.Scale("Tasha/tashaNeutral.png", 1000, 1000)
