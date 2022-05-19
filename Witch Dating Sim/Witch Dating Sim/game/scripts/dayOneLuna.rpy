@@ -33,9 +33,9 @@ label day1Luna:
             "She looks down at me."
             "My legs shake in spite of my best efforts to stay calm."
             "She utters under her breath."
-            m "If you knew anything about this academy, you'd know that I'm the only \"great witch\" here."
+            m "{i}If you knew anything about this academy, you'd know that I'm the only \"great witch\" here.{/i}"
     unknown "Please excuse our beloved professor."
-    "A gorgeous girl walks up from behind Professor Morgana."
+    #"A gorgeous girl walks up from behind Professor Morgana."
     hide morganaSmile
     hide morganaUpset
     show morganaNeutral at left with move
@@ -50,7 +50,7 @@ label day1Luna:
     "Morgana turns to me and stares me down menacingly."
     m "[name], this is Eluna."
     m "Think of her as your superior from now on."
-    show elunaUpset at left
+    show elunaUpset at right
     "Eluna rolls her eyes, just out of the professor's view."
     "Morgana continues to glare at me as I hold my breath nervously."
     m "She is this class's pride and joy..."
@@ -82,11 +82,13 @@ label day1Luna:
     e "I'm sorry about that."
     show elunaNeutral
     e "Let me show you to the Commons now..."
+    hide elunaUpset
     hide elunaNeutral with dissolve
     scene Commons with Fade(2.0, 1.0, 2.0)
     with Pause(2.0)
-    show elunaNeutral
     "We walk quietly into the Commons."
+    show elunaNeutral with dissolve
+
     "She hasn't really said a word to me after Professor Morgana's encounter."
     e "..."
     e "So, [name], what do you do in your spare time?"

@@ -30,9 +30,11 @@ label day2Luna:
     m "It is of  utmost importance that you take this seriously, and when the Ritual begins, the rites are performed {i}perfectly{/i}." 
     m "For this year's Ritual, I will be having Eluna leading the rites."
     m "Eluna, would you like to demonstrate to them what is expected in the Ritual?" 
+    show morganaNeutral at left with move
+    show elunaNeutral at right with dissolve
     e "It would be my pleasure, Professor."
-    hide morganaNeutral
-    hide elunaNeutral
+    hide morganaNeutral with dissolve
+    hide elunaNeutral with dissolve
     scene elunaDanceCG with Fade (1.0, 0.0, 1.0)
     #CG OPTION: Eluna singing/dancing
     "Everyone in the class stares at Eluna with wonder."
@@ -57,6 +59,7 @@ label day2Luna:
             e "Ah, oh no, it's fine. Thank you for the compliment."
             "She stares back at where Profesor Morgana is lecturing the students about the ritual."
 
+    hide elunaUpset
     hide elunaNeutral with dissolve
     show morganaNeutral with dissolve
     m "No one has signed up to be Eluna's supporting lead for the Ritual."
@@ -66,10 +69,14 @@ label day2Luna:
     m "[name], why don't you take supporting role for now?"
     "..."
     "What?"
+    hide morganaNeutral
     show morganaNeutral
     m "You're conveniently next to her, might as well run lines together."
     "Professor Morgana shoves a stack of papers into my hands."
     m "Here, read... this part of the script with her."
+    hide morganaSmile
+    show morganaNeutral at left with move
+    show elunaNeutral at right with dissolve
     e "..."
     "Oh boy, this has been a hell of a day."
 
@@ -79,42 +86,56 @@ label day2Luna:
         "Read the lines while looking at Eluna":
             "While reading, I stumble over a line."
             "Eluna is completely straight-faced."
+            show morganaUpset
             m "You just need some more practice, but I'm sure you'll get the hang of it."            
         "Focus on reading the lines directly from the page.":
+            show elunaUpset at right
             "I managed to get through the lines, but it didn't really feel very impactful."
             "Eluna looks a bit annoyed."
+            show morganaNeutral at left
             m "Bit dry of a performance, but I'm sure with practice you'll get the hang of it." 
         "Cast a spell on your throat that will amplify your voice!":
             "I haven't shown Professor Morgana my magical prowess."
             "Maybe now is the time!"
             "I cast the spell and-"
+            show morganaUpset at left
+            show elunaSmile at right
             char "{i}THE FULL MOON IS REPRESENTATIV- {/i}"
             "Oh no, my voice was too loud!"
             m "Alright, enough of that now..."
             char "I'M SORRY PROFESSOR! I DIDN'T REALIZE IT WOULD TURN OUT THIS WAY!"
-            m "{i}*Sigh*{/i), of course you didn't."
+            m "{i}Sigh{/i}, of course you didn't."
             "Professor Morgana waves her hands and my vocal chords feel less tense."
             "Professor Morgana looks peeved, but Eluna looks pretty amused."   
-
+    hide morganaUpset
+    show elunaNeutral at right
+    show morganaNeutral at left
     m "Since there isn't anyone else brave enough to be supporting lead, [name], you shall be supporting lead for Eluna."
     m "You all are excused for today."
+    hide elunaSmile
+    hide elunaUpset
+    hide elunaNeutral with dissolve
+    show morganaNeutral at center with move
     "Everyone starts packing up and getting out of their seats."
     m "[name]."
     "I look up at Professor Morgana peering over at me from across the room."
     m "Practice well."
+    hide morganaNeutral with dissolve
     ##Morgana leaves the scene
     "Ugh..."
 
     e "Hey, [name]?"
+    show elunaNeutral with dissolve
     char "Oh! Hey, sorry for messing up today."
     e "No, it's really no big deal."
     e "I wanted to ask if you'd like to run lines with me tomorrow afternoon?"
     e "Some practice might help you feel a bit more confident perfoming."
-    char "oh, of course! Yes, that'd be great."
+    char "Oh, of course! Yes, that'd be great."
     e " Perfect! I'll find you in the Commons tomorrow afternoon."
     char "S-sounds good!"
     char "I'll see you then!"
     e "Yes, goodbye."
+    hide elunaNeutral with dissolve
     "She promptly leaves the room."
 
     "I slump back into my seat."
