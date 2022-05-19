@@ -21,6 +21,8 @@ if name == "Gamespawn" or name == "gamespawn":
             jump stellaHouseOptions
         "Solis House":
             jump solisHouseOptions
+        "Activespeaker test":
+            jump campus
 
 menu:
     "Your name is [name], correct?"
