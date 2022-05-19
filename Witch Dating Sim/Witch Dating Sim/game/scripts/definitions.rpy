@@ -16,14 +16,14 @@ image amphitheater1 = "BackgroundCG/dayAmphitheater.png"
 image amphitheater2 = "BackgroundCG/nightAmphitheater.png"
 image amphitheater3 = "BackgroundCG/night2Amphitheater.png"
 
-image morganaNeutral = im.Scale("Morgana/morganaNeutral.png")
+image morganaNeutral = "Morgana/morganaNeutral.png"
 #image morganaNeutral_inactive = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
 
-image morganaSmile = im.Scale("Morgana/morganaSmile.png")
-image morganaUpset = im.Scale("Morgana/morganaUpset.png")
-image tashaNeutral = im.Scale("Tasha/tashaNeutral.png")
-image tashaUpset = im.Scale("Tasha/tashaUpset.png")
-image tashaSmile = im.Scale("Tasha/tashaSmile.png")
-image circeNeutral = im.Scale("Circe/circeNeutral.png")
-image circeSmile = im.Scale("Circe/circeSmile.png")
-image circeUpset = im.Scale("Circe/circeUpset.png")
+image morganaSmile = "Morgana/morganaSmile.png"
+image morganaUpset = "Morgana/morganaUpset.png"
+image tashaNeutral = "Tasha/tashaNeutral.png"
+image tashaUpset = "Tasha/tashaUpset.png"
+image tashaSmile = "Tasha/tashaSmile.png"
+image circeNeutral = "Circe/circeNeutral.png"
+image circeSmile = "Circe/circeSmile.png"
+image circeUpset = "Circe/circeUpset.png"
