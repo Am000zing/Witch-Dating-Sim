@@ -4,7 +4,7 @@ define s = Character('Summer', color='#ff94c1')
 define t = Character('Tasha', color='#52e5ff')
 define c = Character('Celeste', color='#ff94c1')
 define k = Character('Circe', color='#52e5ff')
-define char = Character("name", dynamic=True, color='#fff4ff')
+define char = Character("name", dynamic=True, color='#db7fee')
 define unknown = Character("unknown", color= '#ffa9a6')
 
 image lunaDoor = "BackgroundCG/lunaDoor.png"
