@@ -4,7 +4,7 @@ label day1Stella:
     "Stepping forward, I push the door open."
     ##scene schoolExterior with Fade(1.0, 0.0, 1.0)
     "I'm finally here... a new witch at Luminoire Academy!"
-    "The main hall of the school is lined with portraits of witches renown through the land."
+    "A grand facade beneath an even taller tree stands before me."
     "I won't take this opportunity for granted..."
     "I'm going to make the most of my time at Luminoire Academy!"
 
@@ -29,6 +29,7 @@ label StellaGood1:
 
 label continuingStella1:
     ##show circeNeutral
+    k "Nevertheless, I'm flattered."
     k "I'd like to introduce you to my protégeé."
     #"[[Celeste enters]"
     ##show circeNeutral at left with move
@@ -36,7 +37,7 @@ label continuingStella1:
     c "Hello. I'm Celeste. Congratulations on your enrollment."
     "She seems so... static."
     k "Celeste here is one of the brightest students in Luminoire."
-    k "Or at least she would be if she didn't spend ALL her time in my library..."
+    k "Though I think she seems to spend a little too much time in the library…"
     ##"Celeste blushes and squeezes her book."
     ##show celesteUpsetB at right
     c "Thank you, Professor."
@@ -56,7 +57,7 @@ label continuingStella1:
     ##with Pause(2.0)
     "We quietly walk into a smaller hall - the Commons."
     ##show celesteNeutral with dissolve
-    c "These will be our lodgings for the rest of our term."
+    c "These will be our lodgings for the rest of the term."
     c "I usually use this space to pass time between classes..."
 
     c "[name], what's something you do to kill time?"
@@ -69,15 +70,14 @@ label continuingStella1:
             ##show celesteNeutral
             c "Not... that there's anything unknown here."
             "Celeste's demeanor reverts back to being closed off, but her charming smile remains at the corner of her cheek."
-        "Visiting museums that are rich with history.":
+        "Visiting museums – they're rich with history!":
             ##show celesteSmile
-            c "Thankfully, you won't have to spend the money to go somewhere like that."
-            "Her demeanor shifts a little."
+            c "Luckily for you, you won't have to spend the money to go somewhere like that."
             "It's as though she has become less tense than when we introduced ourselves."
             c "Luminoire Academy is already so rich in the history of witches."
             c "In fact, I'd happily give you a tour of our oldest facilities."
             ##show celesteNeutral
-            c "If you'd like."
+            c "If you'd like, of course…"
             "I nod eagerly."
             char "That would be amazing!"
             "My enthusiasm amuses her and she leans against the wall."
@@ -85,8 +85,8 @@ label continuingStella1:
             ##show celesteSmile
             c "Really? I couldn't agree more."
             ##"Celeste's face brightens."
-            " As she begins to elaborate, I take a seat and lean forward, listening to her carefully."
-            c "We can learn as much from tall tales about history as artifacts or ancient text!"
+            "As she continues, I take a seat and lean forward, listening to her carefully."
+            c "We can learn as much from historical tall tales as artifacts or ancient text!"
             c "Folklore reveals to the present the way that the past was perceived,"
             c "In terms of culture, politics, and relationships."
             c "It's just a matter of translating the ancient language to bring visions of the past to life."
@@ -103,5 +103,5 @@ label continuingStella1:
     ##hide celesteNeutral with dissolve
     "She waves goodnight and enters the room across from mine."
     "I'm thankful that I made a decent first impression."
-    "Hopefully I'll make a better one after a good night's rest."
+    "Hopefully I'll make an even better second impression after a good night's rest."
     jump day2Stella
