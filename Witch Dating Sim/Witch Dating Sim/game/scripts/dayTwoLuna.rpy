@@ -8,33 +8,35 @@ label day2Luna:
     scene amphitheater1 with Fade(2.0, 0.0, 2.0)
     "I arrive at the amphitheater, nearly out of breath."
     "The academy's layout is so puzzling with all its twists and turns, so many different entrances with just as many exits."
-    show morganaNeutral with dissolve
+    show morgana Neutral with dissolve
     m "You've barely made it on time."
     "I try to stand up straight and lighten my breathing."
     "So far, Professor Morgana has not pulled any punches with her sharp tongue."
-    show morganaNeutral at left with move
-    show elunaNeutral at right with dissolve
+    show morgana Neutral at left with move
+    show eluna Neutral at right with dissolve
+    show m inactive at left
     e "Oh, Professor, don't be so hard on her..."
     e "It's only her first day! I remember feeling confused navigating the halls on my first day here."
+    show e inactive at right
+    hide m inactive
     m "Well, on your first day you also perfectly performed the introductory enchantment. On your first try, no less!"
-    show morganaSmile at left
-    m "...but we'll see what our new Luna witchling is capable of."
+    m Smile "...but we'll see what our new Luna witchling is capable of."
     "Damn, Profesor Morgana is seriously giving me a hard time."
 
     #I need a better key for this color coding  :sob:
-    hide morganaSmile
-    show morganaNeutral at center with move
-    hide elunaNeutral with dissolve
+    show morgana Smile at center with move
+    hide eluna Neutral
+    hide e inactive with dissolve
     "Profesor Morgana claps her hands with a flourish."
-    m "Alright class! We will now begin the auditions for the Full Moon Ritual."
+    m Neutral "Alright class! We will now begin the auditions for the Full Moon Ritual."
     m "It is of  utmost importance that you take this seriously, and when the Ritual begins, the rites are performed {i}perfectly{/i}." 
     m "For this year's Ritual, I will be having Eluna leading the rites."
     m "Eluna, would you like to demonstrate to them what is expected in the Ritual?" 
-    show morganaNeutral at left with move
-    show elunaNeutral at right with dissolve
+    show morgana Neutral at left with move
+    show eluna Neutral at right with dissolve
     e "It would be my pleasure, Professor."
-    hide morganaNeutral with dissolve
-    hide elunaNeutral with dissolve
+    hide morgana Neutral with dissolve
+    hide eluna Neutral with dissolve
     scene elunaDanceCG with Fade (1.0, 0.0, 1.0)
     #CG OPTION: Eluna singing/dancing
     "Everyone in the class stares at Eluna with wonder."
@@ -47,59 +49,52 @@ label day2Luna:
     "Maybe I should say something to her...."
     menu:
         "Your performance was amazing!":
-            show elunaNeutral with dissolve
+            show eluna Neutral with dissolve
             e "Aha, thank you. That is very kind of you you to say."
             "She stares back at where Professor Morgana is lecturing the students about the ritual."
+            hide eluna Neutral with dissolve
         "You looked really pretty on stage.":
-            show elunaUpset with dissolve
+            show eluna Upset with dissolve
             e "Ah, thank you."
             "She seems a little uncomfortable by that remark."
             char "I'm sorry, I didn't mean to come off as shallow or anything."
-            show elunaNeutral
-            e "Ah, oh no, it's fine. Thank you for the compliment."
+            e Neutral "Ah, oh no, it's fine. Thank you for the compliment."
             "She stares back at where Profesor Morgana is lecturing the students about the ritual."
+            hide eluna Neutral with dissolve
 
-    hide elunaUpset
-    hide elunaNeutral with dissolve
-    show morganaNeutral with dissolve
+    show morgana Neutral with dissolve
     m "No one has signed up to be Eluna's supporting lead for the Ritual."
     m "I'd like for you all to be as involved as possible with the Ritual, as we are the house responsible for the rites."
     m "Hm..."
-    show morganaSmile
-    m "[name], why don't you take supporting role for now?"
+    m Smile "[name], why don't you take supporting role for now?"
     "..."
     "What?"
-    hide morganaNeutral
-    show morganaNeutral
-    m "You're conveniently next to her, might as well run lines together."
+    m Neutral "You're conveniently next to her, might as well run lines together."
     "Professor Morgana shoves a stack of papers into my hands."
     m "Here, read... this part of the script with her."
-    hide morganaSmile
-    show morganaNeutral at left with move
-    show elunaNeutral at right with dissolve
+    show morgana Neutral at left with move
+    show eluna Neutral at right with dissolve
     e "..."
     "Oh boy, this has been a hell of a day."
-
     "I've never done plays before, nor do I have experience running lines with a partner!"
     "What should I do..."
     menu: 
         "Read the lines while looking at Eluna":
             "While reading, I stumble over a line."
             "Eluna is completely straight-faced."
-            show morganaUpset
-            m "You just need some more practice, but I'm sure you'll get the hang of it."            
+            m Upset "You just need some more practice, but I'm sure you'll get the hang of it."
         "Focus on reading the lines directly from the page.":
             show elunaUpset at right
             "I managed to get through the lines, but it didn't really feel very impactful."
             "Eluna looks a bit annoyed."
-            show morganaNeutral at left
-            m "Bit dry of a performance, but I'm sure with practice you'll get the hang of it." 
+            m Neutral "Bit dry of a performance, but I'm sure with practice you'll get the hang of it." 
         "Cast a spell on your throat that will amplify your voice!":
             "I haven't shown Professor Morgana my magical prowess."
             "Maybe now is the time!"
             "I cast the spell and-"
-            show morganaUpset at left
-            show elunaSmile at right
+            show morgana Upset at left
+            show eluna Smile at right
+#            $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
             char "{i}THE FULL MOON IS REPRESENTATIV- {/i}"
             "Oh no, my voice was too loud!"
             m "Alright, enough of that now..."
@@ -107,25 +102,22 @@ label day2Luna:
             m "{i}Sigh{/i}, of course you didn't."
             "Professor Morgana waves her hands and my vocal chords feel less tense."
             "Professor Morgana looks peeved, but Eluna looks pretty amused."   
-    hide morganaUpset
-    show elunaNeutral at right
-    show morganaNeutral at left
-    m "Since there isn't anyone else brave enough to be supporting lead, [name], you shall be supporting lead for Eluna."
+
+    show eluna Neutral at right
+    m Neutral "Since there isn't anyone else brave enough to be supporting lead, [name], you shall be supporting lead for Eluna."
     m "You all are excused for today."
-    hide elunaSmile
-    hide elunaUpset
-    hide elunaNeutral with dissolve
-    show morganaNeutral at center with move
+    hide eluna Neutral with dissolve
+    show morgana Neutral at center with move
     "Everyone starts packing up and getting out of their seats."
     m "[name]."
     "I look up at Professor Morgana peering over at me from across the room."
     m "Practice well."
-    hide morganaNeutral with dissolve
+    hide morgana Neutral with dissolve
     ##Morgana leaves the scene
     "Ugh..."
 
     e "Hey, [name]?"
-    show elunaNeutral with dissolve
+    show eluna Neutral with dissolve
     char "Oh! Hey, sorry for messing up today."
     e "No, it's really no big deal."
     e "I wanted to ask if you'd like to run lines with me tomorrow afternoon?"
@@ -135,7 +127,7 @@ label day2Luna:
     char "S-sounds good!"
     char "I'll see you then!"
     e "Yes, goodbye."
-    hide elunaNeutral with dissolve
+    hide eluna Neutral with dissolve
     "She promptly leaves the room."
 
     "I slump back into my seat."

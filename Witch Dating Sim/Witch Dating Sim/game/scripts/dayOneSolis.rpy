@@ -11,7 +11,7 @@ label day1Solis:
     "I'm going to make the most of my time here at Luminoire Academy!"
 
     t "Salutations! You must be [name]."
-    show tashaNeutral with dissolve
+    show tasha Neutral with dissolve
     "This tall woman approaches me, circling around me as if I were a new specimen for her to study."
     char "Dr. Tasha. It's an honor to meet you."
 
@@ -22,92 +22,78 @@ label day1Solis:
             jump Schoice1good
 
 label Schoice1neutral:
-    show tashaUpset
+    show tasha Upset
     "Tasha sighs, almost disappointed at the response."
     t "Those are merely stepping stones to the real {i}\"accomplishment.\"{/i}"
-    show tashaNeutral
+    show tasha Neutral
     jump continuing1
 
 label Schoice1good:
-    show tashaSmile
+    show tasha Smile
     t "Very interesting..."
-    t "Choose your words carefully, otherwise my expectations of you will grow steeper."
-    show tashaNeutral
+    t Neutral "Choose your words carefully, otherwise my expectations of you will grow steeper."
     jump continuing1
 
 label continuing1:
-    show tashaNeutral
-    t "I look forward to seeing you in class, [name]."
+    t Neutral "I look forward to seeing you in class, [name]."
     t "I'd like for you to meet my lab assistant."
-    hide tashaNeutral
-    show tashaNeutral at left with move
-    show summerSmile at right with dissolve
-    s "Hi there! I'm Summer."
-    show summerNeutral at right
+    show tasha Neutral at left with move
+    show summer Neutral at right with dissolve
+    s Smile "Hi there! I'm Summer."
     "Wow...from the moment she first spoke, she felt as if she was just radiating kindness."
-    s "[name], you'll be working with House Solis on a big project this week, so keep your head up, okay?"
+    s Neutral "[name], you'll be working with House Solis on a big project this week, so keep your head up, okay?"
     t "Despite being a first-year, much like you, she has already made quite an impression."
     t "I've hand-picked her for her sharp eye for botany and animal-handling."
-    show summerSmile at right
-    s "Aww, Doctor. You don't have to flatter me like that."
-    show summerNeutral at right
-    s "It's like you always say:"
+    s Smile "Aww, Doctor. You don't have to flatter me like that."
+    s Neutral "It's like you always say:"
     s "Great magic comes from the world around us. We just have to tap into it."
-    show tashaSmile at left
-    t "Well put, Summer."
-    show tashaNeutral at left
-    t "Unfortunately, I have research to attend to at the moment, so Summer will give you the Luminoire tour."
-    show tashaSmile at left
-    t "I'll see you in the Greenhouse soon, young alchemists!"
-    hide tashaSmile at left with dissolve
-    hide summerNeutral at right
-    show summerNeutral at center with move
+    t Smile "Well put, Summer."
+    t Neutral "Unfortunately, I have research to attend to at the moment, so Summer will give you the Luminoire tour."
+    t Smile "I'll see you in the Greenhouse soon, young alchemists!"
+    hide tasha Smile at left with dissolve
+    show summer Neutral at center with move
     s "Hope you don't mind it just being the two of us."
     "I definitely do not mind..."
-    s "Great! Then let's head over to our dormitory!"
-    "I follow Summer down the main hall into a living area."
-    ##hide summerNeutral with dissolve
+    s Smile "Great! Then let's head over to our dormitory!"
+    "Did she just-?"
+    hide summer Neutral
+    "Summer darts off immediately."
+    "I follow her down the main hall into a living area."
     ##hide Schoolgrounds with Fade(1.0,0.0,1.0)
-    ##scene Commons with Fade(2.0,0,2.0)
-    ##show summerNeutral with dissolve
+    scene Commons with Fade(2.0,0,2.0)
+    show summer Neutral with dissolve
     s "Welcome to the Commons!"
-    ##show summerSmile
-    s "Get comfy, because we'll be here all year."
-    s "Each term can get real intense from the get-go..."
-    ##show summerNeutral
+    s Smile "Get comfy, because we'll be here all year."
+    s Neutral "Each term can get real intense from the get-go..."
     jump summerAsk
 
 label summerAsk:
     s "Hey, [name]. What's something you do to decompress?"
     menu:
         "I would brew a hot cup of tea.":
-            ##show summerSmile
-            s "Dang... Are you reading my mind or something?"
-            ##show summerNeutral
-            s "I always brew myself a cup after a hard day's work with Dr. Tasha."
+            s Smile "Dang... Are you reading my mind or something?"
+            s Neutral "I always brew myself a cup after a hard day's work with Dr. Tasha."
             "My attention is directed to a stove in the commons area."
             s "Ah! I see you've noticed the gas stove."
-            ##show summerSmile
-            s "If you ever want to join me for tea, let me know!"
+            s Smile "If you ever want to join me for tea, let me know!"
         "Take care of animals, big and small.":
 ##            "Summer's face lights up."
-            ##show summerSmile
-            s "For real?"
+            s Smile "For real?"
             s "You should come to my family's farm sometime, then!"
             ##show summerNeutral
-            s "Pets aren't allowed here unless they're familiars, unfortunately."
+            s Neutral "Pets aren't allowed here unless they're familiars, unfortunately."
             ##show summerUpset
-            s "I wish I could bring all of my babies to school..."
+            s Upset "I wish I could bring all of my babies to school..."
         "I love to cook, especially with home-grown ingredients!":
             ##show summerSmile
-            s "No way, you can cook, too?!"
+            s Smile "No way, you can cook, too?!"
             s "We need to exchange recipes then! I'd love to try yours sometime."
 ##    "Summer blushes and plays with her right braid."
     ##show summerNeutralBlush
-    s "Sorry... I shouldn't let you listen to me ramble the evening away."
+    s Neutral "Sorry... I shouldn't let you listen to me ramble the evening away."
     s "We have a lot to do tomorrow, so we need as much rest as possible!"
     s "Night night, [name]."
-    ##hide summerNeutral with dissolve
+    hide summer Neutral with dissolve
     "She disappears into a room next to mine."
     "I wonder what we'll be doing tomorrow..."
     ##hide Commons with Fade(1.0,1.0,1.0) 

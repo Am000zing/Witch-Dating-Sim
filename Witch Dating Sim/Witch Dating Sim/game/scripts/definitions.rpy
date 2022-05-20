@@ -1,7 +1,7 @@
 define e = Character('Eluna', color='#ff94c1', image = "eluna")
 define m = Character('Morgana', color='#52e5ff', image = "morgana")
-define s = Character('Summer', color='#ff94c1')
-define t = Character('Tasha', color='#52e5ff')
+define s = Character('Summer', color='#ff94c1', image = "summer")
+define t = Character('Tasha', color='#52e5ff', image = "tasha")
 define c = Character('Celeste', color='#ff94c1')
 define k = Character('Circe', color='#52e5ff')
 define char = Character("name", dynamic=True, color='#db7fee')
@@ -63,19 +63,19 @@ image e inactive = Composite(
 #     (0,0), "cNeutral_mask"
 # )
 
-# image sNeutral_mask = AlphaMask("the_darkness_70", "Summer/summerNeutral.png")
-# image s inactive = Composite(
-#     (1000,1000),
-#     (0,0), "Summer/summerNeutral.png",
-#     (0,0), "sNeutral_mask"
-# )
+image sNeutral_mask = AlphaMask("the_darkness_70", "Summer/summerNeutral.png")
+image s inactive = Composite(
+    (1000,1000),
+    (0,0), "Summer/summerNeutral.png",
+    (0,0), "sNeutral_mask"
+)
 
 image eluna Neutral = "Eluna/elunaNeutral.png"
 image eluna Smile = "Eluna/elunaSmile.png"
 image eluna Upset = "Eluna/elunaUpset.png"
-# image summer Neutral = "Summer/summerNeutral.png"
-# image summer Upset = "Summer/summerUpset.png"
-# image summer Smile = "Summer/summerSmile.png"
+image summer Neutral = "Summer/summerNeutral.png"
+image summer Upset = "Summer/summerUpset.png"
+image summer Smile = "Summer/summerSmile.png"
 # image celeste Neutral = "Celeste/celesteNeutral.png"
 # image celeste Smile = "Celeste/celesteSmile.png"
 # image celeste Upset = "Celeste/celesteUpset.png"

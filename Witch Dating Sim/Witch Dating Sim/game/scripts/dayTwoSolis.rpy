@@ -1,41 +1,46 @@
 label day2Solis:
+    scene Commons with Fade (2.0, 1.0, 2.0)
+    with Pause(1.0)
     "I wonder what today has in store for me."
     "Coming out of my room, I'm met eye-to-eye with..."
-    ##show summerNeutral
-    s "Good morning, sunshine!"
+    show summer Neutral with dissolve
+    s Smile "Good morning, sunshine!"
     s "Hope you had a restful sleep."
-    s "We have a lot to get done before the Banquet!"
+    s Neutral "We have a lot to get done before the Banquet!"
     s "Come with me. I want to show you something special."
-
+    hide summer Neutral with dissolve
+    scene greenhouse with Fade(2.0,2.0,2.0)
     "Summer eagerly takes me by the wrist as we travel from the Commons to an unfamiliar part of the academy."
     "We enter a room contained by shimmering glass."
     "Summer happily does a little twirl."
-    ##scene Greenhouse with Fade(2.0,2.0,2.0)
-    ##show summerSmile
-    s "Welcome to the Greenhouse!"
-    s "You and I will be working on cultivating and gathering ingredients."
-    s "All in preparation for the Full Moon Ritual!"
+    show summer Neutral with dissolve
+    s Smile "Welcome to the Greenhouse!"
+    s Neutral "You and I will be working on cultivating and gathering ingredients."
+    s Smile "All in preparation for the Full Moon Ritual!"
     "Summer guides me to a wall in the Greenhouse covered in magical plants of all kinds."
-    s "For the ritual, we use only the finest ingredients."
+    s Neutral "For the ritual, we use only the finest ingredients."
     ##show tashaNeutral behind summerSmile with dissolve
-    t "…all provided to the academy per my request."
+    t "...all provided to the academy per my request."
+    show summer Neutral at left with move
+    show tasha Neutral at right with dissolve
     ##show summerSmile at left with move
     ##show tashaNeutral at right
 
     "Tasha rounds the corner from behind the wall, caressing the large leaves of the potted plants."
-    t "House Solis is responsible for tending to the Greenhouse with the utmost care."
-    s "And todaaay… you'll be harvesting leaves from the rare hare basil."
+    t Smile "House Solis is responsible for tending to the Greenhouse with the utmost care."
+    s "And todaaay...you'll be harvesting leaves from the rare hare basil."
     s "While endangered in most parts of the realm, the academy provides a haven for all living things."
-    t "And in return, the gardens provide the magic we use to sustain the ritual."
+    t Neutral "And in return, the gardens provide the magic we use to sustain the ritual."
     t "Summer, I trust you'll do well to train our new witch."
     t "I have much to attend to before the ritual."
-    s "You can always count on me!"
+    s Smile "You can always count on me!"
     t "Lovely. I leave it to you."
-    ##hide tashaNeutral
-    
-    "Tasha leaves."
-    s "I'm going to harvest the other ingredients from the gardens."
+    hide tasha Neutral with dissolve
+    ##"Tasha leaves."
+    show summer Neutral at center with move
+    s Neutral "I'm going to harvest the other ingredients from the gardens."
     s "I'll be keeping an eye on you, but no pressure!"
+    hide summer Neutral with dissolve
     "Summer tends to another pocket of greenery elsewhere."
     ##hide summerSmile
 
@@ -47,15 +52,16 @@ label day2Solis:
         "Cut it at the root.":
             "From a tray nearby, I take a pair of shears and go for the base of the stem."
             ##show summerUpset
+            show summer Upset with dissolve
             s "WHAT ARE YOU DOING?!"
             "Summer snatches the shears from my hands."
             s "Be careful with these!"
-            s "You could have killed the poor thing…"
-            s "Here. I'll do it."
+            s "You could have killed the poor thing..."
+            s Neutral "Here. I'll do it."
         "Collect the fallen leaves.":
             "It looks like there are enough fallen leaves. I don't want to hurt the plant."
             "I take the few that I see and bring them over to Summer."
-            ##show summerNeutral
+            show summer Neutral with dissolve
             s "Oh!"
             s "These look a little... crumpled. Don't you think?"
             s "We should probably grab the larger leaves from the basil plant."
