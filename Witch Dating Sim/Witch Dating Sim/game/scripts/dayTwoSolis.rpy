@@ -78,3 +78,4 @@ label day2Solis:
     ##show summerNeutral
     s "Now that we're done here, let's head back to the Commons."
     "I follow Summer back to the Commons."
+    jump day3Solis
