@@ -87,4 +87,4 @@ label continuingStella2:
     "My instincts tell me she knows a bit more than what she is letting on…"
     "She offers me a book."
     c "Let's look into it some more."
-
+    jump day3Stella
