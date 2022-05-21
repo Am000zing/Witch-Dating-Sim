@@ -51,7 +51,6 @@ label day2Solis:
     menu:
         "Cut it at the root.":
             "From a tray nearby, I take a pair of shears and go for the base of the stem."
-            ##show summerUpset
             show summer Upset with dissolve
             s "WHAT ARE YOU DOING?!"
             "Summer snatches the shears from my hands."
@@ -63,25 +62,33 @@ label day2Solis:
             "I take the few that I see and bring them over to Summer."
             show summer Neutral with dissolve
             s "Oh!"
-            s "These look a little... crumpled. Don't you think?"
-            s "We should probably grab the larger leaves from the basil plant."
+            s Upset "These look a little... crumpled. Don't you think?"
+            s Neutral "We should probably grab the larger leaves from the basil plant."
             s "That way it'll give it more room to grow out the younger, smaller leaves."
         "Pluck the largest ones.":
             "The large leaves on the plant look enticing."
             "I carefully pluck them from the stem, making sure not to accidentally grab the small and young ones."
-            ##show summerSmile
+            show summer Smile with dissolve
             s "Good job!"
-            s "These look great - you have an eye for harvesting."
+            s Neutral "These look great - you have an eye for harvesting."
             "I give the leaves to her."
 
-    ##show summerNeutral
     "Summer takes the leaves and ties them into a bundle."
     "In a mortar and pestle, she grinds it into a fine powder."
     "The atmosphere of the Greenhouse transforms as a fragrance fills the air."
     "At the end of the delicate process, Summer pours the powder into a mesh strainer and tosses it into a cauldron."
-    ##show summerSmile
+    show summer Smile
     s "At the banquet, we'll be serving this as a beverage for the ritual!"
     ##show summerNeutral
-    s "Now that we're done here, let's head back to the Commons."
-    "I follow Summer back to the Commons."
+    s Neutral "Now that we're done here, let's head back to the Commons."
+    hide summer Neutral with dissolve
+    "I follow Summer back to the Commons"
+    scene Commons with Fade(2.0, 0.0, 2.0)
+    show summer Neutral with dissolve
+    s "Okay, [name]."
+    s "You did alright today, but you'll have to bring your A-Game tomorrow!"
+    s "Meet me in the Library tomorrow."
+    s "We're going to do some sweet research on the basics of magical agriculture."
+    s "Goodnight!"
+    hide summer Neutral with dissolve
     jump day3Solis

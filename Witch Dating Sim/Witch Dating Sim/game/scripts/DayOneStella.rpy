@@ -1,14 +1,15 @@
 label day1Stella:
     "Through the mist, a tall, stone door grows in front of me."
+    scene stellaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Star is engraved into it."
     "Stepping forward, I push the door open."
-    ##scene schoolExterior with Fade(1.0, 0.0, 1.0)
+    scene schoolExterior with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
     "A grand facade beneath an even taller tree stands before me."
     "I won't take this opportunity for granted..."
     "I'm going to make the most of my time at Luminoire Academy!"
 
-    ##show circeNeutral
+    show circe Neutral with dissolve
     k "Greetings! You wouldn't happen to be [name]?"
     char "No way! You're Professor Circe."
 
@@ -20,43 +21,53 @@ label day1Stella:
 
 label StellaNeu1:
     ##show circeUpset
-    k "What are you suggesting about my age?"
+    k Upset "What are you suggesting about my age?"
     jump continuingStella1
 
 label StellaGood1:
     ##show circeSmile
-    k "I appreciate that, but the article is outdated - by about 3000 years!"
+    k Smile "I appreciate that, but the article is outdated - by about 3000 years!"
 
 label continuingStella1:
-    ##show circeNeutral
-    k "Nevertheless, I'm flattered."
+    k Neutral "Nevertheless, I'm flattered."
     k "I'd like to introduce you to my protégeé."
-    #"[[Celeste enters]"
-    ##show circeNeutral at left with move
-    ##show celesteNeutral at right with dissolve
-    c "Hello. I'm Celeste. Congratulations on your enrollment."
+    show circe Neutral at left with move
+    show celeste Neutral at right with dissolve
+    show k inactive at left
+    c "Hello. I'm Celeste."
+    c "Congratulations on your enrollment."
     "She seems so... static."
+    hide k inactive
+    show c inactive at right
     k "Celeste here is one of the brightest students in Luminoire."
-    k "Though I think she seems to spend a little too much time in the library…"
+    k Smile "Though I think she seems to spend a little too much time in the library..."
     ##"Celeste blushes and squeezes her book."
     ##show celesteUpsetB at right
-    c "Thank you, Professor."
-    k "I'll see you two tomorrow to discuss preparations for the Moonlight Ritual."
+    hide c inactive
+    show k inactive at left
+    c Upset "Thank you, Professor."
+    show c inactive at right
+    hide k inactive
+    k Neutral "I'll see you two tomorrow to discuss preparations for the Moonlight Ritual."
     k "Celeste, please show [name] to the Commons."
-    ##show celesteNeutral at right
-    c "Of course, ma'am."
+    show k inactive
+    show c inactive at right
+    c Neutral "Of course, ma'am."
     #"[[Circe leaves]"
+    hide k inactive
+    hide circe Neutral with dissolve
+    show celeste Neutral at center with move
     ##hide circeNeutral with dissolve
     ##show celesteNeutral at center with move
 
     "Celeste gestures for me to follow her down the main hall."
     "She stares down the hallway without turning to check if I'm following her."
-    ##hide celesteNeutral with dissolve
+    hide celeste Neutral with dissolve
     "It doesn't seem like she would enjoy small talk, so I keep to myself."
-    ##scene Commons with Fade(2.0,0.0,2.0)
-    ##with Pause(2.0)
+    scene Commons with Fade(2.0,0.0,2.0)
+    with Pause(2.0)
     "We quietly walk into a smaller hall - the Commons."
-    ##show celesteNeutral with dissolve
+    show celeste Neutral with dissolve
     c "These will be our lodgings for the rest of the term."
     c "I usually use this space to pass time between classes..."
 
@@ -64,43 +75,36 @@ label continuingStella1:
     menu:
         "Exploring places that I've never been!":
             ##"A small, knowing smile cracks on Celeste's face."
-            ##show celesteSmile
+            show celeste Smile
             "Her attention turns towards me with a hint of excitement."
             c "Exploring the unknown is exactly what House Stella is all about."
-            ##show celesteNeutral
-            c "Not... that there's anything unknown here."
+            c Neutral "Not... that there's anything unknown here."
             "Celeste's demeanor reverts back to being closed off, but her charming smile remains at the corner of her cheek."
-        "Visiting museums – they're rich with history!":
-            ##show celesteSmile
-            c "Luckily for you, you won't have to spend the money to go somewhere like that."
+        "Visiting museums– they're rich with history!":
+            c Smile "Luckily for you, you won't have to spend the money to go somewhere like that."
             "It's as though she has become less tense than when we introduced ourselves."
             c "Luminoire Academy is already so rich in the history of witches."
             c "In fact, I'd happily give you a tour of our oldest facilities."
-            ##show celesteNeutral
-            c "If you'd like, of course…"
+            c Neutral "If you'd like, of course..."
             "I nod eagerly."
             char "That would be amazing!"
             "My enthusiasm amuses her and she leans against the wall."
         "Cracking open a book about folktales and fables.":
-            ##show celesteSmile
-            c "Really? I couldn't agree more."
+            c Smile "Really? I couldn't agree more."
             ##"Celeste's face brightens."
             "As she continues, I take a seat and lean forward, listening to her carefully."
             c "We can learn as much from historical tall tales as artifacts or ancient text!"
             c "Folklore reveals to the present the way that the past was perceived,"
             c "In terms of culture, politics, and relationships."
-            c "It's just a matter of translating the ancient language to bring visions of the past to life."
+            c Neutral "It's just a matter of translating the ancient language to bring visions of the past to life."
 
-    ##show celesteNeutral
-    c "You seem pretty... trustworthy."
+    c Neutral "You seem pretty... trustworthy."
     "Celeste becomes inquisitive, as though observing my response."
-    ##show celesteSmile
-    c "And by that I mean reliable!"
+    c Smile "And by that I mean reliable!"
     "Her awkward laugh comes out again, but much less forced than earlier."
-    ##show celesteNeutral
-    c "We should get some rest before tomorrow."
+    c Neutral "We should get some rest before tomorrow."
     c "I'll see you at the library - Goodnight."
-    ##hide celesteNeutral with dissolve
+    hide celeste Neutral with dissolve
     "She waves goodnight and enters the room across from mine."
     "I'm thankful that I made a decent first impression."
     "Hopefully I'll make an even better second impression after a good night's rest."

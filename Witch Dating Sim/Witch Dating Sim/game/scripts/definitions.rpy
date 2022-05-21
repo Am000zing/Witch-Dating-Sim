@@ -56,12 +56,12 @@ image e inactive = Composite(
     (0,0), "eNeutral_mask"
 )
 
-# image cNeutral_mask = AlphaMask("the_darkness_70", "Celeste/celesteNeutral.png")
-# image c inactive = Composite(
-#     (1000,1000),
-#     (0,0), "Celeste/celesteNeutral.png",
-#     (0,0), "cNeutral_mask"
-# )
+image cNeutral_mask = AlphaMask("the_darkness_70", "Celeste/celesteNeutral.png")
+image c inactive = Composite(
+    (1000,1000),
+    (0,0), "Celeste/celesteNeutral.png",
+    (0,0), "cNeutral_mask"
+)
 
 image sNeutral_mask = AlphaMask("the_darkness_70", "Summer/summerNeutral.png")
 image s inactive = Composite(
@@ -76,6 +76,6 @@ image eluna Upset = "Eluna/elunaUpset.png"
 image summer Neutral = "Summer/summerNeutral.png"
 image summer Upset = "Summer/summerUpset.png"
 image summer Smile = "Summer/summerSmile.png"
-# image celeste Neutral = "Celeste/celesteNeutral.png"
-# image celeste Smile = "Celeste/celesteSmile.png"
-# image celeste Upset = "Celeste/celesteUpset.png"
+image celeste Neutral = "Celeste/celesteNeutral.png"
+image celeste Smile = "Celeste/celesteSmile.png"
+image celeste Upset = "Celeste/celesteUpset.png"

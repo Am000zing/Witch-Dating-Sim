@@ -1,13 +1,19 @@
 label day3Solis:
+    scene Commons with Fade (2.0, 1.0, 2.0)
+    with Pause(1.0)
     "Todays the day. I have to do well, I can't disappoint Summer now."
-    "After getting ready, I stumble out of the commons, hastily making my way to the grand library"
-    "From the front desk, Summer spots me and waves cheerily, standing next the history instructor, Professor Circe."
+    "After getting ready, I stumble out of the commons, hastily making my way to the grand library."
+    scene Library with Fade(2.0, 0.0, 2.0)
 
+    "From the front desk, Summer spots me and waves cheerily, standing next the history instructor, Professor Circe."
+    show summer Neutral with dissolve
     s "Morning, sunshine."
     s "Got enough sleep yesterday?"
-    s "Prepare to be worked to the bone."
-    s "Today, we're hitting the books!"
-    k "Good morning [name]. I've heard from Dr. Tasha that you'll be researching magical dishes."
+    s Smile "Prepare to be worked to the bone."
+    s Neutral "Today, we're hitting the books!"
+    show summer Neutral at right with move
+    show circe Neutral at left with dissolve
+    k "Good morning, [name]. I've heard from Dr. Tasha that you'll be researching magical dishes."
     k "I'm here to offer my guidance in any way I can."
     k "Follow me to the arcane cuisine section."
 

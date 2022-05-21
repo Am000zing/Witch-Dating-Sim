@@ -6,7 +6,7 @@ label day3Stella:
     c "Hello? [name]?"
     c "Are you alright in there?"
     char "Y-yes, give me a second."
-
+    scene Commons with Fade(2.0, 1.0, 2.0)
     "I dash out to the Commons."
     char "I'm sorry, I'm not sure what happened."
     c "Oh, no worries."

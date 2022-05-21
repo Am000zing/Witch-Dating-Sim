@@ -1,29 +1,32 @@
 label day2Stella:
+    scene Commons with Fade(2.0, 1.0, 2.0)
+    with Pause(1.0)
     "I'm still processing the fact that I've managed to make it into Luminoire Academy."
-    "I'm in awe at everything I've seen here thus far…"
+    "I'm in awe at everything I've seen here thus far..."
     "I've been constantly curious to learn more about this school's history."
-
-    "I run into Circe upon entering the Commons."
+    "I run into Circe entering the Commons."
     ##"She greets me with a wave, happy to see me."
-    k "Oh, [name]! Good morning!"
-    k "I hope you've been getting comfortable here."
+    show circe Neutral with dissolve
+    k Smile "Oh, [name]! Good morning!"
+    k Neutral "I hope you've been getting comfortable here."
     menu: 
-        "Ah… I'm still getting used to it…":
+        "Ah...I'm still getting used to it...":
             k "That's understandable. It's only your first day, after all."
             k "But you'll do great! I just know it."
 
         "I'm eager to learn more about everything!":
-            k "That's the spirit! I assure you that you'll take much interest in some of my lessons."
-            k "It'll be fun! I can hardly wait myself…"
+            k Smile "That's the spirit! I assure you that you'll take much interest in some of my lessons."
+            k Neutral "It'll be fun! I can hardly wait myself..."
 
-    k "Ah, that's right. I'd like to invite you to the library."
+    k Neutral "Ah, that's right. I'd like to invite you to the library."
     k "I believe Celeste's already there, as per usual."
-    k "It's practically a second home to her in there…"
-    k "Anyways, I'd like to discuss the Moonlight Ritual with the both of you."
+    k Smile "It's practically a second home to her in there..."
+    k Neutral "Anyways, I'd like to discuss the Moonlight Ritual with the both of you."
     "Circe leads me though one of the school's many hallways, and we make it to an ornate door."
-    k "Well, don't just stand there…"
+    k "Well, don't just stand there..."
     k "Come see the library for yourself."
-
+    scene library with Fade (2.0, 0.0, 2.0)
+    with Pause(1.0)
     "I push the door open and and the first thing I see is rows upon rows of books."
     ##"Celeste notices me enter."
     c "Ah, good morning."
