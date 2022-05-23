@@ -33,7 +33,7 @@ image k inactive = Composite(
     (0,0), "kNeutral_mask"
 )
 
-image tNeutral_mask = AlphaMask("the_darkness_70", "Circe/tashaNeutral.png")
+image tNeutral_mask = AlphaMask("the_darkness_70", "Tasha/tashaNeutral.png")
 image t inactive = Composite(
     (1000,1000),
     (0,0), "Tasha/tashaNeutral.png",

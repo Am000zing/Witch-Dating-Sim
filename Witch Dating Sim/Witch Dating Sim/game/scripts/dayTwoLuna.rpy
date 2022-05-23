@@ -48,12 +48,12 @@ label day2Luna:
     "I sit up a little straighter in my chair."
     "Maybe I should say something to her...."
     menu:
-        "Your performance was amazing!":
+        "\"Your performance was amazing!\"":
             show eluna Neutral with dissolve
             e "Aha, thank you. That is very kind of you you to say."
             "She stares back at where Professor Morgana is lecturing the students about the ritual."
             hide eluna Neutral with dissolve
-        "You looked really pretty on stage.":
+        "\"You looked really pretty on stage.\"":
             show eluna Upset with dissolve
             e "Ah, thank you."
             "She seems a little uncomfortable by that remark."
