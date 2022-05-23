@@ -1,4 +1,6 @@
 label day3Stella:
+    scene black with Fade(2.0, 2.0, 2.0)
+    with Pause(1.0)
     "Huh, I'm in my room."
     "The last thing I remember was studying with Celeste..."
     "Oh no, I must've fallen asleep!"
@@ -9,6 +11,7 @@ label day3Stella:
     scene Commons with Fade(2.0, 1.0, 2.0)
     "I dash out to the Commons."
     char "I'm sorry, I'm not sure what happened."
+    show celeste Neutral with dissolve
     c "Oh, no worries."
     c "You passed out after an hour of reading."
     c "You seemed to have really fallen asleep, so I took you back."
@@ -16,9 +19,8 @@ label day3Stella:
     c "I'm not as adept as Eluna in my magical prowess-"
     c "But I managed to do some short transportation hops across campus."
     char "I'm so sorry, that must've been really out of the way for you."
-    c "I actually thought it was really funny you fell asleep."
-    c "You've gotta learn to keep up with me."
-
+    c Smile "I actually thought it was really funny you fell asleep."
+    c Neutral "You've gotta learn to keep up with me."
     c "Speaking of keeping up..."
     c "I wanted to go to the Greenhouse today to check out the flowers."
     c "Flower language can be quite important, and it may be useful in understanding Luminoire much better."
@@ -28,7 +30,7 @@ label day3Stella:
     char "Got it, it'll only be a minute."
     "I scramble to get ready for the day."
     "I've already got a quest to do!"
-
+    scene Commons with Fade(1.0, 0.0, 1.0)
     "After freshening up, I go find Celeste in the Commons."
     "When Celeste notices me, she closes the book she's reading."
     c "Ready to go?"
@@ -36,11 +38,15 @@ label day3Stella:
     c "Great!"
     c "Let's go to the Greenhouse."
 
-    ##scene Greenhouse with Fade(2.0, 0.0, 2.0) Celeste: Here we are!
+    scene Greenhouse with Fade(2.0, 0.0, 2.0)
+    show celeste Neutral with dissolve
+    c "Here we are!"
     c "Although the Greenhouse isn't as precisely organized as the library-"
     c "-there's a certain charm to its...organized mess."
     t "Are you bad-mouthing my Greenhouse?"
     c "P-professor Tasha!"
+    show celeste Neutral at left with move
+    show tasha Neutral at right with dissolve
     ##show tashaNeutral at right with move 
     c "It's not bad-mouthing, it's just an observation I've made."
     t "I'm just joking, no need to take me so seriously."

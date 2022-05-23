@@ -2,8 +2,8 @@ define e = Character('Eluna', color='#ff94c1', image = "eluna")
 define m = Character('Morgana', color='#52e5ff', image = "morgana")
 define s = Character('Summer', color='#ff94c1', image = "summer")
 define t = Character('Tasha', color='#52e5ff', image = "tasha")
-define c = Character('Celeste', color='#ff94c1')
-define k = Character('Circe', color='#52e5ff')
+define c = Character('Celeste', color='#ff94c1', image = "celeste")
+define k = Character('Circe', color='#52e5ff', image = "circe")
 define char = Character("name", dynamic=True, color='#db7fee')
 define unknown = Character("unknown", color= '#ffa9a6')
 
@@ -15,6 +15,9 @@ image greenhouse = "BackgroundCG/greenhouse.png"
 image amphitheater1 = "BackgroundCG/dayAmphitheater.png"
 image amphitheater2 = "BackgroundCG/nightAmphitheater.png"
 image amphitheater3 = "BackgroundCG/night2Amphitheater.png"
+image Commons = "BackgroundCG/commonsHolder.png"
+image library = "BackgroundCG/libraryHolder.png"
+image black = "BackgroundCG/blackBG.jpg"
 
 image mNeutral_mask = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
 image m inactive = Composite(
