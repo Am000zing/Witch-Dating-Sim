@@ -2,6 +2,7 @@ label day1Solis:
     "Through the mist, a tall, stone door appears in front of me."
     scene solisDoor with Fade(1.0,0.0,1.0)
     "The crest of the Sun is engraved into it."
+    stop music fadeout 6.0
     "Stepping forward, I push the door open..."
     scene schoolExterior with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
@@ -12,6 +13,7 @@ label day1Solis:
 
     t "Salutations! You must be [name]."
     show tasha Neutral with dissolve
+    play music overworldMusic volume 0.5 fadein 6.0
     "This tall woman approaches me, circling around me as if I were a new specimen for her to study."
     char "Dr. Tasha. It's an honor to meet you."
 

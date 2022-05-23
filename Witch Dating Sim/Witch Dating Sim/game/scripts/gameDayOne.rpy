@@ -71,7 +71,7 @@ label solisHouseOptions:
             jump day5Solis
 
 label quiz:
-play music introQuizMusic volume 0.5
+play music introQuizMusic volume 0.5 fadein 5.0
 "Thank you. A name is important for witches, as names may hold great power."
 "Before further embarking on this magical journey, I'd like to know a few things about you."
 
