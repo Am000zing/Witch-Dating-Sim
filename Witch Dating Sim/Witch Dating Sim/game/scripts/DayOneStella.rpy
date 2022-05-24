@@ -2,6 +2,8 @@ label day1Stella:
     "Through the mist, a tall, stone door grows in front of me."
     scene stellaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Star is engraved into it."
+    stop music fadeout 6.0
+
     "Stepping forward, I push the door open."
     scene schoolExterior with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
@@ -10,6 +12,7 @@ label day1Stella:
     "I'm going to make the most of my time at Luminoire Academy!"
 
     show circe Neutral with dissolve
+    play music overworldMusic volume 0.5 fadein 6.0
     k "Greetings! You wouldn't happen to be [name]?"
     char "No way! You're Professor Circe."
 
@@ -59,7 +62,7 @@ label continuingStella1:
     show celeste Neutral at center with move
     ##hide circeNeutral with dissolve
     ##show celesteNeutral at center with move
-
+    stop music fadeout 6.0
     "Celeste gestures for me to follow her down the main hall."
     "She stares down the hallway without turning to check if I'm following her."
     hide celeste Neutral with dissolve

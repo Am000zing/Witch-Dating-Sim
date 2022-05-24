@@ -18,6 +18,9 @@ image amphitheater3 = "BackgroundCG/night2Amphitheater.png"
 image Commons = "BackgroundCG/commonsHolder.png"
 image library = "BackgroundCG/libraryHolder.png"
 image black = "BackgroundCG/blackBG.jpg"
+image titleArtBig = "BackgroundCG/titleArtBig.png"
+image titleArt = "BackgroundCG/titleArt.png"
+image titleArtSmall = "BackgroundCG/titleArtSmall.png"
 
 image mNeutral_mask = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
 image m inactive = Composite(

@@ -61,6 +61,7 @@ label continuing1:
     hide summer Neutral
     "Summer darts off immediately."
     "I follow her down the main hall into a living area."
+    stop music fadeout 6.0
     ##hide Schoolgrounds with Fade(1.0,0.0,1.0)
     scene Commons with Fade(2.0,0,2.0)
     show summer Neutral with dissolve

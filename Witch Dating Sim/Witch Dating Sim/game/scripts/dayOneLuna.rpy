@@ -2,6 +2,7 @@ label day1Luna:
     "Through the mist, a tall, stone door grows in front of me."
     scene lunaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Moon is engraved into it."
+    stop music fadeout 6.0
     "Stepping forward, I push the door open..."
     scene schoolExterior with Fade (2.0, 0.0, 2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
@@ -91,6 +92,7 @@ label day1Luna:
 
     e Upset "I'm sorry about that."
     e Neutral "Let me show you to the Commons now..."
+    stop music fadeout 6.0
     hide eluna Neutral with dissolve
     scene Commons with Fade(2.0, 1.0, 2.0)
     with Pause(2.0)

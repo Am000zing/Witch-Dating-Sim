@@ -26,7 +26,7 @@ init python:
 define gui.accent_color = '#9933ff'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#503838'
+define gui.idle_color = '#b4b4b3'
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
@@ -85,7 +85,7 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "images/BackgroundCG/titleArt.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
 
@@ -256,7 +256,7 @@ define gui.skip_ypos = 15
 define gui.notify_ypos = 68
 
 ## The spacing between menu choices.
-define gui.choice_spacing = 33
+define gui.choice_spacing = 5
 
 ## Buttons in the navigation section of the main and game menus.
 define gui.navigation_spacing = 6

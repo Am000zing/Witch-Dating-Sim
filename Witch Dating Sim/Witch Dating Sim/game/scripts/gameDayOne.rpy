@@ -1,5 +1,6 @@
 label start:
 python:
+    stop music fadeout(6.0)
     name = renpy.input("Before we begin our journey, what is your name?")
     name.strip()
 #if name == "Leilia" or name == "leilia":
