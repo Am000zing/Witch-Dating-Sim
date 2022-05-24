@@ -49,7 +49,7 @@ define gui.hover_muted_color = '#5b1e99'
 
 ## The colors used for dialogue and menu choice text.
 define gui.text_color = '#ffffff'
-define gui.interface_text_color = '#000000'
+define gui.interface_text_color = '#ffffff'
 
 
 ## Fonts and Font Sizes ########################################################
@@ -256,7 +256,7 @@ define gui.skip_ypos = 15
 define gui.notify_ypos = 68
 
 ## The spacing between menu choices.
-define gui.choice_spacing = 5
+define gui.choice_spacing = 30
 
 ## Buttons in the navigation section of the main and game menus.
 define gui.navigation_spacing = 6

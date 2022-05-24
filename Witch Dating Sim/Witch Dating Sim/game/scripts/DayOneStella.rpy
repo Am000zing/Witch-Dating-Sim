@@ -76,14 +76,16 @@ label continuingStella1:
 
     c "[name], what's something you do to kill time?"
     menu:
-        "Exploring places that I've never been!":
+        "\"Exploring places that I've never been!\"":
             ##"A small, knowing smile cracks on Celeste's face."
+            $ celesteAP += 2
             show celeste Smile
             "Her attention turns towards me with a hint of excitement."
             c "Exploring the unknown is exactly what House Stella is all about."
             c Neutral "Not... that there's anything unknown here."
             "Celeste's demeanor reverts back to being closed off, but her charming smile remains at the corner of her cheek."
-        "Visiting museums– they're rich with history!":
+        "\"Visiting museums– they're rich with history!\"":
+            $ celesteAP += 2
             c Smile "Luckily for you, you won't have to spend the money to go somewhere like that."
             "It's as though she has become less tense than when we introduced ourselves."
             c "Luminoire Academy is already so rich in the history of witches."
@@ -92,7 +94,8 @@ label continuingStella1:
             "I nod eagerly."
             char "That would be amazing!"
             "My enthusiasm amuses her and she leans against the wall."
-        "Cracking open a book about folktales and fables.":
+        "\"Cracking open a book about folktales and fables.\"":
+            $ celesteAP += 2
             c Smile "Really? I couldn't agree more."
             ##"Celeste's face brightens."
             "As she continues, I take a seat and lean forward, listening to her carefully."

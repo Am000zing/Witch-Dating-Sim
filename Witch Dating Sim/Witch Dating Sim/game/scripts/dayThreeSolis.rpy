@@ -13,17 +13,24 @@ label day3Solis:
     s Neutral "Today, we're hitting the books!"
     show summer Neutral at right with move
     show circe Neutral at left with dissolve
-    k "Good morning, [name]. I've heard from Dr. Tasha that you'll be researching magical dishes."
+    show s inactive at right
+    k Neutral "Good morning, [name]."
+    k "I've heard from Dr. Tasha that you'll be researching magical dishes."
     k "I'm here to offer my guidance in any way I can."
     k "Follow me to the arcane cuisine section."
-
+    hide s inactive
+    hide summer Neutral with dissolve
+    hide circe Neutral with dissolve
     "Summer and I follow Circe through the towering aisles of bookshelves"
     "Circe suddenly stops in the middle of the aisle."
+    show circe Neutral with dissolve
     k "Typically, the Library is reserved to my studious Stella witches..."
-    k "But I'll gladly make an exception for the both of you"
+    k Smile "But I'll gladly make an exception for the both of you"
     "Casting a spell on the books, they begin to flow and float from the shelves, encircling, Circe, Summer, and I in the air."
-    k "Besides, finding recipes for the banquet is an exciting task!"
+    k Neutral "Besides, finding recipes for the banquet is an exciting task!"
     k "We have recipe books from ages past..."
+    show circe Neutral at left with move
+    show summer Neutral at right with dissolve
     s "Oh, I think what we're looking for is much simpler than you think."
 
     "The books begins to spin faster and faster."
@@ -69,6 +76,7 @@ label day3Solis:
     "I should be careful about opening this box..."
     menu:
         "Lift the lid from the crate to get a good look inside to investigate.":
+            $ summerAP += 3
             "In the darkness of the crate, tiny, glowing bees float to the top."
             "They suspend themselves at the top of the crate, gently flying around my face."
             s "Oh! I see you're already two steps ahead of me."
@@ -79,6 +87,7 @@ label day3Solis:
             s "Good thing you didn't use any magic, these guys hate that stuff."
             s "Tasks like these require a kind touch."
         "Cast a spell of telekinesis and collect honeycomb without touching the box.":
+            $ summerAP += 1
             "A relatively simple spell, the lid slowly floats off the crate."
             "The inside of the crate begins to glow red. The ight from the inside begins to flicker."
             s "Put the lid down!"
@@ -91,6 +100,7 @@ label day3Solis:
             "Summer pulls the crate away from me."
             s "You know, magic can't solve all of our problems."
         "Don some gardening gloves, open the lid, and feel around the inside of the box.":
+            $ summerAP += 2
             "After slipping on some thick gloves, I lift the lid and set it down gently next to the crate."
             "The crate is dark, and it seems that there are only honeycombs inside."
             "But no honeybees."
@@ -111,21 +121,22 @@ label day3Solis:
     s "The honeybees need to protect the honeycomb,"
     s "otherwise it'll be too sweet and throw off the whole crumble."
     s "Now we have our dessert and the bees have more than enough for their hive."
-    menu:
-        "I consume a piece of the honeycomb myself":
-            s "[name], NOOOOO!"
-        "We watch as the Cauldron bubbles mixing in the ingrediencies delicately.":
-            s "You know, [name], I'm glad you came to help me out today."
-            "As I turn to look at her, Summer takes a hold of my hand."
-            s "I... don't have too many friends at the academy, they're always a little hesitant with how giddy I am."
-            s "So when you first agreed to come with me I was really worried, maybe you'd think the same way as everyone else."
-            s "But I'm glad that wasn't the case. Thanks [name]."
-            s "We should head back to the Commons."
-            s "It's been a long day, and you must be tired."
-            s "Do you wanna grab a bite with me on the way though?"
-            s "There won't be any bees to deal with."
-            "I feel a small rumble in my stomach."
-            "I could really go for some food before heading back to my room."
-            char "That sounds like a great idea."
-            s "Great!"
+    # menu:
+    #     "I consume a piece of the honeycomb myself":
+    #         s "[name], NOOOOO!"
+    "We watch as the Cauldron bubbles mixing in the ingrediencies delicately."
+    s "You know, [name], I'm glad you came to help me out today."
+    "As I turn to look at her, Summer takes a hold of my hand."
+    s "I... don't have too many friends at the academy, they're always a little hesitant with how giddy I am."
+    s "So when you first agreed to come with me I was really worried, maybe you'd think the same way as everyone else."
+    s "But I'm glad that wasn't the case."
+    s Smile "Thanks [name]."
+    s "We should head back to the Commons."
+    s "It's been a long day, and you must be tired."
+    s "Do you wanna grab a bite with me on the way though?"
+    s "There won't be any bees to deal with."
+    "I feel a small rumble in my stomach."
+    "I could really go for some food before heading back to my room."
+    char "That sounds like a great idea."
+    s "Great!"
     #jump day4Solis

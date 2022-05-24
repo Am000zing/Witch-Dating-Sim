@@ -49,11 +49,13 @@ label day2Luna:
     "Maybe I should say something to her...."
     menu:
         "\"Your performance was amazing!\"":
+            $ elunaAP += 2
             show eluna Neutral with dissolve
             e "Aha, thank you. That is very kind of you you to say."
             "She stares back at where Professor Morgana is lecturing the students about the ritual."
             hide eluna Neutral with dissolve
         "\"You looked really pretty on stage.\"":
+            $ elunaAP += 1
             show eluna Upset with dissolve
             e "Ah, thank you."
             "She seems a little uncomfortable by that remark."
@@ -80,15 +82,18 @@ label day2Luna:
     "What should I do..."
     menu: 
         "Read the lines while looking at Eluna":
+            $ elunaAP += 2
             "While reading, I stumble over a line."
             "Eluna is completely straight-faced."
             m Upset "You just need some more practice, but I'm sure you'll get the hang of it."
         "Focus on reading the lines directly from the page.":
+            $ elunaAP += 1
             show elunaUpset at right
             "I managed to get through the lines, but it didn't really feel very impactful."
             "Eluna looks a bit annoyed."
             m Neutral "Bit dry of a performance, but I'm sure with practice you'll get the hang of it." 
         "Cast a spell on your throat that will amplify your voice!":
+            $ elunaAP += 3
             "I haven't shown Professor Morgana my magical prowess."
             "Maybe now is the time!"
             "I cast the spell and-"
@@ -134,4 +139,5 @@ label day2Luna:
     "What a day."
     "I guess I'll be meeting Eluna tomorrow then."
     "I should go back and get some rest."
+    # perfect run 7 points
     ## ##Scene fade out, jump LunaDayThree

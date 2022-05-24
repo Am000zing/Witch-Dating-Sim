@@ -50,6 +50,7 @@ label day2Solis:
     "How should I harvest it?"
     menu:
         "Cut it at the root.":
+            $ summerAP +=  1
             "From a tray nearby, I take a pair of shears and go for the base of the stem."
             show summer Upset with dissolve
             s "WHAT ARE YOU DOING?!"
@@ -58,6 +59,7 @@ label day2Solis:
             s "You could have killed the poor thing..."
             s Neutral "Here. I'll do it."
         "Collect the fallen leaves.":
+            $ summerAP += 2
             "It looks like there are enough fallen leaves. I don't want to hurt the plant."
             "I take the few that I see and bring them over to Summer."
             show summer Neutral with dissolve
@@ -66,6 +68,7 @@ label day2Solis:
             s Neutral "We should probably grab the larger leaves from the basil plant."
             s "That way it'll give it more room to grow out the younger, smaller leaves."
         "Pluck the largest ones.":
+            $ summerAP += 3
             "The large leaves on the plant look enticing."
             "I carefully pluck them from the stem, making sure not to accidentally grab the small and young ones."
             show summer Smile with dissolve

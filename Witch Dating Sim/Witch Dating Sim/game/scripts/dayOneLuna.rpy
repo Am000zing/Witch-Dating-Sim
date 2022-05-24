@@ -104,15 +104,18 @@ label day1Luna:
     e Smile "So, [name], what do you do in your spare time?"
     menu:
         "\"Making weekend plans with my friends.\"":
+            $ elunaAP += 2
             e "That sounds really fun."
             e "It's definitely important to maintain the relationships around you."
             e "You never know when you might be in a pinch and need help."
         "\"Writing serenades for...well...\"":
+            $ elunaAP += 2
             e "Oh?"
             e "For whom I wonder."
             char "Oh, uh, I mean- it's not-"
             e Smile "I won't pry."
         "\"Dancing alone in my room.\"":
+            $ elunaAP += 2
             e "There's nothing quite like the comfort of being in your own space."
             e "I enjoy being House Luna's primary student representative-"
             e Upset "-but it can be hard to keep things secretive when it comes to news about me."

@@ -7,7 +7,6 @@ label day1Solis:
     scene schoolExterior with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
     "A grand facade beneath an even taller tree stands before me."
-##    "The main hall of the school is lined with portraits of witches renown through the land."
     "I won't take this opportunity for granted..."
     "I'm going to make the most of my time here at Luminoire Academy!"
 
@@ -18,9 +17,9 @@ label day1Solis:
     char "Dr. Tasha. It's an honor to meet you."
 
     menu:
-        "Luminoire Academy has accomplished so much thanks to your research in alchemy." :
+        "\"Luminoire Academy has accomplished so much thanks to your research in alchemy.\"" :
             jump Schoice1neutral
-        "I'm really looking forward to alchemy in the Greenhouse - I'm excited to see what your lab has to offer." :
+        "\"I'm really looking forward to alchemy in the Greenhouse - I'm excited to see what your lab has to offer.\"" :
             jump Schoice1good
 
 label Schoice1neutral:
@@ -41,18 +40,26 @@ label continuing1:
     t "I'd like for you to meet my lab assistant."
     show tasha Neutral at left with move
     show summer Neutral at right with dissolve
+    show t inactive at left with dissolve
     s Smile "Hi there! I'm Summer."
     "Wow...from the moment she first spoke, she felt as if she was just radiating kindness."
     s Neutral "[name], you'll be working with House Solis on a big project this week, so keep your head up, okay?"
+    hide t inactive
+    show s inactive at right
     t "Despite being a first-year, much like you, she has already made quite an impression."
     t "I've hand-picked her for her sharp eye for botany and animal-handling."
+    hide s inactive
+    show t inactive at left
     s Smile "Aww, Doctor. You don't have to flatter me like that."
     s Neutral "It's like you always say:"
     s "Great magic comes from the world around us. We just have to tap into it."
+    hide t inactive
+    show s inactive at right
     t Smile "Well put, Summer."
     t Neutral "Unfortunately, I have research to attend to at the moment, so Summer will give you the Luminoire tour."
     t Smile "I'll see you in the Greenhouse soon, young alchemists!"
-    hide tasha Smile at left with dissolve
+    hide tasha Smile with dissolve
+    hide s inactive with dissolve
     show summer Neutral at center with move
     s "Hope you don't mind it just being the two of us."
     "I definitely do not mind..."
@@ -62,7 +69,6 @@ label continuing1:
     "Summer darts off immediately."
     "I follow her down the main hall into a living area."
     stop music fadeout 6.0
-    ##hide Schoolgrounds with Fade(1.0,0.0,1.0)
     scene Commons with Fade(2.0,0,2.0)
     show summer Neutral with dissolve
     s "Welcome to the Commons!"
@@ -73,25 +79,24 @@ label continuing1:
 label summerAsk:
     s "Hey, [name]. What's something you do to decompress?"
     menu:
-        "I would brew a hot cup of tea.":
+        "\"I would brew a hot cup of tea.\"":
+            $ summerAP += 2
             s Smile "Dang... Are you reading my mind or something?"
             s Neutral "I always brew myself a cup after a hard day's work with Dr. Tasha."
             "My attention is directed to a stove in the commons area."
             s "Ah! I see you've noticed the gas stove."
             s Smile "If you ever want to join me for tea, let me know!"
-        "Take care of animals, big and small.":
-##            "Summer's face lights up."
+        "\"Take care of animals, big and small.\"":
+##          "Summer's face lights up."
+            $ summerAP += 2
             s Smile "For real?"
             s "You should come to my family's farm sometime, then!"
-            ##show summerNeutral
             s Neutral "Pets aren't allowed here unless they're familiars, unfortunately."
-            ##show summerUpset
             s Upset "I wish I could bring all of my babies to school..."
-        "I love to cook, especially with home-grown ingredients!":
-            ##show summerSmile
+        "\"I love to cook, especially with home-grown ingredients!\"":
+            $ summerAP += 2
             s Smile "No way, you can cook, too?!"
             s "We need to exchange recipes then! I'd love to try yours sometime."
-##    "Summer blushes and plays with her right braid."
     ##show summerNeutralBlush
     s Neutral "Sorry... I shouldn't let you listen to me ramble the evening away."
     s "We have a lot to do tomorrow, so we need as much rest as possible!"

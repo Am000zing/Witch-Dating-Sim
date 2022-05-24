@@ -66,6 +66,7 @@ label day2Stella:
             jump StellaGood2
 
 label StellaBad1:
+    $ celesteAP += 1
     show celeste Upset
     "Celeste tenses up for a moment, taken aback."
     c Upset "If you’re going to be a part of Stella, you have to take your studies seriously."
@@ -74,6 +75,7 @@ label StellaBad1:
     jump continuingStella2
 
 label StellaNeu2:
+    $ celesteAP += 2
     "Celeste takes one of the books and flips through the pages."
     c Neutral "Look in this book, for instance. This page has the ancient language written on it."
     c "Witches used to often be hunted in an era past."
@@ -85,6 +87,7 @@ label StellaNeu2:
     jump continuingStella2
 
 label StellaGood2:
+    $ celesteAP += 3
     show celeste Smile
     "Celeste leans closer to me with a brightened expression."
     c Smile "That’s exactly my hypothesis as well, and I’m hoping the research we’re doing will help with answering further questions!"

@@ -1,6 +1,6 @@
 label start:
+$renpy.music.stop(fadeout = 5.0)
 python:
-    stop music fadeout(6.0)
     name = renpy.input("Before we begin our journey, what is your name?")
     name.strip()
 #if name == "Leilia" or name == "leilia":
@@ -72,7 +72,7 @@ label solisHouseOptions:
             jump day5Solis
 
 label quiz:
-play music introQuizMusic volume 0.5 fadein 5.0
+play music introQuizMusic volume 0.5 fadein 10.0
 "Thank you. A name is important for witches, as names may hold great power."
 "Before further embarking on this magical journey, I'd like to know a few things about you."
 
