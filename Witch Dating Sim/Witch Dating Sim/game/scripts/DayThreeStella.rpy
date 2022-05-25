@@ -112,23 +112,23 @@ label day3Stella:
     menu:
         "\"She really is.\"":
             s "Oh?"
-            s "You'd better hope she didn't hear you say that."
-            s "She normally isn't okay with teasing."
+            s Smile "You'd better hope she didn't hear you say that."
+            s Neutral "She normally isn't okay with teasing."
             s "We're pretty close, so I'm not so concerned with her perception of me-"
-            s "-as it's been established a while ago."
+            s Upset "-as it's been established a while ago."
             "Summer looks out the window to where Celeste is and sighs."
             s "It's funny..."
             s "Despite Celeste and I being the same age and year-"
             s "- She puts {i}so{/i} much pressure on herself to be more knowledgeable than any other witch here."
-            s "Make sure you watch over her, okay?"
+            s Neutral "Make sure you watch over her, okay?"
             "Watch over her?"
             "I wonder what she means by that..."
         "\"What do you mean?\"":
-            s "She takes herself so seriously."
+            s Upset "She takes herself so seriously."
             s "I wish she'd think about just decompressing for a little bit."
-            s "I'm glad though that she's taken a liking to you."
+            s Smile "I'm glad though that she's taken a liking to you."
             char "You think she has?"
-            s "Oh yeah."
+            s Neutral "Oh yeah."
             s "It might seem like she's just dragging you along for her research-"
             s "-And you wouldn't be wrong on that presumption-"
             s "-but, much like research, consistency is key."
@@ -137,40 +137,70 @@ label day3Stella:
             "I wonder what she means by that..."
     
     c "[name]! [name]!"
-    "She dashes into the Greenhouse, nearly out of breath."
+    "Celeste dashes into the Greenhouse, nearly out of breath."
+    show summer Neutral at left with move
+    show celeste Neutral at right with moveinright
+    show s inactive at left
     c "I've made some incredible observations!"
-    c "I've jotted them all down in my notebook, I'll show it to you later."
+    c Smile "I've jotted them all down in my notebook, I'll show it to you later."
+    hide s inactive
+    show c inactive at right
     s "Well you certainly seem excited."
+    hide c inactive
+    show s inactive at left
     c "The garden was especially beautiful today."
     c "I've brought some flowers with me too."
-    if celesteAP >= 3:
-        c "Here, I picked one for you!"
+    if celesteAP >= 5:
+        c Smile "Here, I picked one for you!"
+        #show violet at center
         "She hands me a vibrant violet."
-        c "Isn't this such a perfect flower?"
+        c Neutral "Isn't this such a perfect flower?"
         char "Yeah, it's very pretty."
         "I can feel Summer peering over at us..."
         "My face feels really warm..."
+        hide s inactive
+        show c inactive at right
         s "That's very sweet of you to do, Celeste."
     else:
-        s "Oh, you picked flowers from the garden?"
+        hide s inactive
+        show c inactive at right
+        s Upset "Oh, you picked flowers from the garden?"
+        hide c inactive
+        show s inactive at left
         c "There were so many, I'm sure it's fine."
-        s "Alright, but next time please as first."
+        hide s inactive
+        show c inactive at right
+        s Upset "Alright, but next time please as first."
+        hide c inactive
+        show s inactive at left
         c "Got it!"
-        c "Sorry, Summer. I know how much that bothers you."
-        c "The results will be worth it, I swear!"
-        s "Alright..."
+        c Upset "Sorry, Summer. I know how much that bothers you."
+        c Neutral "The results will be worth it, I swear!"
+        hide s inactive
+        show c inactive at right
+        s Neutral "Alright..."
     
+    hide c inactive
+    show s inactive at left
     c "We should head back to the Commons."
     "Celeste tightens her grip on the book."
     c "There's a lot I need to tell you!"
-    s "Don't trip on your way back."
+    hide s inactive
+    show c inactive at right
+    s Neutral "Don't trip on your way back."
+    hide c inactive
+    hide celeste Neutral with dissolve
     "Celeste makes her way out of the Greenhouse."
     "I turn to follow her and-"
+    show summer Neutral at center with move
     s "Remember what I told you."
     "I look back at Summer."
     "Her stare is unwavering."
-    s "Have fun!"
+    s Smile "Have fun!"
+    hide summer Smile with dissolve 
     "Summer briskly leaves the Greenhouse as well, making her way to the garden."
     "Well, that was an eventful day."
     "I need to catch up with Celeste..."
     char "Wait up!"
+
+#jump day4Stella
