@@ -12,7 +12,8 @@ label day1Solis:
 
     t "Salutations! You must be [name]."
     show tasha Neutral with dissolve
-    play music overworldMusic volume 0.5 fadein 6.0
+    play music overworldMusic fadein 6.0
+    #volume 0.5
     "This tall woman approaches me, circling around me as if I were a new specimen for her to study."
     char "Dr. Tasha. It's an honor to meet you."
 

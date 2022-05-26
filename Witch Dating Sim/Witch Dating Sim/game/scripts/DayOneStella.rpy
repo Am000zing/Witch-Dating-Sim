@@ -12,7 +12,8 @@ label day1Stella:
     "I'm going to make the most of my time at Luminoire Academy!"
 
     show circe Neutral with dissolve
-    play music overworldMusic volume 0.5 fadein 6.0
+    play music overworldMusic fadein 6.0
+    #volume 0.5
     k "Greetings! You wouldn't happen to be [name]?"
     char "No way! You're Professor Circe."
 

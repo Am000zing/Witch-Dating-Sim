@@ -1,4 +1,6 @@
 label day4Stella:
+    scene library with Fade(2.0, 3.0, 3.0)
+    with Pause(1.0)
     "The library has slowly become more and more familiar."
     "Celeste said she would be here, so where is she?"
     "Then, before me sits a huge pile of books. Looking closer, there's a head peeking out."
