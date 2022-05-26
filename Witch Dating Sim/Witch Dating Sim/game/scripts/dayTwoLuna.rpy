@@ -141,3 +141,4 @@ label day2Luna:
     "I should go back and get some rest."
     # perfect run 7 points
     ## ##Scene fade out, jump LunaDayThree
+    jump day3Luna
