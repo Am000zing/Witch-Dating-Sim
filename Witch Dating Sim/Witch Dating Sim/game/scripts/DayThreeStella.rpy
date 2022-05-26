@@ -203,4 +203,4 @@ label day3Stella:
     "I need to catch up with Celeste..."
     char "Wait up!"
 
-#jump day4Stella
+    jump day4Stella
