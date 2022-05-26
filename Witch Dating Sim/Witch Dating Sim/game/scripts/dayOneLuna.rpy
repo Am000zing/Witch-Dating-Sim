@@ -12,8 +12,8 @@ label day1Luna:
 
     m "Excuse me, witchling."
     show morgana Neutral with dissolve
-    play music overworldMusic volume 0.5 fadein 6.0
-
+    play music overworldMusic fadein 6.0
+    #volume 0.5
     "The door that you entered through has disappeared."
     "Instead, a witch emanating raw magical power towers over you."
     m "You're in my way."
