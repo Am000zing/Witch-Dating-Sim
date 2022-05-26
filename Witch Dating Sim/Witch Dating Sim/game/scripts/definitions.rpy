@@ -22,6 +22,22 @@ image titleArtBig = "BackgroundCG/titleArtBig.png"
 image titleArt = "BackgroundCG/titleArt.png"
 image titleArtSmall = "BackgroundCG/titleArtSmall.png"
 
+image p1 = "BackgroundCG/Page_1.png"
+image p2a = "BackgroundCG/Page_2a.png"
+image p2b = "BackgroundCG/Page_2b.png"
+image p3a  = "BackgroundCG/Page_3a.png"
+image p3b = "BackgroundCG/Page_3b.png"
+image p3c = "BackgroundCG/Page_3c.png"
+image p4a = "BackgroundCG/Page_4a.png"
+image p4b = "BackgroundCG/Page_4b.png"
+image p4c = "BackgroundCG/Page_4c.png"
+image p5a = "BackgroundCG/Page_5a.png"
+image p5b = "BackgroundCG/Page_5b.png"
+image p5c = "BackgroundCG/Page_5c.png"
+image p6 = "BackgroundCG/Page_6.png"
+image p7 = "BackgroundCG/Page_7.png"
+image p8 = "BackgroundCG/Page_8.png"
+
 image mNeutral_mask = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
 image m inactive = Composite(
     (1000,1000),
