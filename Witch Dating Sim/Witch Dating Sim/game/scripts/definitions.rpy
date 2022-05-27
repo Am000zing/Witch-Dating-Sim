@@ -42,7 +42,7 @@ image mNeutral_mask = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
 image m inactive = Composite(
     (1000,1000),
     (0,0), "Morgana/morganaNeutral.png",
-    (0,0), "mSmile_mask"
+    (0,0), "mNeutral_mask"
 )
 
 image kNeutral_mask = AlphaMask("the_darkness_70", "Circe/circeNeutral.png")
