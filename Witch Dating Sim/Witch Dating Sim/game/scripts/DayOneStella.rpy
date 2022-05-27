@@ -54,11 +54,11 @@ label continuingStella1:
     hide k inactive
     k Neutral "I'll see you two tomorrow to discuss preparations for the Moonlight Ritual."
     k "Celeste, please show [name] to the Commons."
-    show k inactive
-    show c inactive at right
+    show k inactive at left
+    hide c inactive
     c Neutral "Of course, ma'am."
     #"[[Circe leaves]"
-    hide k inactive
+    hide k inactive with dissolve
     hide circe Neutral with dissolve
     show celeste Neutral at center with move
     ##hide circeNeutral with dissolve

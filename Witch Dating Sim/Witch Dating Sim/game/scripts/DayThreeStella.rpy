@@ -111,6 +111,7 @@ label day3Stella:
     s "Celeste is really something, isn't she?"
     menu:
         "\"She really is.\"":
+            $ celesteAP += 2
             s "Oh?"
             s Smile "You'd better hope she didn't hear you say that."
             s Neutral "She normally isn't okay with teasing."
@@ -124,6 +125,7 @@ label day3Stella:
             "Watch over her?"
             "I wonder what she means by that..."
         "\"What do you mean?\"":
+            $ celesteAP += 3
             s Upset "She takes herself so seriously."
             s "I wish she'd think about just decompressing for a little bit."
             s Smile "I'm glad though that she's taken a liking to you."
@@ -150,7 +152,7 @@ label day3Stella:
     show s inactive at left
     c "The garden was especially beautiful today."
     c "I've brought some flowers with me too."
-    if celesteAP >= 5:
+    if celesteAP == 11:
         c Smile "Here, I picked one for you!"
         #show violet at center
         "She hands me a vibrant violet."

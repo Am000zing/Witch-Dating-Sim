@@ -99,7 +99,7 @@ label day2Luna:
             "I cast the spell and-"
             show morgana Upset at left
             show eluna Smile at right
-#            $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+#           $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
             char "{i}THE FULL MOON IS REPRESENTATIV- {/i}"
             "Oh no, my voice was too loud!"
             m "Alright, enough of that now..."

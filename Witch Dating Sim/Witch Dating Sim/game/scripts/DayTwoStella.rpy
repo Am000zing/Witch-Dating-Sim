@@ -11,10 +11,12 @@ label day2Stella:
     k Neutral "I hope you've been getting comfortable here."
     menu: 
         "Ah...I'm still getting used to it...":
+            $ celesteAP += 2
             k "That's understandable. It's only your first day, after all."
             k "But you'll do great! I just know it."
 
         "I'm eager to learn more about everything!":
+            $ celesteAP += 3
             k Smile "That's the spirit! I assure you that you'll take much interest in some of my lessons."
             k Neutral "It'll be fun! I can hardly wait myself..."
 
