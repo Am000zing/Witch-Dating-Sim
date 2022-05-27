@@ -122,3 +122,9 @@ define chatter = "..//audio//SFX//StudentsTalking.wav"
 define text1 = "..//audio//SFX//TextBoxSelection1.wav"
 define text2 = "..//audio//SFX//TextBoxSelection2.wav"
 define whoosh = "..//audio//SFX//WindyWhoosh.wav"
+
+###################################################################AP#############################
+
+default summerAP = 0
+default celesteAP = 0
+default elunaAP = 0
