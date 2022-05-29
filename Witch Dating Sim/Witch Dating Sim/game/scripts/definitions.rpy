@@ -1,3 +1,9 @@
+# default summerAP = 0
+# default celesteAP = 0
+# default elunaAP = 0
+
+###########################################################################################################
+
 define e = Character('Eluna', color='#ff94c1', image = "eluna")
 define m = Character('Morgana', color='#52e5ff', image = "morgana")
 define s = Character('Summer', color='#ff94c1', image = "summer")
@@ -129,7 +135,3 @@ define text2 = "..//audio//SFX//TextBoxSelection2.wav"
 define whoosh = "..//audio//SFX//WindyWhoosh.wav"
 
 ###################################################################AP#############################
-
-default summerAP = 0
-default celesteAP = 0
-default elunaAP = 0
