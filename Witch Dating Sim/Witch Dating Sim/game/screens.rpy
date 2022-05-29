@@ -296,9 +296,11 @@ screen navigation():
         style_prefix "navigation"
 
         #xpos gui.navigation_xpos
-        xalign 0.72
+        if renpy.get_screen('main_menu'):
+            xalign 0.72
+        else:
+            xoffset 70
         yalign 0.5
-
         spacing gui.navigation_spacing
 
         if main_menu:
@@ -313,7 +315,7 @@ screen navigation():
 
         textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -346,6 +348,7 @@ style navigation_button:
 
 style navigation_button_text:
     properties gui.button_text_properties("navigation_button")
+    font "fonts/stunders.ttf"
     xalign 0.5
 
 
@@ -402,6 +405,7 @@ style main_menu_vbox:
     yoffset -20
 
 style main_menu_text:
+    size 60
     properties gui.text_properties("main_menu", accent=True)
 
 style main_menu_title:

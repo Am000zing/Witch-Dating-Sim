@@ -61,7 +61,7 @@ define gui.text_font = "DejaVuSans.ttf"
 define gui.name_text_font = "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/stunders.ttf"
+define gui.interface_text_font = "DejaVuSans.ttf" 
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -71,6 +71,11 @@ define gui.name_text_size = 40
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 60
+
+# if renpy.get_screen('main_menu'):
+#     define gui.interface_text_size = 60
+# else:
+#     define gui.interface_text_size = 30
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 36
@@ -431,7 +436,7 @@ init python:
         gui.text_size = 45
         gui.name_text_size = 54
         gui.notify_text_size = 38
-        gui.interface_text_size = 1000
+        gui.interface_text_size = 40
         gui.button_text_size = 45
         gui.label_text_size = 51
 

@@ -20,13 +20,13 @@ label day3Stella:
     c "But I managed to do some short transportation hops across campus."
     char "I'm so sorry, that must've been really out of the way for you."
     c Smile "I actually thought it was really funny you fell asleep."
-    c Neutral "You've gotta learn to keep up with me."
-    c "Speaking of keeping up..."
+    c "You've gotta learn to keep up with me."
+    c Neutral "Speaking of keeping up..."
     c "I wanted to go to the Greenhouse today to check out the flowers."
     c "Flower language can be quite important, and it may be useful in understanding Luminoire much better."
     char "Ah, I see."
-    c "Hurry up and get ready to go out."
-    c "I'll wait here in the Commons for you."
+    c Smile "Hurry up and get ready to go out."
+    c Neutral "I'll wait here in the Commons for you."
     char "Got it, it'll only be a minute."
     "I scramble to get ready for the day."
     "I've already got a quest to do!"
@@ -153,6 +153,7 @@ label day3Stella:
     c "The garden was especially beautiful today."
     c "I've brought some flowers with me too."
     if celesteAP == 11:
+        $ cperfect = true
         c Smile "Here, I picked one for you!"
         #show violet at center
         "She hands me a vibrant violet."
