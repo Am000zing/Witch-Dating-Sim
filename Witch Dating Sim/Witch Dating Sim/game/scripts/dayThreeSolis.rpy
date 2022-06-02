@@ -161,4 +161,4 @@ label day3Solis:
     s Smile "Great!"
     hide summer Smile with dissolve
 
-    #jump day4Solis
+    jump day4Solis
