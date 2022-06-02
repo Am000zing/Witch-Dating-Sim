@@ -22,6 +22,7 @@ style hyperlink_text:
     hover_underline True
 
 style gui_text:
+    size 30
     properties gui.text_properties("interface")
 
 
@@ -29,9 +30,18 @@ style button:
     properties gui.button_properties("button")
 
 style button_text is gui_text:
+    # if renpy.get_screen('main_menu'):
+    #     size 60
+    # else:
+    #     size 30
+    size 30
     properties gui.text_properties("button")
     yalign 0.5
 
+style mm_custom_text:
+    size 60
+    properties gui.text_properties("button")
+    yalign 0.5
 
 style label_text is gui_text:
     properties gui.text_properties("label", accent=True)
@@ -340,7 +350,9 @@ screen navigation():
 
 
 style navigation_button is gui_button
-style navigation_button_text is gui_button_text
+style navigation_button_text is mm_custom_text
+
+#style mm_custom_text
 
 style navigation_button:
     size_group "navigation"
@@ -511,11 +523,11 @@ style game_menu_outer_frame:
     background "gui/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
-    xsize 420
+    xsize 600
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
+    left_margin 30
     right_margin 30
     top_margin 15
 
@@ -877,6 +889,7 @@ style slider_button:
     left_margin 10
 
 style slider_button_text:
+    size 30
     properties gui.button_text_properties("slider_button")
 
 style slider_vbox:
