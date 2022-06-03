@@ -1,78 +1,137 @@
 label day4Solis:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
-    "I hope the experiment went well, I can't imagine having to deal with those bees again."
-    "After leaving the herbs to marinate for the night it was now time to go see how they've developed."
-    "Stumbling out of the room, I make my way to the green room."
-    "Half way there, I stumble into Summer who'd seem to have been waiting for me."
-
-    "I greet Summer, nervously as I had realized I had been late to our agreed time."
-    s "What the heck [name], you're late. What took you so long?"
+    scene Commons with Fade (2.0, 1.0, 2.0)
+    with Pause (2.0)
+    "I can't imagine having to deal with those bees again."
+    #"After leaving the herbs to marinate for the night it was now time to go see how they've developed."
+    "Stumbling out of my room, I begin to make my way to the Greenhouse."
+    #"Half way there, I stumble into Summer who'd seem to have been waiting for me."
+    "I run into Summer who'd seem to have been waiting for me."
+    #"I greet Summer, nervously as I had realized I had been late to our agreed time."
+    show summer Upset with dissolve
+    s Upset "What the heck [name], you're late. What took you so long?"
+    #"I try to explain to her how the demons had attacked me in my bed, while in truth I had just slept past my alarm."
+    char "Uhh..."
+    char "I was attacked in bed!"
     "I try to explain to her how the demons had attacked me in my bed, while in truth I had just slept past my alarm."
-    s "Demons? Oh No! Are you okay? Are you hurt? Why didn't you tell me earlier?"
+    s Neutral "Demons?"
+    s "Are you okay? Are you hurt?"
+    s "Why didn't you tell me earlier?"
     "A sense of guilt washses over me as I hesitate from her sudden concern."
-    "I tell her the truth, she sighs and puffs up her cheeks in anger."
-
-    s "Don't worry me like that again, okay? I really thought you got harassed by demons."
-    "I chuckle, telling her how demons aren't real. She looks at me with concern."
-    s "What do you mean... demons are real...."
-    "There's a silence between us for a moment."
-    s "Anyways, lets go check on the herbs in the garden I'm sure it was a success."
-
-    "We head towards the green house."
-    "As we enter the green house we notice a figure inspecting our herbs."
-    "I had seen her in the green house before, though I wasn't too sure who she was."
-    "A little cautious, I began to approach her. Ready to confront her meddling."
-    s "Wait! That's Professor Tasha, she's the one who let us use the green house for our experiment."
-
-    "Tasha turns around, smiling as she noticed the two of us."
-    t "Well well well, if it isn't my dear sunshine. How is it going?"
-    "She smiles as she hugs Summer who's a little hesitant from the sudden embracement."
-    s "Hey professor Tasha, we're doing... great."
-    "Tasha lets go of Summer allowing her to finally breath again."
-    t "I was just looking at your experiment, quite an excellent job marinating the herbs. You've even managed to get all the chlorophyll out."
+    char "Oh, uh..."
+    char "I was just joking, there weren't any demons."
+    char "I just overslept."
+    #"I admit the truth, and she sighs."
+    s Upset "Don't worry me like that again, okay?"
+    s "I really thought you got harassed by demons."
+    #"I chuckle, telling her how demons aren't real. She looks at me with concern."
+    char "Haha, but demons aren't real though!"
+    "My laughter trails off as she continues to look at me with concern."
+    s Neutral "What do you mean..."
+    s Upset "Demons {i}are{/i} real..."
+    char "..."
+    s "..."
+    #"There's a silence between us for a moment."
+    char "..."
+    s "..."
+    s Smile "Anyways, lets go back to the greenhouse."
+    s Neutral "There are fermenting herbs waiting for me there."
+    hide summer Neutral with dissolve
+    scene greenhouse with Fade (2.0, 0.0, 2.0)
+    #"We head towards the green house."
+    "When we enter the green house, we notice a figure inspecting Summer's herbal experiment."
+    #"I had seen her in the green house before, though I wasn't too sure who she was."
+    #"A little cautious, I began to approach her. Ready to confront her meddling."
+    show summer Neutral with dissolve
+    s "Professor Tasha!"
+    #"Tasha turns around, smiling as she noticed the two of us."
+    show summer Neutral at left with move
+    show tasha Neutral at right with dissolve 
+    show s inactive at left
+    t "Well, well, well."
+    t Smile "if it isn't my dear sunshine. How's it going?"
+    "She smiles and hugs Summer, who returns the embrace."
+    hide s inactive
+    show t inactive at right
+    s Smile "Hey professor Tasha, we're doing-"
+    "Summer struggles to breath."
+    s Neutral "-great!"
+    "Tasha releases Summer, who inhales a deep breath."
+    hide t inactive
+    show s inactive at left
+    t "I was just looking over your results."
+    t Smile "Your herbs are perfect! You've even managed to get all the chlorophyll out."
     "Summer and I look at the leaves, which now appeared transparent."
-
     t "And your concoction as well, I haven't seen a Cloying crumble this perfect in centuries."
-    "Summer blushes a little, the waves of compliments lighting up her cheeks."
-    t "Since your project seems to be completed, could I ask you a small favor Summer?"
-    s "Sure thing Professor Tasha, what can I help you with?"
-    "Tasha explains how the mandrakes she had sent to set up for the Amphitheater had withered and how she needs help setting up for the banquet."
-    s "I wholeheartedly agrees though she seems to make no effort in asking you for help."
-
-    "What do you do? On the one hand Summer hadn't directly asked you for help."
-    "But on the other it would take her the whole day to set up for  the banquet."
+    #"Summer blushes a little, the waves of compliments lighting up her cheeks."
+    #show summer Neutral blush at left
+    t Neutral "Since you've seemed to complete your project, could I ask a small favor of you, Summer?"
+    #hide summer Neutral blush
+    hide s inactive
+    show t inactive at right
+    s "Sure thing, Professor Tasha!"
+    s "What can I help you with?"
+    hide t inactive
+    show s inactive at left
+    #"Tasha explains how the mandrakes she had sent to set up for the Amphitheater had withered and how she needs help setting up for the banquet."
+    t Upset "The mandrakes I had sent over to the Amphitheater have withered."
+    t "I'd bring over the rest of the decor and supplies-"
+    t "-but that would take away time from me reviving the mandrakes."
+    t Neutral "Could you possibly bring the supplies over from the greenhouse to the amphitheater?"
+    hide s inactive
+    show t inactive at right
+    s Smile "Of course!"
+    s Neutral "I'll get on it right away."
+    hide t inactive
+    show s inactive at left
+    t Smile "Thank you, Summer."
+    t Neutral "I must go attend to the mandrakes at once."
+    hide tasha Neutral with dissolve
+    hide summer Neutral with dissolve
+    "Professor Tasha briskly leaves the greenhouse."
+    "Summer eyes a set of boxes in the corner, and begins making her way to them."
+    "She wholeheartedly agreed to Professor Tasha's request..."
+    "-but made no effort in asking for help."
+    "What should I do?"
+    "On the one hand, Summer hadn't directly asked me for help..."
+    "But on the other, it would take her the whole day to set up for the banquet."
     menu:
-        "I'll be right back.":
+        "\"I'll be right back.\"":
             "I head towards the Amphitheater."
             "There's a performance that seems to be wrapping up at the theater."
             m "Hello fellow Solis student."
             "Professor Morgana of House Luna appears behind me."
             char "Ah, Professor Morgana!"
             m "May I help you?"
-            char "Well actually we need help setting up for the banquet to bring things over here."
+            char "Well, actually we need help setting up for the banquet-"
+            char "-and that requires bringing a lot of boxes and items over here."
             e "We?"
             "The performer who had been on stage shows up beside Professor Morgana."
             e "I bet it's Summer trying to work on arrangements by herself."
             m "I suppose it's quite in character for her."
             m "You'd know best, Eluna."
             jump day4SolisExtraPath
-        "Do you need any help?":
+        "\"Do you need any help?\"":
             s "Thanks [name], though I'm not sure how much we can do with just the two of us."
             s "But I really appreciate that you're willing to help me."
+            scene amphitheater with Fade(2.0, 1.0, 2.0)
             "It took a decent amount of time, but we got the work done early."
             "The sun's nearly set as we finish loading the final pot onto the cart."
             s "Oof, I think that was the last of them, it took longer then expected didn't it."
             s "Thanks for helping me out [name]."
-            "Summer begins to mumble to herself: though it would've been faster if I had magical abilities."
-            "My body is killing me after all that."
+            #"Summer mumbles to herself-"
+            s "{i}-though it would've been faster if I had better magical abilities.{\i}"
+            "My body is seriously killing me after all that."
             jump day4SolisEnd
-        "Good luck, Summer!":
+        "\"Good luck, Summer!\"":
             "Summer smiles at you, sighing as she prepares to get back to work."
-            "Realizing my prank didn't get through, I quickly go to help her out."
-            "We work diligently, though there's any talk between us."
+            "Ah, she didn't take it as a joke."
+            "I quickly go to help her out."
+            scene amphitheater with Fade(2.0, 1.0, 2.0)
+            "We worked diligently."
+            "We barely spoke a word the whole time."
             "As we finish setting up for the banquet we hear the performers over at the Amphitheater."
-            s "That must've been the folks at the house of Luna."
-            "I realize that perhaps I could've asked them for help, but it was too late for that."
+            s "That must've been the folks of the Luna House."
+            #"I realize that perhaps I could've asked them for help, but it was too late for that."
             s "Well, thanks for your help [name] I couldn't have done this without you."
             jump day4SolisEnd
 
@@ -85,13 +144,14 @@ label day4SolisExtraPath:
     "I nod, startled by the intensity of Eluna's call to action."
     "Eluna walks off briskly."
     "I trail after her."
-
+    scene greenhouse with Fade(1.0, 0.0, 1.0)
+    with Pause(2.0)
     "We show up at the Greenhouse."
-    "I'm nearly out of breath, but Eluna still seems to be fine."
-    "Summer is grunting, lifting up heavy pots onto a small wagon."
+    "I'm nearly out of breath, but Eluna is steady."
+    "Summer grunts, lifting heavy pots onto a small wagon."
     e "Summer!"
     s "Oh! Hiya Eluna! What brings you here?"
-    e "What brings me here? I'm here to help you out."
+    e "What brings me here? I'm here to help you."
     e "What gives you the idea that you need to be doing all this heavy lifting yourself!?"
     s "It's not a big deal, really."
     e "You're going to break your back lifting all these pots and decor alone."
@@ -100,7 +160,7 @@ label day4SolisExtraPath:
     s "..."
     e "Come on, [name], let's lift these together."
 
-    #Time skip.
+    scene amphitheater with Fade(2.0, 0.0, 2.0)
     "Summer and I wave goodbye to Eluna and the other Luna students who came to help."
     "Summer sighs in exhaustion."
     s "Well, I sure am glad at least we managed to finish all the preparations today."
@@ -112,31 +172,52 @@ label day4SolisExtraPath:
     s "I guess I have a bad habit of not really asking for help."
     s "You see..."
     s "I didn't grow up glamorous or with a lot of magical abilities to spare."
-    if(True){
-        s "Instead it almost felt as if all our families magical talent went to my sister."
-        s "She was perfect in every way, she was strong, magical, and beautiful."
-        s "While I'm... this."
-        s "While she was nice to me, my parents weren't the same. They only saw her, and I was labeled a failure."
-        s "Sometimes I wondered if I was even a part of this family."
-        s "Maybe I was a little scared they'd abandon me."
-        s "So I'd work alone, if I could do everything myself I would be successful right?"
-        s "Eluna was the first to notice, we knew each other since we were little."
-        s "She used to help me out anytime I'd try to do anything alone, but she moved away when we were 10."
-        "Summer begins to cry as she recounts the countless of times she's felt like a failure, even though it's clearly she's pushing herself past her limit."
-        s "I guess what I wanted to say was... thank you, I would've probably passed out from exhaustion if you hadn't helped me out."
-        s "heh, that sounds a little weird when you think about it, I know what I'm doing wrong but I still can't fix it."
-        s "But as a token of thanks, I wanted to give you this."
+    if solis AP == 11:
+        s "It felt like all of our family's magical talent went to my sister."
+        s "She was perfect in every way."
+        s "Strong, magical, beautiful..."
+        s "I'm just..."
+        "Summer gestures towards herself."
+        s "...this."
+        s "She was incredibly kind to me, but I can't say the same about my parents."
+        s "They only ever saw her."
+        s "I would wonder if I ever was related to the family."
+        s "I was worried that if I didn't work hard enough-"
+        s "..."
+        "Summer takes a shaky breath."
+        s "If I were able to do everything by myself..."
+        s "If I could succeed at tasks without assistance..."
+        s "...that meant that I was just as good, right?"
+        "Summer shuffles her feet from side to side."
+        s "Eluna and I have known each other since childhood."
+        s "She used to help me out anytime I'd try to do anything alone."
+        s "Eluna was kind of like my second older sister."
+        s "She had to move away though when I was 10."
+        #"Summer begins to cry as she recounts the countless of times she's felt like a failure, even though it's clearly she's pushing herself past her limit."
+        "Summer's eyes glisten, but she keeps a steady breath."
+        s "I guess what I wanted to say was..."
+        s "...thank you."
+        s "I would've probably just worked the entire day without actually considering asking for help."
+        s Smile "It sounds a little weird when you really think about it."
+        s "I'm aware it's a bad habit, but I can't seem to change it."
+        #s "But as a token of thanks, I wanted to give you this."
         "She hands you a bouquet of dried flowers, all still perfectly preserved with their beauty."
-        s "It's sunflowers, my favorite flower."
-        s "I've always wanted to be like a sunflower, someone who's bright and loved by everyone."
-        s "I hope I did a good job at that."
-        "She smiled, a slight glow emitting from her body, a sign she'd let her soul free."
-    }else{
+        s "It's sunflowers."
+        s "They're my favorite flower."
+        s "Sunflowers are so bright and lovely."
+        s "They stand so tall and unrelenting, always facing the sun."
+        s "I used to imagine being a sunflower when I was little..."
+    else:
         s "Actually, never mind, this isn't the right time to tell you"
-    }
+
 
 label day4SolisEnd:
     s "Let's go grab some food, I'm starving after all that work!"
     #transition to Commons
+    scene Commons with Fade (2.0, 1.0, 2.0)
+    with Pause (2.0)
     "Summer and I had a big meal in the cafeteria."
-    "The both of us were so tired we walked back to the Commons in peaceful silence."
+    "We were so exhausted by the events of the day that we had walked back to the Commons in peaceful silence."
+    s "..."
+    s "[name], I'll see you tomorrow for the Full Moon Ritual!"
+    "Summer and I bid our goodbyes, and leave to our respective rooms."
