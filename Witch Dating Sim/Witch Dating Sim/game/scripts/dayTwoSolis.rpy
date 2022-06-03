@@ -1,5 +1,4 @@
 label day2Solis:
-    play sound dingDong1
     scene Commons with Fade (2.0, 1.0, 2.0)
     with Pause(1.0)
     "I wonder what today has in store for me."
@@ -94,7 +93,10 @@ label day2Solis:
     s "Meet me in the Library tomorrow."
     s "We're going to do some sweet research on the basics of magical agriculture."
     s "Goodnight!"
-    hide summer Neutral with dissolve
-    show text "Day 3 Solis" with dissolve
-    show text "2 Days Until the Blood Moon Ritual..." with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 3" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "2 Days Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
     jump day3Solis

@@ -1,5 +1,4 @@
 label day1Solis:
-    play sound dingDong1
     "Through the mist, a tall, stone door appears in front of me."
     scene solisDoor with Fade(1.0,0.0,1.0)
     "The crest of the Sun is engraved into it."
@@ -107,6 +106,10 @@ label summerAsk:
     "She disappears into a room next to mine."
     "I wonder what we'll be doing tomorrow..."
     ##hide Commons with Fade(1.0,1.0,1.0) 
-    show text "Day 2 Solis" with dissolve
-    show text "3 Days Until the Blood Moon Ritual..." with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 2" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "3 Days Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
     jump day2Solis

@@ -146,6 +146,6 @@ label day4Luna:
     with Pause(3.0)
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause(3.0)
-    jump day4Luna
+    # jump day5
 #perfect run: 13
     ##hide Scene with Fade

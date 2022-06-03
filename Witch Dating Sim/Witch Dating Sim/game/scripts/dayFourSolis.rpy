@@ -1,5 +1,4 @@
 label day4Solis:
-    play sound dingDong1
     scene Commons with Fade (2.0, 1.0, 2.0)
     with Pause (2.0)
     "I can't imagine having to deal with those bees again."
@@ -222,5 +221,9 @@ label day4SolisEnd:
     s "..."
     s "[name], I'll see you tomorrow for the Full Moon Ritual!"
     "Summer and I bid our goodbyes, and leave to our respective rooms."
-    show text "Day 5 Solis" with dissolve
-    show text "..." with dissolve
+    show text "Day 5" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "0 Days Until the Full Moon Ritual..." with dissolve
+    with Pause(3.0)
+    # jump day5
