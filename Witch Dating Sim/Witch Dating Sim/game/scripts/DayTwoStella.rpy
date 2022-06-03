@@ -29,6 +29,7 @@ label day2Stella:
     k "Come see the library for yourself."
     hide circe Neutral with dissolve
     scene library with Fade (2.0, 0.0, 2.0)
+    play music overworldMusic fadein 6.0
     with Pause(1.0)
     "I push the door open and and the first thing I see is rows upon rows of books."
     ##"Celeste notices me enter."
@@ -102,7 +103,8 @@ label continuingStella2:
     c "I think it would be a good place to start for building up our research."
     c "The Florae language has been here for as long as the fairies have been mentioned."
     c "We need to see where it leads us."
-    ##"Celeste's purses her lips once more."
+    stop music fadeout 6.0
+    "Celeste's purses her lips once more."
     "My instincts tell me she knows a bit more than what she is letting on…"
     "She offers me a book."
     c "Let's look into it some more."

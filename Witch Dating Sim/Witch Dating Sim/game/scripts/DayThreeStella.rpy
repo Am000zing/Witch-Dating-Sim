@@ -42,11 +42,13 @@ label day3Stella:
 
     scene greenhouse with Fade(2.0, 0.0, 2.0)
     show celeste Neutral with dissolve
+    play sound bird volume 0.3 fadein 3.0
     c "Here we are!"
     c "Although the Greenhouse isn't as precisely organized as the library-"
     c Smile "-there's a certain charm to its...organized mess."
     unknown "Are you bad-mouthing my Greenhouse?"
     c Neutral "P-professor Tasha!"
+    play music overworldMusic fadein 6.0
     show celeste Neutral at left with move
     show tasha Neutral at right with dissolve
     show t inactive at right
@@ -104,6 +106,7 @@ label day3Stella:
     c Upset "No!"
     c "Nothing happened."
     c "I'm going to be in the garden for a bit."
+    stop music fadeout 6.0
     hide celeste Upset with dissolve
     hide s inactive with dissolve
     "Celeste briskly leaves the Greenhouse."
@@ -126,6 +129,7 @@ label day3Stella:
             "I wonder what she means by that..."
         "\"What do you mean?\"":
             $ celesteAP += 3
+            play music cgMusic fadein 6.0
             s Upset "She takes herself so seriously."
             s "I wish she'd think about just decompressing for a little bit."
             s Smile "I'm glad though that she's taken a liking to you."
@@ -137,9 +141,11 @@ label day3Stella:
             s "I hope you continue to take care of her."
             "Take care of her?"
             "I wonder what she means by that..."
+            stop music fadeout 6.0
     
     c "[name]! [name]!"
     "Celeste dashes into the Greenhouse, nearly out of breath."
+    play music overworldMusic fadein 6.0
     show summer Neutral at left with move
     show celeste Neutral at right with moveinright
     show s inactive at left
@@ -188,6 +194,7 @@ label day3Stella:
     c "We should head back to the Commons."
     "Celeste tightens her grip on the book."
     c "There's a lot I need to tell you!"
+    stop music fadeout 6.0
     hide s inactive
     show c inactive at right
     s Neutral "Don't trip on your way back."

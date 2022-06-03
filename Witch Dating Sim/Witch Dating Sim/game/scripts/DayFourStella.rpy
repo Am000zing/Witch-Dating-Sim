@@ -1,5 +1,4 @@
 label day4Stella:
-    play sound dingDong1
     scene library with Fade(2.0, 3.0, 3.0)
     with Pause(1.0)
     "The library has slowly become more and more familiar."
@@ -67,7 +66,7 @@ label day4StellaCont:
     c "You see, I ended up in some restricted area in the archives, and I found a notebook written by a faerie."
     c "..."
     c "It took some time to decipher, but I found some information about how the school came to be."
-
+    play music conflictMusic with fadein 5.0
     #scene CG_1 Fade(1.0,0.0,1.0)
     show p1 with Fade(1.0, 0.0, 1.0)
     #with Pause(3.0)
@@ -84,6 +83,8 @@ label day4StellaCont:
     "{i}-the villagers demanded they be burned.{/i}"
     show p4a with Dissolve(2.0)
     "{i}They were being hunted down, and at the moment of capture-"
+    stop music fadeout 6.0
+    play music cgMusic fadein 6.0
     show p4b with Dissolve(2.0)
     "{i}-her lover decided to sacrifice herself to save our fellow founder.{/i}"
     "{i}Since they weren't fully trained on their magic-{/i}"
@@ -115,6 +116,7 @@ label day4StellaCont:
     c "Ah, I can't believe telling that story took so much time!"
     c "I really should get going to the rites prep for the Ritual."
     c "You don't need to stay with me for this."
+    stop music fadeout 6.0
     menu:
         "I'd be willing to help.":
             c "That's very kind of you, but Professor Circe tasked me with this."
@@ -135,5 +137,10 @@ label day4StellaCont:
     c "It's the least I could do to thank you."
     c "Alright, I have to go back to prep."
     c "I'll see you at the Common soon."
-    show text "Day 5 Stella" with dissolve
-    show text "..." with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 5" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "0 Days Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
+    #jump day5

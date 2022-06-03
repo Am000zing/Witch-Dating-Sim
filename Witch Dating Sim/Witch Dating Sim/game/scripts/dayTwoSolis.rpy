@@ -14,6 +14,7 @@ label day2Solis:
     "We enter a room contained by shimmering glass."
     "Summer happily does a little twirl."
     show summer Neutral with dissolve
+    play sound bird volume 0.2 fadein 3.0
     s Smile "Welcome to the Greenhouse!"
     s Neutral "You and I will be working on cultivating and gathering ingredients."
     s Smile "All in preparation for the Full Moon Ritual!"
@@ -79,6 +80,7 @@ label day2Solis:
     "Summer takes the leaves and ties them into a bundle."
     "In a mortar and pestle, she grinds it into a fine powder."
     "The atmosphere of the Greenhouse transforms as a fragrance fills the air."
+    play sound potion volume 0.2 fadein 3.0
     "At the end of the delicate process, Summer pours the powder into a mesh strainer and tosses it into a cauldron."
     show summer Smile
     s "At the banquet, we'll be serving this as a beverage for the ritual!"
