@@ -1,5 +1,5 @@
 label day2Solis:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
+    play sound dingDong1
     scene Commons with Fade (2.0, 1.0, 2.0)
     with Pause(1.0)
     "I wonder what today has in store for me."

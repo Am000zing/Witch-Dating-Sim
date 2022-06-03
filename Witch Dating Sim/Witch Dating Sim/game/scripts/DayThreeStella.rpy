@@ -1,5 +1,5 @@
 label day3Stella:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
+    play sound dingDong1
     scene black with Fade(2.0, 2.0, 2.0)
     with Pause(1.0)
     "Huh, I'm in my room."

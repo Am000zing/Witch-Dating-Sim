@@ -1,5 +1,5 @@
 label day4Stella:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
+    play sound dingDong1
     scene library with Fade(2.0, 3.0, 3.0)
     with Pause(1.0)
     "The library has slowly become more and more familiar."

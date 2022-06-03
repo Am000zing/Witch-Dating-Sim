@@ -1,5 +1,6 @@
 label day4Luna:
     #"Today is the final rehearsal for the Full Moon Ritual"
+    play sound dingDong1
     scene dCommons with Fade(2.0, 1.0, 2.0)
     with Pause(2.0)
     "It's nice and early, about 30 minutes before I need to be at the Amphitheater"

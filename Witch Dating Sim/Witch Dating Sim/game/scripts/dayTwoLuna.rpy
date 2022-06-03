@@ -1,5 +1,5 @@
 label day2Luna:
-    # play sound dingDong1
+    play sound dingDong1
     scene dCommons with Fade(2.0,1.0, 2.0)
     pause 1.0
     "The reality of being at Luminoire Academy is really starting to hit me."

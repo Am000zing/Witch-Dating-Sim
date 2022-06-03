@@ -1,5 +1,5 @@
 label day1Stella:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
+    play sound dingDong1
     "Through the mist, a tall, stone door grows in front of me."
     scene stellaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Star is engraved into it."
