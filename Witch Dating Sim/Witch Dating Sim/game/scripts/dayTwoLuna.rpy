@@ -140,7 +140,7 @@ label day2Luna:
     "What a day."
     "I guess I'll be meeting Eluna tomorrow then."
     "I should go back and get some rest."
-    # perfect run 7 points
+    # perfect run: 7 points
     ## ##Scene fade out, jump LunaDayThree
     show text "Day 3 Solis" with dissolve
     show text "2 Days Until the Full Moon Ritual..." with dissolve

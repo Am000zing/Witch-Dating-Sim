@@ -140,4 +140,5 @@ label day4Luna:
     "Eluna glances at me, and waves."
     "I wave back, and make my way back to the Commons."
 
+#perfect run: 13
     ##hide Scene with Fade

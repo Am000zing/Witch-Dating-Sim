@@ -229,6 +229,7 @@ label day3FinalPathLuna:
     "That was...interesting."
     "Well, I should get going anyways."
     "I gotta make sure I'm at the Amphitheater a little earlier anyways."
+    #perfect run: 10
     show text "Day 4 Solis" with dissolve
     show text "1 Day Until the Full Moon Ritual..." with dissolve
     jump day4Luna
