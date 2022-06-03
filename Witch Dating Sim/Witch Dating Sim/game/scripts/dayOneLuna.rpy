@@ -95,7 +95,7 @@ label day1Luna:
     e Neutral "Let me show you to the Commons now..."
     stop music fadeout 6.0
     hide eluna Neutral with dissolve
-    scene Commons with Fade(2.0, 1.0, 2.0)
+    scene nCommons with Fade(2.0, 1.0, 2.0)
     with Pause(2.0)
     "We walk quietly into the Commons."
     show eluna Neutral with dissolve
