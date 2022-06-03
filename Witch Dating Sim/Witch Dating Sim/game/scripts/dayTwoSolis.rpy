@@ -102,3 +102,4 @@ label day2Solis:
     show text "2 Days Until the Full Moon Ritual..." with dissolve
     with Pause (3.0)
     jump day3Solis
+    #perfect: 5

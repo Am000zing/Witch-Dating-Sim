@@ -107,9 +107,11 @@ label day4Luna:
         "\"I'd love to, but I can't I'll meet you in the Commons.\"":
             $ elunaAP += 1
             e Upset "But you just got here!"
+            play sound sparkle volume 0.2 fadein 3.0
             e "You still have an obligation to stay for class or do schoolwork."
             "The air around us feels like crackling electricity."
             e "Is there something going on?"
+            stop sound fadeout 3.0
             m "That's quite enough, Eluna." #Added a comma
             show eluna Upset at left with move
             show morgana Neutral at right with dissolve

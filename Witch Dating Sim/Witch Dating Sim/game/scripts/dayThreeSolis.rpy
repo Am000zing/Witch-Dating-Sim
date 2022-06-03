@@ -3,7 +3,7 @@ label day3Solis:
     with Pause(1.0)
     "Todays the day. I have to do well, I can't disappoint Summer now."
     "After getting ready, I stumble out of the commons, hastily making my way to the grand library."
-    scene Library with Fade(2.0, 0.0, 2.0)
+    scene library with Fade(2.0, 0.0, 2.0)
 
     "From the front desk, Summer spots me and waves cheerily, standing next the history instructor, Professor Circe."
     show summer Neutral with dissolve
@@ -19,13 +19,14 @@ label day3Solis:
     k "I'm here to offer my guidance in any way I can."
     k "Follow me to the arcane cuisine section."
     hide s inactive
-    hide summer Neutral with dissolve
     hide circe Neutral with dissolve
+    hide summer Neutral with dissolve
     "Summer and I follow Circe through the towering aisles of bookshelves"
     "Circe suddenly stops in the middle of the aisle."
     show circe Neutral with dissolve
     k "Typically, the Library is reserved to my studious Stella witches..."
     k Smile "But I'll gladly make an exception for the both of you"
+    play sound whoosh volume 0.2 fadein 5.0
     "Casting a spell on the books, they begin to flow and float from the shelves, encircling, Circe, Summer, and I in the air."
     k Neutral "Besides, finding recipes for the banquet is an exciting task!"
     k "We have recipe books from ages past..."
@@ -37,6 +38,7 @@ label day3Solis:
     "The books begins to spin faster and faster."
     "I try to look at the titles but my eyes can't keep up."
     "I'm about to fall over from being dizzy when Summer takes my hand and raises her hand politely to Professor Circe."
+    stop sound fadeout 5.0
     show k inactive at left
     s "Professor, we're specifically looking for arcane desserts."
     "Summer squeezes my hand, and lets go trying to elaborate."
@@ -45,7 +47,7 @@ label day3Solis:
     show s inactive at right
     k "Cloying Crumble?"
     k Smile "How curious..."
-    k Neutral "That's an *interesting* choice for the centerpiece of the banquet, Summer."
+    k Neutral "That's an {i}interesting{/i} choice for the centerpiece of the banquet, Summer."
     "Summer squeezes her hands into ambitious fists."
     hide s inactive
     show k inactive at left
@@ -83,15 +85,15 @@ label day3Solis:
     s Neutral "I'll be right back!"
     hide summer Neutral with dissolve
     "Summer disappears around a corner to look for the shipment."
+    play sound bee volume 0.10 fadein 3.0
     "I hear a faint buzzing sound growing from underneath the lab bench."
-    play sound bee volume 0.3 fadein 3.0
     "Ducking under the table I notice a small wooden box"
     "Across the lid of the crate is the label \"HAUNTED HONEYBEES.\""
-
     "Pulling out the box I ponder what to do next."
     "Summer isn't back yet. This could be my chance to really help her."
     "But what even are *haunted* honeybees?"
     "I should be careful about opening this box..."
+    stop sound fadeout 10.0
     menu:
         "Lift the lid from the crate to get a good look inside to investigate.":
             $ summerAP += 3
@@ -108,11 +110,13 @@ label day3Solis:
         "Cast a spell of telekinesis and collect honeycomb without touching the box.":
             $ summerAP += 1
             "A relatively simple spell, the lid slowly floats off the crate."
-            "The inside of the crate begins to glow red. The ight from the inside begins to flicker."
+            "The inside of the crate begins to glow red."
             play sound bee volume 0.5 fadein 2.0
+            "The light from the inside begins to flicker."
             s "Put the lid down!"
             show summer Upset with dissolve
             "Summer comes bursting in, breaking my concentration, the lid drops to the ground, knocking over the crate."
+            stop sound fadeout 3.0
             "Summer fumbles and slides next to the crate, catching it before it spills over."
             "She sets it back up and looks into the crate worriedly."
             s "This is all my fault."
@@ -146,9 +150,12 @@ label day3Solis:
     # menu:
     #     "I consume a piece of the honeycomb myself":
     #         s "[name], NOOOOO!"
+    play sound potion volume 0.2 fadein 5.0
     "We watch as the Cauldron bubbles mixing in the ingrediencies delicately."
     s "You know, [name], I'm glad you came to help me out today."
     "As I turn to look at her, Summer takes a hold of my hand."
+    
+    play music conflictMusic fadein 6.0
     s Upset "I... don't have too many friends at the academy, they're always a little hesitant with how giddy I am."
     s "So when you first agreed to come with me I was really worried, maybe you'd think the same way as everyone else."
     s Neutral "But I'm glad that wasn't the case."
@@ -160,6 +167,7 @@ label day3Solis:
     "I feel a small rumble in my stomach."
     "I could really go for some food before heading back to my room."
     char "That sounds like a great idea."
+    stop music fadeout 5.0
     s Smile "Great!"
     scene black with Dissolve(3.0)
     show text "Day 4" with dissolve
@@ -168,3 +176,4 @@ label day3Solis:
     show text "1 Day Until the Full Moon Ritual..." with dissolve
     with Pause(3.0)
     jump day4Solis
+    #perfect: 8

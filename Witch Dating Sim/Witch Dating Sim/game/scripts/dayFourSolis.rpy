@@ -8,11 +8,13 @@ label day4Solis:
     "I run into Summer who'd seem to have been waiting for me."
     #"I greet Summer, nervously as I had realized I had been late to our agreed time."
     show summer Upset with dissolve
-    s Upset "What the heck [name], you're late. What took you so long?"
+    s Upset "[name], you're up late. What took you so long?"
     #"I try to explain to her how the demons had attacked me in my bed, while in truth I had just slept past my alarm."
     char "Uhh..."
+    "What's my excuse..."
+    play music overworldMusic fadein 5.0
     char "I was attacked in bed!"
-    "I try to explain to her how the demons had attacked me in my bed, while in truth I had just slept past my alarm."
+    "I try to explain to her that demons attacked me in my bed, while in truth I had just slept past my alarm."
     s Neutral "Demons?"
     s "Are you okay? Are you hurt?"
     s "Why didn't you tell me earlier?"
@@ -33,6 +35,7 @@ label day4Solis:
     #"There's a silence between us for a moment."
     char "..."
     s "..."
+    stop music fadeout 5.0
     s Smile "Anyways, lets go back to the greenhouse."
     s Neutral "There are fermenting herbs waiting for me there."
     hide summer Neutral with dissolve
@@ -43,12 +46,13 @@ label day4Solis:
     #"A little cautious, I began to approach her. Ready to confront her meddling."
     show summer Neutral with dissolve
     s "Professor Tasha!"
+    play music overworldMusic fadein 5.0
     #"Tasha turns around, smiling as she noticed the two of us."
     show summer Neutral at left with move
     show tasha Neutral at right with dissolve 
     show s inactive at left
     t "Well, well, well."
-    t Smile "if it isn't my dear sunshine. How's it going?"
+    t Smile "If it isn't my dear sunshine. How's it going?"
     "She smiles and hugs Summer, who returns the embrace."
     hide s inactive
     show t inactive at right
@@ -64,7 +68,7 @@ label day4Solis:
     t "And your concoction as well, I haven't seen a Cloying crumble this perfect in centuries."
     #"Summer blushes a little, the waves of compliments lighting up her cheeks."
     #show summer Neutral blush at left
-    t Neutral "Since you've seemed to complete your project, could I ask a small favor of you, Summer?"
+    t Neutral "Since you've seemed to have completed your project, could I ask a small favor of you, Summer?"
     #hide summer Neutral blush
     hide s inactive
     show t inactive at right
@@ -86,18 +90,22 @@ label day4Solis:
     t Smile "Thank you, Summer."
     t Neutral "I must go attend to the mandrakes at once."
     hide tasha Neutral with dissolve
+    hide s inactive with dissolve
     hide summer Neutral with dissolve
     "Professor Tasha briskly leaves the greenhouse."
     "Summer eyes a set of boxes in the corner, and begins making her way to them."
     "She wholeheartedly agreed to Professor Tasha's request..."
     "-but made no effort in asking for help."
     "What should I do?"
+    stop music fadeout 5.0
     "On the one hand, Summer hadn't directly asked me for help..."
     "But on the other, it would take her the whole day to set up for the banquet."
     menu:
         "\"I'll be right back.\"":
-            play sound clap volume 0.2 fadein 6.0
+            $ summerAP += 3
+            scene amphitheater1 with Fade (2.0, 0.0, 2.0)
             "I head towards the Amphitheater."
+            play sound clap volume 0.2 fadein 6.0
             "There's a performance that seems to be wrapping up at the theater."
             play sound walkProf volume 0.3 fadein 3.0
             m "Hello fellow Solis student."
@@ -119,6 +127,7 @@ label day4Solis:
             m Neutral "You'd know best, Eluna."
             jump day4SolisExtraPath
         "\"Do you need any help?\"":
+            $ summerAP += 2
             s "Thanks [name], though I'm not sure how much we can do with just the two of us."
             s "But I really appreciate that you're willing to help me."
             scene amphitheater with Fade(2.0, 1.0, 2.0)
@@ -131,6 +140,7 @@ label day4Solis:
             "My body is seriously killing me after all that."
             jump day4SolisEnd
         "\"Good luck, Summer!\"":
+            $ summerAP += 1
             "Summer smiles at you, sighing as she prepares to get back to work."
             "Ah, she didn't take it as a joke."
             "I quickly go to help her out."
@@ -190,7 +200,7 @@ label day4SolisExtraPath:
     hide e inactive
     show s inactive at right
     e "Come on, [name], let's lift these together."
-    scene amphitheater with Fade(2.0, 0.0, 2.0)
+    scene amphitheater1 with Fade(2.0, 0.0, 2.0)
     "Summer and I wave goodbye to Eluna and the other Luna students who came to help."
     "Summer sighs in exhaustion."
     show summer Neutral with dissolve
@@ -203,7 +213,7 @@ label day4SolisExtraPath:
     s "I guess I have a bad habit of not really asking for help."
     s Neutral "You see..."
     s Upset "I didn't grow up glamorous or with a lot of magical abilities to spare."
-    if solis AP == 11:
+    if summerAP == 11:
         s Neutral "It felt like all of our family's magical talent went to my sister."
         s "She was perfect in every way."
         s "Strong, magical, beautiful..."
@@ -257,9 +267,11 @@ label day4SolisEnd:
     s "[name], I'll see you tomorrow for the Full Moon Ritual!"
     hide summer Neutral with dissolve
     "Summer and I bid our goodbyes, and leave to our respective rooms."
+    scene black with Dissolve(3.0)
     show text "Day 5" with dissolve
     play sound dingDong1 fadein 3.0 volume 0.25
     with Pause(3.0)
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause(3.0)
     # jump day5
+    #perfec : 11
