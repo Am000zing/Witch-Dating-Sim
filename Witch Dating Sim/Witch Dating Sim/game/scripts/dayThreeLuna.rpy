@@ -1,4 +1,5 @@
 label day3Luna:
+    play sound "..\\audio\\SFX\\SchoolBell1.wav"
     "Yesterday was quite eventful."
     "Hopefully, things will get better soon."
     "I already feel the keen scrutiny of Professor Morgana..."

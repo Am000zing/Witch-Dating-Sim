@@ -1,4 +1,5 @@
 label day2Luna:
+    play sound "..\\audio\\SFX\\SchoolBell1.wav"
     scene Commons with Fade(2.0,1.0, 2.0)
     pause 1.0
     "The reality of being at Luminoire Academy is really starting to hit me."

@@ -1,4 +1,5 @@
 label day4Solis:
+    play sound "..\\audio\\SFX\\SchoolBell1.wav"
     "I hope the experiment went well, I can't imagine having to deal with those bees again."
     "After leaving the herbs to marinate for the night it was now time to go see how they've developed."
     "Stumbling out of the room, I make my way to the green room."
@@ -111,7 +112,7 @@ label day4SolisExtraPath:
     s "I guess I have a bad habit of not really asking for help."
     s "You see..."
     s "I didn't grow up glamorous or with a lot of magical abilities to spare."
-    if(perfectRun){
+    if(True){
         s "Instead it almost felt as if all our families magical talent went to my sister."
         s "She was perfect in every way, she was strong, magical, and beautiful."
         s "While I'm... this."

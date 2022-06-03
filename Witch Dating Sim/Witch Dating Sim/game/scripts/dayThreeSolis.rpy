@@ -1,4 +1,5 @@
 label day3Solis:
+    play sound "..\\audio\\SFX\\SchoolBell1.wav"
     scene Commons with Fade (2.0, 1.0, 2.0)
     with Pause(1.0)
     "Todays the day. I have to do well, I can't disappoint Summer now."
