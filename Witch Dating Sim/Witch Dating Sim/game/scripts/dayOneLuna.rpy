@@ -126,5 +126,5 @@ label day1Luna:
     e "I'll see you at the Amphitheater tomorrow."
     hide eluna Neutral with dissolve
     show text "Day 2 Luna" with dissolve
-    show text "3 Days Until the Blood Moon Ritual..." with dissolve
+    show text "3 Days Until the Full Moon Ritual..." with dissolve
     jump day2Luna

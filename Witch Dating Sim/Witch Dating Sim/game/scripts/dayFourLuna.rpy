@@ -1,34 +1,32 @@
-define e = Character('Eluna', color='#f7c039')
-define m = Character('Morganna', color='#ba1230')
-define char = Character("name", dynamic=True, color='#f933ff')
-
 label day4Luna:
     #"Today is the final rehearsal for the Full Moon Ritual"
-
+    scene dCommons with Fade(2.0, 1.0, 2.0)
+    with Pause(2.0)
     "It's nice and early, about 30 minutes before I need to be at the Amphitheater"
     "Today is supposed to be the final rehearsal for the Full Moon Ritual"
     "Even though it's only been a few days for me at Luminoire Academy..."
     "It's been quite the experience so far!"
     "I head over to the Amphitheater..."
-
+    scene amphitheater1 with Fade(2.0,0.0,2.0)
     "Eluna's already here, practicing her lines."
     "A few other students are already here too..."
     "Uh oh... did I arrive late somehow?"
     m "No, you didn't."
+    show morgana Neutral with dissolve
     char "Professor Morgana! I didn't notice you there."
-    m "It's alright. There was something I wanted to talk to you about."
-
+    m Smile "It's alright."
+    m Neutral "There was something I wanted to talk to you about."
     m "I know you aren't aware of Eluna's family name and bloodline."
     m "She doesn't exactly make it clear wth many of her peers"
     m "She's always preferred to be on the down-low about these matters."
     m "Eluna comes from a prestigious family line of witches."
     m "I was tasked to ensure that her magical prowess would be maximized."
-    m "-and to not allow any potential distractions to her success."
-    m "I think it's good that you and Eluna have befriended each other and have become so close."
+    m Upset "-and to not allow any potential distractions to her success."
+    m Neutral "I think it's good that you and Eluna have befriended each other and have become so close."
     m "I'm sure Eluna appreciates you as well."
     m "But she has been spending much of her free time with you instead of practicing her magic."
     m "[name], I know you mean well but-"
-    m "Do not distract Eluna from her destiny."
+    m Upset "Do not distract Eluna from her destiny."
     m "Understood?"
 
     "I quietly stare back at Professor Morgana."
@@ -36,9 +34,9 @@ label day4Luna:
     "How would Professor Morgana know what's best for Eluna?"
     "Has she even bothered to ask Eluna?"
     "Before I could respond-"
-    m "I know you must feel defensive over Eluna's autonomy."
-    m "If I had a choice, I would want Eluna to explore and have a richer experience of her youth."  
-    m "However, both Eluna and I understand how important her role to her family is." #How important her role is to her family?
+    m Neutral "I know you must feel defensive over Eluna's autonomy."
+    m Upset "If I had a choice, I would want Eluna to explore and have a richer experience of her youth."  
+    m Neutral "However, both Eluna and I understand how important her role is to her family."
     m "I implore you to understand as well."
     
     char "I see..."
@@ -50,64 +48,88 @@ label day4Luna:
     e "[name]!"
     "I turn and see her beeline towards me."
     "I can feel Professor Morgana's piercing gaze..."
-
-    e "I noticed you arrived a little earlier today."
-    e "Worried Professor Morgana would give you a hard time?"
-    m "That should hardly be an issue."
-    m "I should go greet the rest of the class."
-    "Morgana begins to walk towards the rest of the calss, but then pauses next to me." #Professor Morgana? Because in most of the other messages we address her as such
+    show morgana Neutral at left with move
+    show eluna Neutral at right with dissolve
+    show m inactive at left
+    e Neutral "I noticed you arrived a little earlier today."
+    e Smile "Worried Professor Morgana would give you a hard time?"
+    hide m inactive
+    show e inactive at right
+    m Smile "That should hardly be an issue."
+    m Neutral "I should go greet the rest of the class."
+    hide morgana Neutral with dissolve
+    "Professor Morgana begins to walk towards the rest of the class, but then pauses next to me." #Professor Morgana? Because in most of the other messages we address her as such
+    hide e inactive
+    hide eluna Smile with dissolve
     "She quietly speaks to me-"
+    show morgana Upset with dissolve
     m "Remember what I told you."
+    hide morgana Upset with dissolve
     "She heads towards the rest of the class briskly."
+    show eluna Neutral with dissolve
     e "I hope Professor hasn't been giving you a hard time."
-    e "She really does mean well."
-    e "Are you free soon?"
+    e Smile "She really does mean well."
+    e Neutral "Are you free soon?"
     e "I wanted to ask if you'd like to come with me after rehearsals to the Greenhouse."
     e "Or anywhere, really, if you don't feel like going to the Greenhouse."
 
     "I can feel Professor Morgana's stare from here."
     menu:
-	"You should prioritize practicing for the ritual since it's tomorrow.":
-            e "I see..."
-    	    "She sigh deeply."
-	    "I hope I didn't upset her."
-	    e "You're right."
-	    e "I can't get too distracted now."
-	    e "I need to make sure the ritual runs smoothly!"
-	    e "Plus, we can always go out after it's over" #Copyedited says "... go out after the it's over."
-	    char "Go out?"
-	    e "Ah!"
-	    e "I meant like-"
-	    e "Just go out somewhere to celebrate the successes of the Full Moon Ritual, you know?"
-	    e "I should go back and practice."
-	    e "I'll catch you back at the Commons!"
-	    "Eluna briskly walks away."
-	"I actually have an assignment that I have to finish tonight.":
-	    e "Oh, okay."
-	    e "It's good to focus on your studies."
-	    e "I should focus on practicing for the ritual anyways."
-	    e "I can't get too distracted now."
-	    e "I need to make sure it runs smoothly!"
-	    e "I should go back to rehearsing."
-	    e "I'll see you back at the Commons."
-	    char "Yeah I'll catch you later."
-	    "Eluna walks back to the Amphitheater stage."
-	"I'd love to, but I can't I'll meet you in the Commons.":
-	    e "But you just got here!"
-	    e "You still have an obligation to stay for class or do schoolwork."
-	    "The air around us feels like crackling electricity."
-	    e "Is there something going on?"
-	    m "That's quite enough, Eluna." #Added a comma
-	    "Professor Morgana appears besides us."
-	    m "Eluna, you should go continue rehearsing for tomorrow evening's ritual."
-	    e "I'm sorry, Professor Morgana."
-	    e "I should focus on practicing."
-	    e "I can't afford any distractions."
-	    "Eluna walks off to the Amphitheater stage."
-	    "I sigh."
-	    m "You can leave early if you must."
-	    m "I must go back to attend to class."
-	    "Before I could respond, Professor Morgana strides away."
+        "\"You should prioritize practicing for the ritual since it's tomorrow.\"":
+            $ elunaAP += 3
+            e Upset "I see..."
+            "She sighs deeply."
+            "I hope I didn't upset her."
+            e Neutral "You're right."
+            e "I can't get too distracted now."
+            e Smile "I need to make sure the ritual runs smoothly!"
+            e "Plus, we can always go out after it's over" #Copyedited says "... go out after the it's over."
+            char "Go out?"
+            e Neutral "Ah!"
+            e "I meant like-"
+            e "Just go out somewhere to celebrate the successes of the Full Moon Ritual, you know?"
+            e "I should go back and practice."
+            e Smile "I'll catch you back at the Commons!"
+            hide eluna Smile with dissolve
+            "Eluna briskly walks away."
+        "\"I actually have an assignment that I have to finish tonight.\"":
+            $ elunaAP += 2
+            e Upset "Oh, okay."
+            e Neutral "It's good to focus on your studies."
+            e "I should focus on practicing for the ritual anyways."
+            e "I can't get too distracted now."
+            e Smile "I need to make sure it runs smoothly!"
+            e Neutral "I should go back to rehearsing."
+            e "I'll see you back at the Commons."
+            char "Yeah I'll catch you later."
+            hide eluna Neutral with dissolve
+            "Eluna walks back to the Amphitheater stage."
+        "\"I'd love to, but I can't I'll meet you in the Commons.\"":
+            $ elunaAP += 1
+            e Upset "But you just got here!"
+            e "You still have an obligation to stay for class or do schoolwork."
+            "The air around us feels like crackling electricity."
+            e "Is there something going on?"
+            m "That's quite enough, Eluna." #Added a comma
+            show eluna Upset at left with move
+            show morgana Neutral at right with dissolve
+            "Professor Morgana appears besides us."
+            show e inactive at left
+            m "Eluna, you should go continue rehearsing for tomorrow evening's ritual."
+            hide e inactive
+            show m inactive at right 
+            e Neutral "I'm sorry, Professor Morgana."
+            e "I should focus on practicing."
+            e Upset "I can't afford any distractions."
+            hide eluna Upset with dissolve
+            "Eluna walks off to the Amphitheater stage."
+            "I sigh."
+            hide m inactive
+            show morgana Neutral at center with move
+            m "You can leave early if you must."
+            m "I must go back to attend to class."
+            hide morgana Neutral with dissolve
+            "Before I could respond, Professor Morgana strides away."
 
     "I guess I'll go back to my room to read or study for a little bit."
     "I need to clear my head."

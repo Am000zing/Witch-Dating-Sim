@@ -1,6 +1,6 @@
 label day2Luna:
     play sound "..\\audio\\SFX\\SchoolBell1.wav"
-    scene Commons with Fade(2.0,1.0, 2.0)
+    scene dCommons with Fade(2.0,1.0, 2.0)
     pause 1.0
     "The reality of being at Luminoire Academy is really starting to hit me."
     "I'm not sure whether or not I got off the wrong foot with Professor Morgana, but surely I can still make a good impression!"
@@ -143,5 +143,5 @@ label day2Luna:
     # perfect run 7 points
     ## ##Scene fade out, jump LunaDayThree
     show text "Day 3 Solis" with dissolve
-    show text "2 Days Until the Blood Moon Ritual..." with dissolve
+    show text "2 Days Until the Full Moon Ritual..." with dissolve
     jump day3Luna
