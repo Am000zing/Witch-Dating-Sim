@@ -1,5 +1,4 @@
 label day3Stella:
-    play sound dingDong1
     scene black with Fade(2.0, 2.0, 2.0)
     with Pause(1.0)
     "Huh, I'm in my room."
@@ -9,7 +8,7 @@ label day3Stella:
     c "Hello? [name]?"
     c "Are you alright in there?"
     char "Y-yes, give me a second."
-    scene Commons with Fade(2.0, 1.0, 2.0)
+    scene dCommons with Fade(2.0, 1.0, 2.0)
     "I dash out to the Commons."
     char "I'm sorry, I'm not sure what happened."
     show celeste Neutral with dissolve
@@ -206,6 +205,10 @@ label day3Stella:
     "Well, that was an eventful day."
     "I need to catch up with Celeste..."
     char "Wait up!"
-    show text "Day 4 Solis" with dissolve
-    show text "1 Day Until the Blood Moon Ritual..." with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 4" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "1 Day Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
     jump day4Stella

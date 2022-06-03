@@ -1,5 +1,5 @@
 label day2Solis:
-    scene Commons with Fade (2.0, 1.0, 2.0)
+    scene dCommons with Fade (2.0, 1.0, 2.0)
     with Pause(1.0)
     "I wonder what today has in store for me."
     "Coming out of my room, I'm met eye-to-eye with..."

@@ -11,6 +11,7 @@ label day1Solis:
     "I'm going to make the most of my time here at Luminoire Academy!"
 
     t "Salutations! You must be [name]."
+    play sound walkProf volume 0.2 fadein 3.0
     show tasha Neutral with dissolve
     play music overworldMusic fadein 6.0
     #volume 0.5

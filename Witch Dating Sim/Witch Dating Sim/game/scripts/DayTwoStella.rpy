@@ -1,6 +1,5 @@
 label day2Stella:
-    play sound dingDong1
-    scene Commons with Fade(2.0, 1.0, 2.0)
+    scene dCommons with Fade(2.0, 1.0, 2.0)
     with Pause(1.0)
     "I'm still processing the fact that I've managed to make it into Luminoire Academy."
     "I'm in awe at everything I've seen here thus far..."
@@ -108,6 +107,10 @@ label continuingStella2:
     "She offers me a book."
     c "Let's look into it some more."
     hide celeste Neutral with dissolve
-    show text "Day 3 Solis" with dissolve
-    show text "2 Days Until the Blood Moon Ritual..." with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 2" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "3 Days Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
     jump day3Stella

@@ -1,5 +1,5 @@
 label day4Solis:
-    scene Commons with Fade (2.0, 1.0, 2.0)
+    scene dCommons with Fade (2.0, 1.0, 2.0)
     with Pause (2.0)
     "I can't imagine having to deal with those bees again."
     #"After leaving the herbs to marinate for the night it was now time to go see how they've developed."
@@ -96,19 +96,27 @@ label day4Solis:
     "But on the other, it would take her the whole day to set up for the banquet."
     menu:
         "\"I'll be right back.\"":
+            play sound clap volume 0.2 fadein 6.0
             "I head towards the Amphitheater."
             "There's a performance that seems to be wrapping up at the theater."
+            play sound walkProf volume 0.3 fadein 3.0
             m "Hello fellow Solis student."
+            show morgana Neutral with dissolve
             "Professor Morgana of House Luna appears behind me."
             char "Ah, Professor Morgana!"
             m "May I help you?"
             char "Well, actually we need help setting up for the banquet-"
             char "-and that requires bringing a lot of boxes and items over here."
-            e "We?"
+            unknown "We?"
+            show morgana Neutral at left with move
+            show eluna Neutral at right with dissolve
             "The performer who had been on stage shows up beside Professor Morgana."
-            e "I bet it's Summer trying to work on arrangements by herself."
-            m "I suppose it's quite in character for her."
-            m "You'd know best, Eluna."
+            show m inactive at left
+            unknown "I bet it's Summer trying to work on arrangements by herself."
+            hide m inactive
+            show e inactive at right
+            m Smile "I suppose it's quite in character for her."
+            m Neutral "You'd know best, Eluna."
             jump day4SolisExtraPath
         "\"Do you need any help?\"":
             s "Thanks [name], though I'm not sure how much we can do with just the two of us."
@@ -136,12 +144,21 @@ label day4Solis:
             jump day4SolisEnd
 
 label day4SolisExtraPath:
+    hide e inactive
+    show m inactive at left
     e "Where is Summer right now?"
     e "I've just about wrapped up rehearsal, I can manage helping out a friend."
+    hide m inactive
+    show e inactive at right
     m "Go with [name] to manage with Summer."
+    hide e inactive
+    show m inactive at left
     e "Let's go."
     e "I assume she's at the Greenhouse?"
     "I nod, startled by the intensity of Eluna's call to action."
+    hide e inactive
+    hide eluna Neutral with dissolve
+    hide morgana Neutral with dissolve
     "Eluna walks off briskly."
     "I trail after her."
     scene greenhouse with Fade(1.0, 0.0, 1.0)
@@ -212,14 +229,17 @@ label day4SolisExtraPath:
 
 
 label day4SolisEnd:
-    s "Let's go grab some food, I'm starving after all that work!"
+    s Neutral "Let's go grab some food, I'm starving after all that work!"
+    hide summer Neutral with dissolve
     #transition to Commons
-    scene Commons with Fade (2.0, 1.0, 2.0)
+    scene nCommons with Fade (2.0, 1.0, 2.0)
     with Pause (2.0)
     "Summer and I had a big meal in the cafeteria."
     "We were so exhausted by the events of the day that we had walked back to the Commons in peaceful silence."
+    show summer Neutral with dissolve
     s "..."
     s "[name], I'll see you tomorrow for the Full Moon Ritual!"
+    hide summer Neutral with dissolve
     "Summer and I bid our goodbyes, and leave to our respective rooms."
     show text "Day 5" with dissolve
     play sound dingDong1 fadein 3.0 volume 0.25

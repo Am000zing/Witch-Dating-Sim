@@ -1,5 +1,4 @@
 label day1Stella:
-    play sound dingDong1
     "Through the mist, a tall, stone door grows in front of me."
     scene stellaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Star is engraved into it."
@@ -11,10 +10,9 @@ label day1Stella:
     "A grand facade beneath an even taller tree stands before me."
     "I won't take this opportunity for granted..."
     "I'm going to make the most of my time at Luminoire Academy!"
-
+    play sound walkProf volume 0.2 fadein 3.0
     show circe Neutral with dissolve
     play music overworldMusic fadein 6.0
-    #volume 0.5
     k "Greetings! You wouldn't happen to be [name]?"
     char "No way! You're Professor Circe."
 
@@ -69,7 +67,7 @@ label continuingStella1:
     "She stares down the hallway without turning to check if I'm following her."
     hide celeste Neutral with dissolve
     "It doesn't seem like she would enjoy small talk, so I keep to myself."
-    scene Commons with Fade(2.0,0.0,2.0)
+    scene nCommons with Fade(2.0,0.0,2.0)
     with Pause(2.0)
     "We quietly walk into a smaller hall - the Commons."
     show celeste Neutral with dissolve
@@ -116,6 +114,10 @@ label continuingStella1:
     "She waves goodnight and enters the room across from mine."
     "I'm thankful that I made a decent first impression."
     "Hopefully I'll make an even better second impression after a good night's rest."
-    show text "Day 2 Stella" with dissolve
-    show text "3 Days Until the Blood Moon Ritual..." with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 2" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "3 Days Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
     jump day2Stella

@@ -1,5 +1,5 @@
 label day3Solis:
-    scene Commons with Fade (2.0, 1.0, 2.0)
+    scene dCommons with Fade (2.0, 1.0, 2.0)
     with Pause(1.0)
     "Todays the day. I have to do well, I can't disappoint Summer now."
     "After getting ready, I stumble out of the commons, hastily making my way to the grand library."
@@ -84,6 +84,7 @@ label day3Solis:
     hide summer Neutral with dissolve
     "Summer disappears around a corner to look for the shipment."
     "I hear a faint buzzing sound growing from underneath the lab bench."
+    play sound bee volume 0.3 fadein 3.0
     "Ducking under the table I notice a small wooden box"
     "Across the lid of the crate is the label \"HAUNTED HONEYBEES.\""
 
@@ -108,6 +109,7 @@ label day3Solis:
             $ summerAP += 1
             "A relatively simple spell, the lid slowly floats off the crate."
             "The inside of the crate begins to glow red. The ight from the inside begins to flicker."
+            play sound bee volume 0.5 fadein 2.0
             s "Put the lid down!"
             show summer Upset with dissolve
             "Summer comes bursting in, breaking my concentration, the lid drops to the ground, knocking over the crate."
