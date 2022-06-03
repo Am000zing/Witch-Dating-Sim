@@ -116,3 +116,4 @@ label continuingStella2:
     show text "3 Days Until the Full Moon Ritual..." with dissolve
     with Pause (3.0)
     jump day3Stella
+    #perfect: 8

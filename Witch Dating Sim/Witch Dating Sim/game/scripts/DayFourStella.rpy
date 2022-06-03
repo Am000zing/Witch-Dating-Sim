@@ -15,6 +15,7 @@ label day4Stella:
 
 label day4StellaNeu:
     $ celesteAP += 2
+    #13
     "I lean in and gently tap on her shoulder."
     "Celeste jumps slightly and turns her head towards me."
     show celeste Neutral with dissolve
@@ -120,28 +121,32 @@ label day4StellaCont:
     stop music fadeout 6.0
     menu:
         "I'd be willing to help.":
+            $ celesteAP += 2
             c "That's very kind of you, but Professor Circe tasked me with this."
-            c "I'll catch you in the Commons later."
+            c "I'll catch you later."
         "Are you sure?":
+            $ celesteAP += 2
             c "Don't worry!"
             c "Professor Circe tasked me with this."
-            c "I'll catch you in the Commons later."
+            c "I'll catch you later."
 
-    #If CelesteAP == perfect
-    c "[name], wait, before you go!"
-    "She shuffles through her bag then offers the item to me."
-    "It's a quill."
-    char "Oh, thank you, Celeste!"
-    c "I thought you might like it."
-    c "It's a quill made out of an owl's feather."
-    c "After all this time, I had a really wonderful time hanging out with you."
-    c "It's the least I could do to thank you."
-    c "Alright, I have to go back to prep."
-    c "I'll see you at the Common soon."
+    if celesteAP == 15:
+        c "[name], wait, before you go!"
+        "She shuffles through her bag then offers the item to me."
+        "It's a quill."
+        char "Oh, thank you, Celeste!"
+        c "I thought you might like it."
+        c "It's a quill made out of an owl's feather."
+        c "After all this time, I had a really wonderful time hanging out with you."
+        c "It's the least I could do to thank you."
+    else:
+        c "Alright, I have to go back to prep."
+        c "I'll see you at the Commons soon."
     scene black with Dissolve(3.0)
     show text "Day 5" with dissolve
     play sound dingDong1 fadein 3.0 volume 0.25
     with Pause(3.0)
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause (3.0)
+    #perfect
     #jump day5
