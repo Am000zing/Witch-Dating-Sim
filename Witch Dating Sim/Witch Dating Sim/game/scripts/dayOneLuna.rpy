@@ -1,5 +1,4 @@
 label day1Luna:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
     "Through the mist, a tall, stone door grows in front of me."
     scene lunaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Moon is engraved into it."
@@ -12,6 +11,7 @@ label day1Luna:
     "I'm going to make the most of my time at Luminoire Academy!"
 
     m "Excuse me, witchling."
+    play sound walkProf volume 0.2 fadein 3.0
     show morgana Neutral with dissolve
     play music overworldMusic fadein 6.0
     #volume 0.5
@@ -125,6 +125,10 @@ label day1Luna:
     char "Sounds great, thank you!"
     e "I'll see you at the Amphitheater tomorrow."
     hide eluna Neutral with dissolve
-    show text "Day 2 Luna" with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 2" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
     show text "3 Days Until the Full Moon Ritual..." with dissolve
+    with Pause (3.0)
     jump day2Luna

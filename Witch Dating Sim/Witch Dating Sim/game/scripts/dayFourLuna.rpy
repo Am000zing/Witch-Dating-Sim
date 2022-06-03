@@ -140,5 +140,12 @@ label day4Luna:
     "Eluna glances at me, and waves."
     "I wave back, and make my way back to the Commons."
 
+    scene black with Dissolve(3.0)
+    show text "Day 5" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
+    show text "0 Days Until the Full Moon Ritual..." with dissolve
+    with Pause(3.0)
+    jump day4Luna
 #perfect run: 13
     ##hide Scene with Fade

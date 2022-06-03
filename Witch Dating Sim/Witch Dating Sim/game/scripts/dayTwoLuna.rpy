@@ -1,5 +1,5 @@
 label day2Luna:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
+    # play sound dingDong1
     scene dCommons with Fade(2.0,1.0, 2.0)
     pause 1.0
     "The reality of being at Luminoire Academy is really starting to hit me."
@@ -129,7 +129,7 @@ label day2Luna:
     e "I wanted to ask if you'd like to run lines with me tomorrow afternoon?"
     e "Some practice might help you feel a bit more confident perfoming."
     char "Oh, of course! Yes, that'd be great."
-    e " Perfect! I'll find you in the Commons tomorrow afternoon."
+    e "Perfect! I'll find you in the Commons tomorrow afternoon."
     char "S-sounds good!"
     char "I'll see you then!"
     e "Yes, goodbye."
@@ -142,6 +142,10 @@ label day2Luna:
     "I should go back and get some rest."
     # perfect run: 7 points
     ## ##Scene fade out, jump LunaDayThree
-    show text "Day 3 Solis" with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 3" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
     show text "2 Days Until the Full Moon Ritual..." with dissolve
+    with Pause(3.0)
     jump day3Luna

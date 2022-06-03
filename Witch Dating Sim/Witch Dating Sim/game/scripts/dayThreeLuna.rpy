@@ -1,5 +1,4 @@
 label day3Luna:
-    play sound "..\\audio\\SFX\\SchoolBell1.wav"
     scene dCommons with Fade(2.0,1.0, 2.0)
     "Yesterday was quite eventful."
     "Hopefully, things will get better soon."
@@ -230,6 +229,10 @@ label day3FinalPathLuna:
     "Well, I should get going anyways."
     "I gotta make sure I'm at the Amphitheater a little earlier anyways."
     #perfect run: 10
-    show text "Day 4 Solis" with dissolve
+    scene black with Dissolve(3.0)
+    show text "Day 4" with dissolve
+    play sound dingDong1 fadein 3.0 volume 0.25
+    with Pause(3.0)
     show text "1 Day Until the Full Moon Ritual..." with dissolve
+    with Pause(3.0)
     jump day4Luna
