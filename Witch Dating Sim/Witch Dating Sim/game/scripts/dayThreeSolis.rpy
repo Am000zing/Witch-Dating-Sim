@@ -161,5 +161,6 @@ label day3Solis:
     char "That sounds like a great idea."
     s Smile "Great!"
     hide summer Smile with dissolve
-
+    show text "Day 4 Solis" with dissolve
+    show text "1 Day Until the Blood Moon Ritual..." with dissolve
     jump day4Solis

@@ -125,5 +125,6 @@ label day1Luna:
     char "Sounds great, thank you!"
     e "I'll see you at the Amphitheater tomorrow."
     hide eluna Neutral with dissolve
-
+    show text "Day 2 Luna" with dissolve
+    show text "3 Days Until the Blood Moon Ritual..." with dissolve
     jump day2Luna

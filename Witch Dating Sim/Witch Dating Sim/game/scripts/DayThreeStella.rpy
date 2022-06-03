@@ -206,5 +206,6 @@ label day3Stella:
     "Well, that was an eventful day."
     "I need to catch up with Celeste..."
     char "Wait up!"
-
+    show text "Day 4 Solis" with dissolve
+    show text "1 Day Until the Blood Moon Ritual..." with dissolve
     jump day4Stella

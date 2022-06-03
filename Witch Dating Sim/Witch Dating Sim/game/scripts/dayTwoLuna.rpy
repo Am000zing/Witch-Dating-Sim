@@ -142,4 +142,6 @@ label day2Luna:
     "I should go back and get some rest."
     # perfect run 7 points
     ## ##Scene fade out, jump LunaDayThree
+    show text "Day 3 Solis" with dissolve
+    show text "2 Days Until the Blood Moon Ritual..." with dissolve
     jump day3Luna

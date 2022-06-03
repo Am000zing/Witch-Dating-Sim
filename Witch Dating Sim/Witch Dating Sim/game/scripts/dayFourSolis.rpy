@@ -222,3 +222,5 @@ label day4SolisEnd:
     s "..."
     s "[name], I'll see you tomorrow for the Full Moon Ritual!"
     "Summer and I bid our goodbyes, and leave to our respective rooms."
+    show text "Day 5 Solis" with dissolve
+    show text "..." with dissolve

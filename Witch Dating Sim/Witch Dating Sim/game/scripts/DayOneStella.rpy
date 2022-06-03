@@ -116,4 +116,6 @@ label continuingStella1:
     "She waves goodnight and enters the room across from mine."
     "I'm thankful that I made a decent first impression."
     "Hopefully I'll make an even better second impression after a good night's rest."
+    show text "Day 2 Stella" with dissolve
+    show text "3 Days Until the Blood Moon Ritual..." with dissolve
     jump day2Stella

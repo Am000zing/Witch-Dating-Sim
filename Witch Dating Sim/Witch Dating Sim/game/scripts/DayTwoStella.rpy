@@ -108,4 +108,6 @@ label continuingStella2:
     "She offers me a book."
     c "Let's look into it some more."
     hide celeste Neutral with dissolve
+    show text "Day 3 Solis" with dissolve
+    show text "2 Days Until the Blood Moon Ritual..." with dissolve
     jump day3Stella

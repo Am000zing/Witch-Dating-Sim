@@ -95,4 +95,6 @@ label day2Solis:
     s "We're going to do some sweet research on the basics of magical agriculture."
     s "Goodnight!"
     hide summer Neutral with dissolve
+    show text "Day 3 Solis" with dissolve
+    show text "2 Days Until the Blood Moon Ritual..." with dissolve
     jump day3Solis

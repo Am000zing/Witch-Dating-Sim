@@ -181,3 +181,6 @@ label day3FinalPathLuna:
     "Well, I should get going anyways."
     "I gotta make sure I'm at the Amphitheater a little earlier anyways."
     ##hide Scene with Fade
+    show text "Day 4 Solis" with dissolve
+    show text "1 Day Until the Blood Moon Ritual..." with dissolve
+    jump day4Luna

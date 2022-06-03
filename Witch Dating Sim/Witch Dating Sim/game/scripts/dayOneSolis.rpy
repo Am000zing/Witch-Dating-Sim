@@ -107,5 +107,6 @@ label summerAsk:
     "She disappears into a room next to mine."
     "I wonder what we'll be doing tomorrow..."
     ##hide Commons with Fade(1.0,1.0,1.0) 
-
-jump day2Solis
+    show text "Day 2 Solis" with dissolve
+    show text "3 Days Until the Blood Moon Ritual..." with dissolve
+    jump day2Solis

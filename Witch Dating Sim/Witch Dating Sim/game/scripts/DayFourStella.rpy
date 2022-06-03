@@ -135,3 +135,5 @@ label day4StellaCont:
     c "It's the least I could do to thank you."
     c "Alright, I have to go back to prep."
     c "I'll see you at the Common soon."
+    show text "Day 5 Stella" with dissolve
+    show text "..." with dissolve
