@@ -30,7 +30,7 @@ label day3Stella:
     char "Got it, it'll only be a minute."
     "I scramble to get ready for the day."
     "I've already got a quest to do!"
-    scene Commons with Fade(1.0, 0.0, 1.0)
+    scene dCommons with Fade(1.0, 0.0, 1.0)
     "After freshening up, I go find Celeste in the Commons."
     "When Celeste notices me, she closes the book she's reading."
     show celeste Neutral with dissolve
@@ -45,6 +45,7 @@ label day3Stella:
     play sound bird volume 0.3 fadein 3.0
     c "Here we are!"
     c "Although the Greenhouse isn't as precisely organized as the library-"
+    stop sound fadeout 5.0
     c Smile "-there's a certain charm to its...organized mess."
     unknown "Are you bad-mouthing my Greenhouse?"
     c Neutral "P-professor Tasha!"
@@ -139,9 +140,10 @@ label day3Stella:
             s "-And you wouldn't be wrong on that presumption-"
             s "-but, much like research, consistency is key."
             s "I hope you continue to take care of her."
+            stop music fadeout 6.0
             "Take care of her?"
             "I wonder what she means by that..."
-            stop music fadeout 6.0
+            
     
     c "[name]! [name]!"
     "Celeste dashes into the Greenhouse, nearly out of breath."

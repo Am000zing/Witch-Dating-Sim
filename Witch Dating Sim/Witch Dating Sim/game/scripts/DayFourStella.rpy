@@ -44,8 +44,8 @@ label day4StellaCont:
     scene black with Dissolve(3.0)
     "After waving a quick bye to our professor, Celeste leads me through the winding corridors."
     scene amphitheater1 with Fade(2.0, 1.0, 2.0)
-    with Pause(2.0)
     play sound bird volume 0.2 fadein 3.0
+    with Pause(2.0)
     "We end up outside where a huge circular stage stands at the center."
     show celeste Neutral with dissolve
     c "Have you been to the Amphitheater yet?"
@@ -93,7 +93,7 @@ label day4StellaCont:
     with Pause(2.0)
     "{i}-they both had no idea what she was capable of.{/i}"
     with Pause (2.0)
-    stop music fadeout 6.0
+    stop music fadeout 10.0
     scene p5a with Fade(2.0, 0.0, 3.0)
     scene p5b with Dissolve(3.0)
     "{i}A forest bloomed to hide themselves from the hunters-{/i}"
@@ -102,11 +102,11 @@ label day4StellaCont:
     "{i}-but the magic was so powerful-{/i}"
     scene p6 with Dissolve(3.0)
     "{i}-that she crumbled into bright sand.{/i}"
-    play music cgMusic fadein 6.0
+    play music cgMusic fadein 10.0
     show p7 with Dissolve(2.0)
     "{i}The faeries of the region, despite being peeved that there was now a large forest covering their homes-{/i}"
     "{i}-were so moved by the act that they helped construct our school now known as Luminoire Academy.{/i}"
-    show p8 with Dissolve(3.0)
+    scene p8 with Fade(3.0, 0.0, 3.0)
     "{i}The realm of Luminoire was named after her lover.{/i}"
     scene amphitheater2 with Fade(2.0, 0.0, 2.0)
     with Pause(2.0)
@@ -139,8 +139,8 @@ label day4StellaCont:
         c "It's a quill made out of an owl's feather."
         c "After all this time, I had a really wonderful time hanging out with you."
         c "It's the least I could do to thank you."
-    else:
         c "Alright, I have to go back to prep."
+    else:
         c "I'll see you at the Commons soon."
     scene black with Dissolve(3.0)
     show text "Day 5" with dissolve

@@ -24,6 +24,8 @@ label day2Stella:
     k "I believe Celeste's already there, as per usual."
     k Smile "It's practically a second home to her in there..."
     k Neutral "Anyways, I'd like to discuss the Moonlight Ritual with the both of you."
+    hide circe Neutral with dissolve
+    scene black with dissolve
     "Circe leads me though one of the school's many hallways, and we make it to an ornate door."
     k "Well, don't just stand there..."
     k "Come see the library for yourself."
@@ -110,10 +112,10 @@ label continuingStella2:
     c "Let's look into it some more."
     hide celeste Neutral with dissolve
     scene black with Dissolve(3.0)
-    show text "Day 2" with dissolve
+    show text "Day 3" with dissolve
     play sound dingDong1 fadein 3.0 volume 0.25
     with Pause(3.0)
-    show text "3 Days Until the Full Moon Ritual..." with dissolve
+    show text "2 Days Until the Full Moon Ritual..." with dissolve
     with Pause (3.0)
     jump day3Stella
     #perfect: 8
