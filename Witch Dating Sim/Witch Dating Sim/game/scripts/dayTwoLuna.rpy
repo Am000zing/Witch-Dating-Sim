@@ -41,7 +41,7 @@ label day2Luna:
     #scene elunaDanceCG with Fade (1.0, 0.0, 1.0)
     #CG OPTION: Eluna singing/dancing
     "Everyone in the class stares at Eluna with wonder."
-    "It's like she's enchanted everyone in the room."
+    "It's like she's enchanted everyone."
     "She certainly is quite... beautiful."
     m "Thank you, Eluna. You may go sit down."
     scene amphitheater1 with Fade (1.0, 0.0, 1.0)
