@@ -1,5 +1,3 @@
-
-
 ###########################################################################################################
 
 define e = Character('Eluna', color='#ff94c1', image = "eluna")
@@ -12,6 +10,13 @@ define char = Character("name", dynamic=True, color='#db7fee')
 define unknown = Character("unknown", color= '#ffa9a6')
 
 ###########################################################################################################
+
+image dampmask = AlphaMask("the_darkness_70", "nightAmphitheater.png")
+image darkAmphitheater = Composite(
+    (1920,1080),
+    (0,0), "nightAmphitheater.png",
+    (0,0), "dampmask"
+)
 
 image lunaDoor = "BackgroundCG/lunaDoor.png"
 image solisDoor = "BackgroundCG/solisDoor.png"
