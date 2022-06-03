@@ -44,9 +44,11 @@ label day4StellaCont:
     "After waving a quick bye to our professor, Celeste leads me through the winding corridors."
     scene amphitheater1 with Fade(2.0, 1.0, 2.0)
     with Pause(2.0)
+    play sound bird volume 0.2 fadein 3.0
     "We end up outside where a huge circular stage stands at the center."
     show celeste Neutral with dissolve
     c "Have you been to the Amphitheater yet?"
+    stop sound fadeout 6.0
     char "No..."
     char "Is this it?"
     c Smile "Precisely."
@@ -54,9 +56,9 @@ label day4StellaCont:
 
     c "This is where they have the Ritual."
     c "I thought it might be best that you see it before your very eyes."
+    play music conflictMusic fadein 5.0
     c Smile "Since you're already aware that this school is so rich in history."
     "Celeste gestures towards the stage."
-
     c Neutral "There are stories of the origins of the Academy."
     c "Some stories you might hear about the school might tell you that it was constructed by several different magical beings and the high witches of Luminoire."
     c "But that's not really the case."
@@ -66,7 +68,6 @@ label day4StellaCont:
     c "You see, I ended up in some restricted area in the archives, and I found a notebook written by a faerie."
     c "..."
     c "It took some time to decipher, but I found some information about how the school came to be."
-    play music conflictMusic with fadein 5.0
     #scene CG_1 Fade(1.0,0.0,1.0)
     show p1 with Fade(1.0, 0.0, 1.0)
     #with Pause(3.0)
@@ -83,8 +84,6 @@ label day4StellaCont:
     "{i}-the villagers demanded they be burned.{/i}"
     show p4a with Dissolve(2.0)
     "{i}They were being hunted down, and at the moment of capture-"
-    stop music fadeout 6.0
-    play music cgMusic fadein 6.0
     show p4b with Dissolve(2.0)
     "{i}-her lover decided to sacrifice herself to save our fellow founder.{/i}"
     "{i}Since they weren't fully trained on their magic-{/i}"
@@ -92,7 +91,8 @@ label day4StellaCont:
     scene black with Dissolve(4.0)
     with Pause(2.0)
     "{i}-they both had no idea what she was capable of.{/i}"
-    
+    with Pause (2.0)
+    stop music fadeout 6.0
     scene p5a with Fade(2.0, 0.0, 3.0)
     scene p5b with Dissolve(3.0)
     "{i}A forest bloomed to hide themselves from the hunters-{/i}"
@@ -101,6 +101,7 @@ label day4StellaCont:
     "{i}-but the magic was so powerful-{/i}"
     scene p6 with Dissolve(3.0)
     "{i}-that she crumbled into bright sand.{/i}"
+    play music cgMusic fadein 6.0
     show p7 with Dissolve(2.0)
     "{i}The faeries of the region, despite being peeved that there was now a large forest covering their homes-{/i}"
     "{i}-were so moved by the act that they helped construct our school now known as Luminoire Academy.{/i}"
