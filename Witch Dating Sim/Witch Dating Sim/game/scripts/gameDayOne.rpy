@@ -184,20 +184,20 @@ elif summerAP == celesteAP:
 label houseSolis:
     "House Solis!"
     $ solis = True
-    show text "Day 1 Solis" with dissolve
-    show text "4 Days Until the Blood Moon Ritual..." with dissolve
+    # show text "Day 1 Solis" with dissolve
+    # show text "4 Days Until the Blood Moon Ritual..." with dissolve
     jump day1Solis
 
 label houseLuna:
     "House Luna!"
     $ luna = True
-    show text "Day 1 Luna" with dissolve
-    show text "4 Days Until the Blood Moon Ritual..." with dissolve
+    # show text "Day 1 Luna" with dissolve
+    # show text "4 Days Until the Blood Moon Ritual..." with dissolve
     jump day1Luna
 
 label houseStella:
     "House Stella!"
     $ stella = True
-    show text "Day 1 Stella" with dissolve
-    show text "4 Days Until the Blood Moon Ritual..." with dissolve
+    # show text "Day 1 Stella" with dissolve
+    # show text "4 Days Until the Blood Moon Ritual..." with dissolve
     jump day1Stella

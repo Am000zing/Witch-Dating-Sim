@@ -1,5 +1,4 @@
 label day1Luna:
-    play sound dingDong1
     "Through the mist, a tall, stone door grows in front of me."
     scene lunaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Moon is engraved into it."

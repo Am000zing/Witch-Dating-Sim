@@ -1,5 +1,4 @@
 label day3Luna:
-    play sound dingDong1
     scene dCommons with Fade(2.0,1.0, 2.0)
     "Yesterday was quite eventful."
     "Hopefully, things will get better soon."
