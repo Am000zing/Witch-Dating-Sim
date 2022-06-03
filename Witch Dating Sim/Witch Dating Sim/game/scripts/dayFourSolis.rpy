@@ -166,66 +166,82 @@ label day4SolisExtraPath:
     "We show up at the Greenhouse."
     "I'm nearly out of breath, but Eluna is steady."
     "Summer grunts, lifting heavy pots onto a small wagon."
+    show eluna Neutral with dissolve
     e "Summer!"
+    show eluna Neutral at left with move
+    show summer Neutral at right with dissolve
+    show e inactive at left
     s "Oh! Hiya Eluna! What brings you here?"
+    hide e inactive
+    show s inactive at right
     e "What brings me here? I'm here to help you."
-    e "What gives you the idea that you need to be doing all this heavy lifting yourself!?"
+    e Upset "What gives you the idea that you need to be doing all this heavy lifting yourself!?"
+    hide s inactive
+    show e inactive at left
     s "It's not a big deal, really."
-    e "You're going to break your back lifting all these pots and decor alone."
-    e "You're here at the academy now."
-    e "You don't have to keep doing things alone."
+    hide e inactive
+    show s inactive at right
+    e Neutral "You're going to break your back lifting all these pots and decor alone."
+    e Upset "You're here at the academy now."
+    e Neutral "You don't have to keep doing things alone."
+    hide s inactive
+    show e inactive at left
     s "..."
+    hide e inactive
+    show s inactive at right
     e "Come on, [name], let's lift these together."
-
     scene amphitheater with Fade(2.0, 0.0, 2.0)
     "Summer and I wave goodbye to Eluna and the other Luna students who came to help."
     "Summer sighs in exhaustion."
+    show summer Neutral with dissolve
     s "Well, I sure am glad at least we managed to finish all the preparations today."
     s "I really have to go thank Eluna and the other students of Luna."
-    s "..."
+    s Upset "..."
     s "Hey, [name]?"
     char "Yeah?"
-    s "I really appreciate you reaching out to the Luna students and helping me out."
+    s Smile "I really appreciate you reaching out to the Luna students and helping me out."
     s "I guess I have a bad habit of not really asking for help."
-    s "You see..."
-    s "I didn't grow up glamorous or with a lot of magical abilities to spare."
+    s Neutral "You see..."
+    s Upset "I didn't grow up glamorous or with a lot of magical abilities to spare."
     if solis AP == 11:
-        s "It felt like all of our family's magical talent went to my sister."
+        s Neutral "It felt like all of our family's magical talent went to my sister."
         s "She was perfect in every way."
         s "Strong, magical, beautiful..."
         s "I'm just..."
         "Summer gestures towards herself."
-        s "...this."
-        s "She was incredibly kind to me, but I can't say the same about my parents."
-        s "They only ever saw her."
+        s Upset "...this."
+        s "She was kind to me, but I can't say the same about my parents."
+        s Neutral "They only ever saw her."
         s "I would wonder if I ever was related to the family."
         s "I was worried that if I didn't work hard enough-"
-        s "..."
+        s Upset "..."
         "Summer takes a shaky breath."
         s "If I were able to do everything by myself..."
         s "If I could succeed at tasks without assistance..."
-        s "...that meant that I was just as good, right?"
+        s Smile "...that meant that I was just as good, right?"
         "Summer shuffles her feet from side to side."
-        s "Eluna and I have known each other since childhood."
+        s Neutral "Eluna and I have known each other since childhood."
         s "She used to help me out anytime I'd try to do anything alone."
         s "Eluna was kind of like my second older sister."
-        s "She had to move away though when I was 10."
+        s Upset "She had to move away though when I was 10."
+        s Neutral "Kind of a miracle though that we got to see each other again at Luminoire Academy."
+        s "She's just as kind as I remembered her."
         #"Summer begins to cry as she recounts the countless of times she's felt like a failure, even though it's clearly she's pushing herself past her limit."
         "Summer's eyes glisten, but she keeps a steady breath."
         s "I guess what I wanted to say was..."
-        s "...thank you."
-        s "I would've probably just worked the entire day without actually considering asking for help."
+        s Smile "...thank you."
+        s Neutral "I would've probably just worked the entire day without actually considering asking for help."
         s Smile "It sounds a little weird when you really think about it."
-        s "I'm aware it's a bad habit, but I can't seem to change it."
+        s Neutral "I'm aware it's a bad habit, but I can't seem to change it."
         #s "But as a token of thanks, I wanted to give you this."
         "She hands you a bouquet of dried flowers, all still perfectly preserved with their beauty."
         s "It's sunflowers."
-        s "They're my favorite flower."
-        s "Sunflowers are so bright and lovely."
+        s Smile "They're my favorite flower."
+        s Neutral "Sunflowers are so bright and lovely."
         s "They stand so tall and unrelenting, always facing the sun."
         s "I used to imagine being a sunflower when I was little..."
     else:
-        s "Actually, never mind, this isn't the right time to tell you"
+        s Neutral "Actually, never mind, this isn't the right time to tell you"
 
 
 label day4SolisEnd:
