@@ -35,7 +35,7 @@ label day5:
     "I arrive at the Amphitheater."
     "It's filled with the hustle and bustle of witches of all houses anticipating tonight's event."
     "Caught up in the excitement of the ritual, I feel a light tap on my shoulder -"
-    if solis == True:
+    if(solis == True):
         s "Heya, [name]!"
         s "I'm happy to see you."
         s "What do you think of the Amphitheater?"
