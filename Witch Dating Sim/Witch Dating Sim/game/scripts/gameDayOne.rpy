@@ -35,15 +35,23 @@ menu:
 label lunaHouseOptions:
     menu:
         "1 Luna":
+            $ solis = False
+            $ stella = False
             $ luna = True
             jump day1Luna
         "2 Luna":
+            $ solis = False
+            $ stella = False
             $ luna = True
             jump day2Luna
         "3 Luna":
+            $ solis = False
+            $ stella = False
             $ luna = True
             jump day3Luna
         "4 Luna":
+            $ solis = False
+            $ stella = False
             $ luna = True
             jump day4Luna
         "5 Luna":
@@ -55,36 +63,56 @@ label lunaHouseOptions:
 label stellaHouseOptions:
     menu:
         "1 Stella":
+            $ luna = False
+            $ solis = False
             $ stella = True
             jump day1Stella
         "2 Stella":
+            $ luna = False
+            $ solis = False
             $ stella = True
             jump day2Stella
         "3 Stella":
+            $ luna = False
+            $ solis = False
             $ stella = True
             jump day3Stella
         "4 Stella":
+            $ luna = False
+            $ solis = False
             $ stella = True
             jump day4Stella
         "5 Stella":
+            $ luna = False
+            $ solis = False
             $ stella = True
             jump day5
 
 label solisHouseOptions:
     menu:
         "1 Solis":
+            $ luna = False
+            $ stella = False
             $ solis = True
             jump day1Solis
         "2 Solis":
+            $ luna = False
+            $ stella = False
             $ solis = True
             jump day2Solis
         "3 Solis":
+            $ luna = False
+            $ stella = False
             $ solis = True
             jump day3Solis
         "4 Solis":
+            $ luna = False
+            $ stella = False
             $ solis = True
             jump day4Solis
         "5 Solis":
+            $ luna = False
+            $ stella = False
             $ solis = True
             jump day5
 
@@ -200,21 +228,23 @@ elif summerAP == celesteAP:
 
 label houseSolis:
     "House Solis!"
+    $ luna = False
+    $ stella = False
     $ solis = True
-    # show text "Day 1 Solis" with dissolve
-    # show text "4 Days Until the Blood Moon Ritual..." with dissolve
+
     jump day1Solis
 
 label houseLuna:
     "House Luna!"
+    $ solis = False
+    $ stella = False
     $ luna = True
-    # show text "Day 1 Luna" with dissolve
-    # show text "4 Days Until the Blood Moon Ritual..." with dissolve
+
     jump day1Luna
 
 label houseStella:
     "House Stella!"
+    $ luna = False
+    $ solis = False
     $ stella = True
-    # show text "Day 1 Stella" with dissolve
-    # show text "4 Days Until the Blood Moon Ritual..." with dissolve
     jump day1Stella
