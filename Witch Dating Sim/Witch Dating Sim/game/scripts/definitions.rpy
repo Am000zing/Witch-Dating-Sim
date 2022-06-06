@@ -8,6 +8,12 @@ define c = Character('Celeste', color='#ff94c1', image = "celeste")
 define k = Character('Circe', color='#52e5ff', image = "circe")
 define char = Character("name", dynamic=True, color='#db7fee')
 define unknown = Character("unknown", color= '#ffa9a6')
+define student1 = Character("Student 1", color='#3419ca')
+define student2 = Character("Student 2", color='#ca19a1')
+define student3 = Character("Student 3", color='#3419ca')
+define student4 = Character("Student 4", color='#ca19a1')
+define student5 = Character("Student 5", color='#3419ca')
+define student6 = Character("Student 6", color='#ca19a1')
 
 ###########################################################################################################
 
@@ -140,3 +146,5 @@ define text2 = "..//audio//SFX//TextBoxSelection2.wav"
 define whoosh = "..//audio//SFX//WindyWhoosh.wav"
 
 ###################################################################AP#############################
+
+$ day4good = False

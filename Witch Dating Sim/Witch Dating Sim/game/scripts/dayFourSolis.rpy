@@ -102,6 +102,7 @@ label day4Solis:
     "But on the other, it would take her the whole day to set up for the banquet."
     menu:
         "\"I'll be right back.\"":
+            $ day4good = True
             $ summerAP += 3
             scene amphitheater1 with Fade (2.0, 0.0, 2.0)
             "I head towards the Amphitheater."
@@ -213,7 +214,7 @@ label day4SolisExtraPath:
     s "I guess I have a bad habit of not really asking for help."
     s Neutral "You see..."
     s Upset "I didn't grow up glamorous or with a lot of magical abilities to spare."
-    if summerAP == 11:
+    if summerAP >= 11:
         s Neutral "It felt like all of our family's magical talent went to my sister."
         s "She was perfect in every way."
         s "Strong, magical, beautiful..."
