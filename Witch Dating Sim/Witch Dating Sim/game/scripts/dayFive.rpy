@@ -35,7 +35,7 @@ label day5:
     "I arrive at the Amphitheater."
     "It's filled with the hustle and bustle of witches of all houses anticipating tonight's event."
     "Caught up in the excitement of the ritual, I feel a light tap on my shoulder -"
-    if(solis == True):
+    if solis == True:
         s "Heya, [name]!"
         s "I'm happy to see you."
         s "What do you think of the Amphitheater?"
@@ -70,7 +70,7 @@ label day5:
                 s "All the people I care about will prosper from our hard work."
                 "She turn away, covering the side of her face."
                 s "You know what I mean?"
-    if(luna == True):
+    elif(luna == True):
         e "[name], glad to see you here already."
         e "I hope you're feeling better prepared for the Ritual performance."
         e "I'll be there with you, of course."
@@ -99,7 +99,7 @@ label day5:
                 e "I know."
                 e "It feels like I've been preparing myself for this moment this whole time."
                 e "I've always seen the rites performed, but I've never done it myself."
-    if(stella == True):
+    elif(stella == True):
         c "I thought it was you, [name]."
         c "I hope you've been enjoying yourself so far."
         if(celesteAP >= 11):
@@ -107,7 +107,7 @@ label day5:
             c "I've always preferred doing research solo-"
             c "-But so far I've actually quite enjoyed having a fellow partner."
             c "I hope you haven't been overthinking how the Full Moon Ritual goes."
-            c "Typically nothing crazy happens, although it'd be nice if something interesting actually happened this time."
+            c "Typically nothing crazy happens, although it'd be nice if something interesting actually occurred this time."
         else:
             c "You don't need to be too nervous about the banquet."
             c "They often play out a fancy ritual, say some words, and then sometimes something interesting happens."

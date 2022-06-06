@@ -35,41 +35,58 @@ menu:
 label lunaHouseOptions:
     menu:
         "1 Luna":
+            $ luna = True
             jump day1Luna
         "2 Luna":
+            $ luna = True
             jump day2Luna
         "3 Luna":
+            $ luna = True
             jump day3Luna
         "4 Luna":
+            $ luna = True
             jump day4Luna
         "5 Luna":
-            jump day5Luna
+            $ solis = False
+            $ stella = False
+            $ luna = True
+            jump day5
 
 label stellaHouseOptions:
     menu:
         "1 Stella":
+            $ stella = True
             jump day1Stella
         "2 Stella":
+            $ stella = True
             jump day2Stella
         "3 Stella":
+            $ stella = True
             jump day3Stella
         "4 Stella":
+            $ stella = True
             jump day4Stella
         "5 Stella":
-            jump day5Stella
+            $ stella = True
+            jump day5
 
 label solisHouseOptions:
     menu:
         "1 Solis":
+            $ solis = True
             jump day1Solis
         "2 Solis":
+            $ solis = True
             jump day2Solis
         "3 Solis":
+            $ solis = True
             jump day3Solis
         "4 Solis":
+            $ solis = True
             jump day4Solis
         "5 Solis":
-            jump day5Solis
+            $ solis = True
+            jump day5
 
 label quiz:
 play music introQuizMusic  fadein 10.0
