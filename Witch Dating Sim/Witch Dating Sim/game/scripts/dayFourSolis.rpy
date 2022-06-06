@@ -102,7 +102,7 @@ label day4Solis:
     "But on the other, it would take her the whole day to set up for the banquet."
     menu:
         "\"I'll be right back.\"":
-            $ day4good = True
+            $ day4solisGood = True
             $ summerAP += 3
             scene amphitheater1 with Fade (2.0, 0.0, 2.0)
             "I head towards the Amphitheater."

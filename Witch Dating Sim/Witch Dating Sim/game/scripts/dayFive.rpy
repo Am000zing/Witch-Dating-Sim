@@ -1,8 +1,11 @@
 label day5:
+    scene dCommons with Fade (2.0, 1.0, 2.0)
+    with Pause (2.0)
     "Tonight's the night: the Full Moon Ritual!"
     "House Stella, Luna, and Solis come together to celebrate tonight."
     "I can't lose rhythm now!"
-    "I enter the Commons, excitement filling the air."
+    play sound chatter volume 0.2 fadein 6.0
+    "Excitement fills the air of the Commons."
     student1 "I heard Eluna of House Luna is going to be performing the rites!"
     student2 "I bet she's going to be incredible!"
     student1 "She's always incredible."
@@ -31,7 +34,7 @@ label day5:
     k "Prepare your offering for the Full Moon ritual."
     k "We'll see you all soon."
 
-    scene amphitheater with Fade(2.0, 0.0, 2.0)
+    scene amphitheater1 with Fade(2.0, 0.0, 2.0)
     "I arrive at the Amphitheater."
     "It's filled with the hustle and bustle of witches of all houses anticipating tonight's event."
     "Caught up in the excitement of the ritual, I feel a light tap on my shoulder -"
@@ -40,13 +43,13 @@ label day5:
         s "I'm happy to see you."
         s "What do you think of the Amphitheater?"
         s "I hope everyone likes it."
-        if(d4good == True):
+        if(day4solisGood == True):
             s "Thank to you and the other Luna students, we were able to finish decorating in no time!"
         else:
             s "We spent all of yesterday getting the decorations done, so it better be worth it!"
         s "What are you most excited for in tonight's event?"
         menu:
-            "Hanging out with you, of course!":
+            "\"Hanging out with you, of course!\"":
                 s "Aww, that's sweet of you to say."
                 s "Just a heads up: I'll be splitting my attention tonight."
                 s "Between serving the students at the banquet table, handling the cloying crumble, and ensuring the ritual goes smoothly..."
@@ -55,12 +58,12 @@ label day5:
                 s "I promise I can find time and fit you in."
                 "She's already spread thin."
                 "Am I getting in the way?"
-            "Sneaking a bite from the banquet table.":
+            "\"Sneaking a bite from the banquet table.\"":
                 s "Honestly, I wouldn't mind sneaking a little either..."
                 s "I usually get my dinner while I'm making it!"
                 s "I love snacking."
                 s "But let's make sure that everyone has a chance to grab a bite."
-            "I'm not completely sure what to expect.":
+            "\"I'm not completely sure what to expect.\"":
                 s "That's alright!"
                 s "Actually, that's my favorite part of tonight."
                 s "Whatever you offer to the altar determines the course of the year..."
@@ -75,7 +78,7 @@ label day5:
         e "I hope you're feeling better prepared for the Ritual performance."
         e "I'll be there with you, of course."
         "She squeezes my shoulder lightly."
-        if(d4good == True):
+        if(day4lunaGood == True):
             char "Are you okay?"
             e "Just some stage-fright."
             e "Everyone gets it - even Professor Morgana."
@@ -89,13 +92,13 @@ label day5:
         e "I didn't want you to feel like I was blowing you off or something."
         "Collecting my thoughts, I turn away to try to think of a response."
         menu:
-            "You mean so much to me.":
+            "\"You mean so much to me.\"":
                 e "That's very sweet of you."
-            "I don't want to be a distraction.":
+            "\"I don't want to be a distraction.\"":
                 e "Why would you think you'd be a distraction to me?"
                 e "I believe I'm qualified enough to know what it is I want for myself-"
                 e "-And to what extent I can handle my own personal troubles."
-            "You've been working so hard for this day.":
+            "\"You've been working so hard for this day.\"":
                 e "I know."
                 e "It feels like I've been preparing myself for this moment this whole time."
                 e "I've always seen the rites performed, but I've never done it myself."
@@ -117,14 +120,14 @@ label day5:
         c "After all, they play quite the role in how the school came to be."
         c "I guess I hinted at them since the beginning, huh?"
         menu:
-            "It wasn't much of a secret.":
+            "\"It wasn't much of a secret.\"":
                 c "I suppose you're right."
                 c "After all, there's no such thing as secrets."
                 c "Only undiscovered truths."
-            "I thought you were just dragging me along.":
+            "\"I thought you were just dragging me along.\"":
                 c "That would be an incredibly callous way of having someone keep me company."
                 c "You wouldn't think me that shallow, would you?"
-            "You were more of a mystery than the fae.":
+            "\"You were more of a mystery than the fae.\"":
                 c "I guess I really keep to myself a lot."
                 c "It's been easy being around you, though."
                 c "It's nice when someone truly listens to me and returns feedback."
@@ -190,12 +193,12 @@ label day5:
         m "I already discussed this with her, so just sit down and watch."
         m "Sound good?"
         menu:
-            "I'll be cheering her on.":
+            "\"I'll be cheering her on.\"":
                 m "Good."
                 m "Go take a seat."
-            "I suppose so.":
+            "\"I suppose so.\"":
                 m "You suppose so?"
-                m "I suppose you should go take a seat."
+                m "Well, I suppose you should go take a seat."
                 "Professor Morgana briskly walks away."
     else:
         "Eluna of House Luna approaches the center stage of the amphitheater."

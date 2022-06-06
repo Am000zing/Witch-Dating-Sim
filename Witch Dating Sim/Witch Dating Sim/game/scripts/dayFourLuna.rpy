@@ -77,6 +77,7 @@ label day4Luna:
     menu:
         "\"You should prioritize practicing for the ritual since it's tomorrow.\"":
             $ elunaAP += 3
+            $ day4lunaGood = True
             e Upset "I see..."
             "She sighs deeply."
             "I hope I didn't upset her."
