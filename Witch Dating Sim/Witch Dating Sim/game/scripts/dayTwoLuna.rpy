@@ -38,8 +38,9 @@ label day2Luna:
     show morgana Neutral at left with move
     show eluna Neutral at right with dissolve
     e "It would be my pleasure, Professor."
-    hide morgana Neutral with dissolve
-    hide eluna Neutral with dissolve
+    hide morgana Neutral 
+    hide eluna Neutral
+    with dissolve
     play music cgMusic fadein 5.0
     #scene elunaDanceCG with Fade (1.0, 0.0, 1.0)
     #CG OPTION: Eluna singing/dancing
@@ -73,6 +74,7 @@ label day2Luna:
     m "No one has signed up to be Eluna's supporting lead for the Ritual."
     m "I'd like for you all to be as involved as possible with the Ritual, as we are the house responsible for the rites."
     m "Hm..."
+    play music overworldMusic fadein 6.0
     m Smile "[name], why don't you take supporting role for now?"
     "..."
     "What?"
@@ -81,7 +83,9 @@ label day2Luna:
     m "Here, read... this part of the script with her."
     show morgana Neutral at left with move
     show eluna Neutral at right with dissolve
+    show m inactive at left
     e "..."
+    hide m inactive
     "Oh boy, this has been a hell of a day."
     "I've never done plays before, nor do I have experience running lines with a partner!"
     "What should I do..."
@@ -102,9 +106,10 @@ label day2Luna:
             "I haven't shown Professor Morgana my magical prowess."
             "Maybe now is the time!"
             "I cast the spell and-"
-            show morgana Upset at left
+            # $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+            show morgana Upset at left 
             show eluna Smile at right
-#           $ sshake = Shake((0, 0, 0, 0), 1.0, dist=15)
+            with hpunch
             char "{i}THE FULL MOON IS REPRESENTATIV- {/i}"
             "Oh no, my voice was too loud!"
             m "Alright, enough of that now..."
@@ -119,6 +124,7 @@ label day2Luna:
     hide eluna Neutral with dissolve
     show morgana Neutral at center with move
     "Everyone starts packing up and getting out of their seats."
+    stop music fadeout 6.0
     m "[name]."
     "I look up at Professor Morgana peering over at me from across the room."
     m "Practice well."
@@ -138,7 +144,7 @@ label day2Luna:
     char "I'll see you then!"
     e "Yes, goodbye."
     hide eluna Neutral with dissolve
-    "She promptly leaves the room."
+    "She promptly leaves."
 
     "I slump back into my seat."
     "What a day."

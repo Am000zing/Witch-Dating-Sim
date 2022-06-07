@@ -4,7 +4,7 @@ label day3Luna:
     "Hopefully, things will get better soon."
     "I already feel the keen scrutiny of Professor Morgana..."
     e "Hey, [name]."
-    show elunaNeutral with dissolve
+    show eluna Neutral with dissolve
     "It's Eluna."
     e Neutral "Let's go run lines today."
     "Right, she had asked if I could run lines with her yesterday."
