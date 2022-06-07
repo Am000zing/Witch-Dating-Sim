@@ -30,6 +30,21 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
+Accepted to the all-girls school of magic, Luminoire Academy, you have one week to prepare for the Full Moon Banquet with one of three charming witches. Play through this witchy dating game, and discover the secrets Luminoire Academy has to offer!
+
+Tags: Visual Novel, Romance, Comedy, Slice of Life, 2D 
+
+Behold! The wonderful folks at Tangy's Taiwan:
+
+\t-Programming: Haocheng M, Amina Penafiel, Everlee Mai
+
+\t-Writing & Copyediting: Izzy C. Arcinue, JH Ronk, Ray K, Amina Penafiel, Lesley Gavin
+
+\t-Art: Alexis Lee, Alice T, Daphne F, Sophie T (@on5li7)
+
+\t-Music & SFX: Daphne F, Santiago Tavarez, Corwin Grably-Shrager
+
+We hope you enjoy!
 """)
 
 
