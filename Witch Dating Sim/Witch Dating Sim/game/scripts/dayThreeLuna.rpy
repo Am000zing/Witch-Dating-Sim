@@ -28,6 +28,7 @@ label greenhousePath:
     "We arrive at the Greenhouse."
     "I see someone that I remember passing by in the Commons."
     show summer Neutral with dissolve 
+    play music overworldMusic fadein 6.0
     unknown "Hey, Eluna! How are you?"
     show summer Neutral at left with move
     show eluna Neutral at right with dissolve
@@ -93,6 +94,7 @@ label greenhousePath:
     e "Ah, I see."
     e "Well, I hope you two had a good time."
     e "Let's get to running our lines together."
+    stop music fadeout 6.0
     e "There should be no distractions or interruptions since it's closed, so this should go smoothly."
     ##Fade scene
     jump day3FinalPathLuna
@@ -108,6 +110,7 @@ label libraryPath:
     show eluna Neutral at left with move
     show celeste Neutral at right with dissolve
     unknown "Oh! Hi, Eluna."
+    play music overworldMusic fadein 6.0
     show c inactive at right
     e "I'm sorry, I shouldn't have snuck up on you like that."
     hide c inactive
@@ -144,6 +147,7 @@ label libraryPath:
     e "I'll be right back."
     hide eluna Neutral with Dissolve(2.0)
     "Eluna briskly walks away."
+    hide c inactive
     show celeste Upset at center with move
     c Neutral "How has your time been with House Luna so far?"
     c "To my understanding, Professor Morgana is one of the more stricter professors here at Luminoire."
