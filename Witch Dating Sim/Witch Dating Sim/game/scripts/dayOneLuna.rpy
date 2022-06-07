@@ -2,7 +2,14 @@ label day1Luna:
     "Through the mist, a tall, stone door grows in front of me."
     scene lunaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Moon is engraved into it."
+    show candle at my_center with Dissolve(2.0)
+    "An ethereal voice speaks:"
+    unknown "{i}The moon gifts you the candle which holds the eternal flame.{/i}"
+    unknown "{i}May it guide you in times of uncertainty.{/i}"
+    hide candle with Dissolve(2.0)
+    unknown "{i}House of the Moon...{/i}"
     stop music fadeout 6.0
+    unknown "{i}May your journey be guided by strength.{/i}"
     "Stepping forward, I push the door open..."
     scene schoolExterior with Fade (2.0, 0.0, 2.0)
     "I'm finally here... a new witch at Luminoire Academy!"

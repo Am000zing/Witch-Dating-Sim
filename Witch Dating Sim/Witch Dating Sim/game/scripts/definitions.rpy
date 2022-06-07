@@ -57,6 +57,10 @@ image p6 = "BackgroundCG/Page_6.png"
 image p7 = "BackgroundCG/Page_7.png"
 image p8 = "BackgroundCG/Page_8.png"
 
+image quill = "graphics/quill.png"
+image candle = "graphics/candle.png"
+image tea = "graphics/teaLeaves.png"
+
 ###########################################################################################################
 
 image mNeutral_mask = AlphaMask("the_darkness_70", "Morgana/morganaNeutral.png")
@@ -147,3 +151,6 @@ define whoosh = "..//audio//SFX//WindyWhoosh.wav"
 
 ###################################################################AP#############################
 
+transform my_center:
+    xalign 0.5
+    yalign 0.5

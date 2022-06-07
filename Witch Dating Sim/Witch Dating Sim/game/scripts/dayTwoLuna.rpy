@@ -8,8 +8,10 @@ label day2Luna:
     scene amphitheater1 with Fade(2.0, 0.0, 2.0)
     "I arrive at the amphitheater, nearly out of breath."
     "The academy's layout is so puzzling with all its twists and turns, so many different entrances with just as many exits."
-    show morgana Neutral with dissolve
+    play sound walkProf volume 0.2 fadein 3.0
     m "You've barely made it on time."
+    play music overworldMusic fadein 6.0
+    show morgana Neutral with dissolve
     "I try to stand up straight and lighten my breathing."
     "So far, Professor Morgana has not pulled any punches with her sharp tongue."
     show morgana Neutral at left with move
@@ -27,6 +29,7 @@ label day2Luna:
     show morgana Smile at center with move
     hide eluna Neutral
     hide e inactive with dissolve
+    stop music fadeout 6.0
     "Profesor Morgana claps her hands with a flourish."
     m Neutral "Alright class! We will now begin the auditions for the Full Moon Ritual."
     m "It is of  utmost importance that you take this seriously, and when the Ritual begins, the rites are performed {i}perfectly{/i}." 
@@ -37,12 +40,14 @@ label day2Luna:
     e "It would be my pleasure, Professor."
     hide morgana Neutral with dissolve
     hide eluna Neutral with dissolve
+    play music cgMusic fadein 5.0
     #scene elunaDanceCG with Fade (1.0, 0.0, 1.0)
     #CG OPTION: Eluna singing/dancing
     "Everyone in the class stares at Eluna with wonder."
     "It's like she's enchanted everyone."
     "She certainly is quite... beautiful."
     m "Thank you, Eluna. You may go sit down."
+    stop music fadeout 5.0
     scene amphitheater1 with Fade (1.0, 0.0, 1.0)
     "Eluna grabs the empty seat next to mine."
     "I sit up a little straighter in my chair."

@@ -2,7 +2,14 @@ label day1Stella:
     "Through the mist, a tall, stone door grows in front of me."
     scene stellaDoor with Fade(1.0,0.0,1.0)
     "On it, the crest of the Star is engraved into it."
+    show quill at my_center with Dissolve(2.0)
+    "An ethereal voice speaks:"
+    unknown "{i}The Stars gift you the phoenix feather.{/i}"
+    unknown "{i}May it write the stories for generations upon generations of witches.{/i}"
+    hide quill with Dissolve(2.0)
+    unknown "{i}House of the Stars...{/i}"
     stop music fadeout 6.0
+    unknown "{i}May your journey be guided by knowledge.{/i}"
 
     "Stepping forward, I push the door open."
     scene schoolExterior with Fade(2.0,2.0,2.0)

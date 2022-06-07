@@ -2,7 +2,15 @@ label day1Solis:
     "Through the mist, a tall, stone door appears in front of me."
     scene solisDoor with Fade(1.0,0.0,1.0)
     "The crest of the Sun is engraved into it."
+    show tea at my_center with Dissolve(2.0)
+    "An ethereal voice speaks:"
+    unknown "{i}The Sun gifts you the tea leaves of amelioration.{/i}"
+    unknown "{i}May it soothe the pain that comes with time.{/i}"
+    hide tea with Dissolve(2.0)
+    unknown "{i}House of the Sun...{/i}"
     stop music fadeout 6.0
+    unknown "{i}May your journey be guided by patience.{/i}"
+
     "Stepping forward, I push the door open..."
     scene schoolExterior with Fade(2.0,2.0,2.0)
     "I'm finally here... a new witch at Luminoire Academy!"
