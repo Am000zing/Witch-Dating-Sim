@@ -133,6 +133,7 @@ label day4StellaCont:
     if celesteAP == 15:
         c "[name], wait, before you go!"
         "She shuffles through her bag then offers the item to me."
+        $ quill = True
         "It's a quill."
         char "Oh, thank you, Celeste!"
         c "I thought you might like it."
@@ -148,5 +149,5 @@ label day4StellaCont:
     with Pause(3.0)
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause (3.0)
-    #perfect
+    #perfect: 15
     #jump day5

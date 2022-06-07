@@ -246,6 +246,7 @@ label day4SolisExtraPath:
         s Neutral "I'm aware it's a bad habit, but I can't seem to change it."
         #s "But as a token of thanks, I wanted to give you this."
         "She hands you a bouquet of dried flowers, all still perfectly preserved with their beauty."
+        $ sunflower = True
         s "It's sunflowers."
         s Smile "They're my favorite flower."
         s Neutral "Sunflowers are so bright and lovely."

@@ -17,10 +17,10 @@ define student6 = Character("Student 6", color='#ca19a1')
 
 ###########################################################################################################
 
-image dampmask = AlphaMask("the_darkness_70", "nightAmphitheater.png")
+image dampmask = AlphaMask("the_darkness_70", "BackgroundCG/nightAmphitheater.png")
 image darkAmphitheater = Composite(
     (1920,1080),
-    (0,0), "nightAmphitheater.png",
+    (0,0), "BackgroundCG/nightAmphitheater.png",
     (0,0), "dampmask"
 )
 
@@ -147,4 +147,3 @@ define whoosh = "..//audio//SFX//WindyWhoosh.wav"
 
 ###################################################################AP#############################
 
-$ day4good = False

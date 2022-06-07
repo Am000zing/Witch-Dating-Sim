@@ -95,6 +95,7 @@ label day4Luna:
             "Eluna briskly walks away."
         "\"I actually have an assignment that I have to finish tonight.\"":
             $ elunaAP += 2
+            $ day4lunaGood = False
             e Upset "Oh, okay."
             e Neutral "It's good to focus on your studies."
             e "I should focus on practicing for the ritual anyways."
@@ -106,6 +107,7 @@ label day4Luna:
             hide eluna Neutral with dissolve
             "Eluna walks back to the Amphitheater stage."
         "\"I'd love to, but I can't I'll meet you in the Commons.\"":
+            $ day4lunaGood = False
             $ elunaAP += 1
             e Upset "But you just got here!"
             play sound sparkle volume 0.2 fadein 3.0
