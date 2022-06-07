@@ -347,11 +347,11 @@ label day5:
     "It's like it's asking for something..."
     "Should I give it something?"
     menu:
-        "Tea imbued with leaves that have healing properties" if solis == True:
+        "Tea imbued with leaves that have healing properties" if solis:
             "I hand the gift provided for me when I was selected into House Solis."
-        "A candle that, when lighted, never burns out" if luna == True:
+        "A candle that, when lighted, never burns out" if luna:
             "I hand the gift provided for me when I was selected into House Luna."
-        "The quill, made from a phoenix feather, used to write tomes" if stella == True:
+        "The quill, made from a phoenix feather, used to write tomes" if stella:
             "I hand the gift provided for me when I was selected into House Stella."
         "Nothing":
             "The light angrily bobs against my hand, and flits away."
