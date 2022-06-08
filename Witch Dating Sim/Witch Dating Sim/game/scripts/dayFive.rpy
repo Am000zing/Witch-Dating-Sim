@@ -252,9 +252,10 @@ label day5:
                 hide morgana Neutral with dissolve
     else:
         "Eluna of House Luna approaches the center stage of the amphitheater."
-        show morgana Neutral at left with dissolve
-        show eluna Neutral at right with dissolve
-        show e inactive at right 
+        show morgana Neutral at left 
+        show eluna Neutral at right 
+        with dissolve
+        show e inactive at right with dissolve
         m "Eluna, are you ready?"
         hide e inactive
         show m inactive at left

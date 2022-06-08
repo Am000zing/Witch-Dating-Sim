@@ -105,7 +105,7 @@ image e inactive = Composite(
 
 image cNeutral_mask = AlphaMask("the_darkness_70", "Celeste/celesteNeutral.png")
 image c inactive = Composite(
-    (1000,1000),
+    (950,950),
     (0,0), "Celeste/celesteNeutral.png",
     (0,0), "cNeutral_mask"
 )

@@ -38,26 +38,36 @@ label lunaHouseOptions:
             $ solis = False
             $ stella = False
             $ luna = True
+            $ day4lunaGood = True
+            $ day4solisGood = False
             jump day1Luna
         "2 Luna":
             $ solis = False
             $ stella = False
             $ luna = True
+            $ day4lunaGood = True
+            $ day4solisGood = False
             jump day2Luna
         "3 Luna":
             $ solis = False
             $ stella = False
             $ luna = True
+            $ day4lunaGood = True
+            $ day4solisGood = False
             jump day3Luna
         "4 Luna":
             $ solis = False
             $ stella = False
             $ luna = True
+            $ day4lunaGood = True
+            $ day4solisGood = False
             jump day4Luna
         "5 Luna":
             $ solis = False
             $ stella = False
             $ luna = True
+            $ day4lunaGood = True
+            $ day4solisGood = False
             jump day5
 
 label stellaHouseOptions:
@@ -66,26 +76,36 @@ label stellaHouseOptions:
             $ luna = False
             $ solis = False
             $ stella = True
+            $ day4lunaGood = False
+            $ day4solisGood = False
             jump day1Stella
         "2 Stella":
             $ luna = False
             $ solis = False
             $ stella = True
+            $ day4lunaGood = False
+            $ day4solisGood = False
             jump day2Stella
         "3 Stella":
             $ luna = False
             $ solis = False
             $ stella = True
+            $ day4lunaGood = False
+            $ day4solisGood = False
             jump day3Stella
         "4 Stella":
             $ luna = False
             $ solis = False
             $ stella = True
+            $ day4lunaGood = False
+            $ day4solisGood = False
             jump day4Stella
         "5 Stella":
             $ luna = False
             $ solis = False
             $ stella = True
+            $ day4lunaGood = False
+            $ day4solisGood = False
             jump day5
 
 label solisHouseOptions:
@@ -94,27 +114,36 @@ label solisHouseOptions:
             $ luna = False
             $ stella = False
             $ solis = True
+            $ day4lunaGood = False
+            $ day4solisGood = True
             jump day1Solis
         "2 Solis":
             $ luna = False
             $ stella = False
             $ solis = True
+            $ day4lunaGood = False
+            $ day4solisGood = True
             jump day2Solis
         "3 Solis":
             $ luna = False
             $ stella = False
             $ solis = True
+            $ day4lunaGood = False
+            $ day4solisGood = True
             jump day3Solis
         "4 Solis":
             $ luna = False
             $ stella = False
             $ solis = True
+            $ day4lunaGood = False
+            $ day4solisGood = True
             jump day4Solis
         "5 Solis":
-            $ day4lunaGood = True
             $ luna = False
             $ stella = False
             $ solis = True
+            $ day4lunaGood = False
+            $ day4solisGood = True
             jump day5
 
 label quiz:
@@ -232,7 +261,8 @@ label houseSolis:
     $ luna = False
     $ stella = False
     $ solis = True
-
+    $ day4lunaGood = False
+    $ day4solisGood = False
     jump day1Solis
 
 label houseLuna:
@@ -240,7 +270,8 @@ label houseLuna:
     $ solis = False
     $ stella = False
     $ luna = True
-
+    $ day4lunaGood = False
+    $ day4solisGood = False
     jump day1Luna
 
 label houseStella:
@@ -248,4 +279,6 @@ label houseStella:
     $ luna = False
     $ solis = False
     $ stella = True
+    $ day4lunaGood = False
+    $ day4solisGood = False
     jump day1Stella

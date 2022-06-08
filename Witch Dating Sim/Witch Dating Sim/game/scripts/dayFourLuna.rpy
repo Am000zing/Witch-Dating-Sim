@@ -16,6 +16,7 @@ label day4Luna:
     char "Professor Morgana! I didn't notice you there."
     m Smile "It's alright."
     m Neutral "There was something I wanted to talk to you about."
+    play music conflictMusic fadein 6.0
     m "I know you aren't aware of Eluna's family name and bloodline."
     m "She doesn't exactly make it clear wth many of her peers"
     m "She's always preferred to be on the down-low about these matters."
@@ -43,6 +44,8 @@ label day4Luna:
     "Seems like Eluna's under a lot of pressure nonetheless."
     "But I don't want to be an interference to Eluna's success-"
     "And her future."
+    stop music fadeout 6.0
+    play sound clap fadein 5.0
     "From behind me I hear applause."
     "Eluna must be done with her rehearsal"
     e "[name]!"
@@ -66,13 +69,14 @@ label day4Luna:
     m "Remember what I told you."
     hide morgana Upset with dissolve
     "She heads towards the rest of the class briskly."
+    play music cgMusic fadein 6.0
     show eluna Neutral with dissolve
     e "I hope Professor hasn't been giving you a hard time."
     e Smile "She really does mean well."
     e Neutral "Are you free soon?"
     e "I wanted to ask if you'd like to come with me after rehearsals to the Greenhouse."
     e "Or anywhere, really, if you don't feel like going to the Greenhouse."
-
+    stop music fadeout 5.0
     "I can feel Professor Morgana's stare from here."
     menu:
         "\"You should prioritize practicing for the ritual since it's tomorrow.\"":

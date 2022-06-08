@@ -198,6 +198,7 @@ label libraryPath:
     show eluna Neutral at center with move
     e "Hm..."
     e "Well, [name], let's run our lines."
+    stop music fadeout 6.0
     e Smile "It's nice and quiet in the library, so this should go smoothly without interruptions."
     ##fade Scene
     jump day3FinalPathLuna
@@ -212,6 +213,7 @@ label day3FinalPathLuna:
     e Smile "You've practiced hard today."
     char "Thanks for helping me!"
     e Neutral "Of course, anytime."
+    play music conflictMusic fadein 6.0
     e "..."
     e Smile "By the way, I do appreciate you accepting my request to come practice with me."
     e "And I also appreciate you socializing a bit with my friends."
@@ -228,6 +230,7 @@ label day3FinalPathLuna:
     e Neutral "I'll see you tomorrow then."
     char "Alright!"
     char "See you then."
+    stop music fadeout 6.0
     hide eluna Neutral with dissolve(2.0)
     "That was...interesting."
     "Well, I should get going anyways."
