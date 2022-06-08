@@ -24,9 +24,9 @@ label day1Stella:
     char "No way! You're Professor Circe."
 
     menu:
-        "The most experienced sorceress at Luminoire. I'm honored!":
+        "\"The most experienced sorceress at Luminoire. I'm honored!\"":
             jump StellaNeu1
-        "I loved your piece on the history of fey arcana!":
+        "\"I loved your piece on the history of fey arcana!\"":
             jump StellaGood1
 
 label StellaNeu1:
@@ -52,10 +52,9 @@ label continuingStella1:
     k "Celeste here is one of the brightest students in Luminoire."
     k Smile "Though I think she seems to spend a little too much time in the library..."
     ##"Celeste blushes and squeezes her book."
-    ##show celesteUpsetB at right
     hide c inactive
     show k inactive at left
-    c Upset "Thank you, Professor."
+    c UpsetB "Thank you, Professor."
     show c inactive at right
     hide k inactive
     k Neutral "I'll see you two tomorrow to discuss preparations for the Moonlight Ritual."

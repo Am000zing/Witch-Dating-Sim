@@ -89,9 +89,10 @@ label day4Solis:
     show s inactive at left
     t Smile "Thank you, Summer."
     t Neutral "I must go attend to the mandrakes at once."
-    hide tasha Neutral with dissolve
-    hide s inactive with dissolve
-    hide summer Neutral with dissolve
+    hide tasha Neutral
+    hide s inactive 
+    hide summer Neutral
+    with dissolve
     "Professor Tasha briskly leaves the greenhouse."
     "Summer eyes a set of boxes in the corner, and begins making her way to them."
     "She wholeheartedly agreed to Professor Tasha's request..."
@@ -168,8 +169,9 @@ label day4SolisExtraPath:
     e "I assume she's at the Greenhouse?"
     "I nod, startled by the intensity of Eluna's call to action."
     hide e inactive
-    hide eluna Neutral with dissolve
-    hide morgana Neutral with dissolve
+    hide eluna Neutral 
+    hide morgana Neutral 
+    with dissolve
     "Eluna walks off briskly."
     "I trail after her."
     scene greenhouse with Fade(1.0, 0.0, 1.0)
@@ -179,6 +181,7 @@ label day4SolisExtraPath:
     "Summer grunts, lifting heavy pots onto a small wagon."
     show eluna Neutral with dissolve
     e "Summer!"
+    play music overworldMusic fadein 6.0
     show eluna Neutral at left with move
     show summer Neutral at right with dissolve
     show e inactive at left
@@ -201,6 +204,7 @@ label day4SolisExtraPath:
     hide e inactive
     show s inactive at right
     e "Come on, [name], let's lift these together."
+    stop music fadeout 5.0
     scene amphitheater1 with Fade(2.0, 0.0, 2.0)
     "Summer and I wave goodbye to Eluna and the other Luna students who came to help."
     "Summer sighs in exhaustion."
@@ -215,6 +219,7 @@ label day4SolisExtraPath:
     s Neutral "You see..."
     s Upset "I didn't grow up glamorous or with a lot of magical abilities to spare."
     if summerAP >= 11:
+        play music conflictMusic fadein 6.0
         s Neutral "It felt like all of our family's magical talent went to my sister."
         s "She was perfect in every way."
         s "Strong, magical, beautiful..."
@@ -247,11 +252,16 @@ label day4SolisExtraPath:
         #s "But as a token of thanks, I wanted to give you this."
         "She hands you a bouquet of dried flowers, all still perfectly preserved with their beauty."
         $ sunflower = True
-        s "It's sunflowers."
+        show s inactive with dissolve
+        show sunflowers at my_center with dissolve
+        "It's sunflowers."
+        hide sunflowers with dissolve
+        hide s inactive
         s Smile "They're my favorite flower."
         s Neutral "Sunflowers are so bright and lovely."
         s "They stand so tall and unrelenting, always facing the sun."
         s "I used to imagine being a sunflower when I was little..."
+        stop music fadeout 5.0
     else:
         s Neutral "Actually, never mind, this isn't the right time to tell you"
 
@@ -275,5 +285,5 @@ label day4SolisEnd:
     with Pause(3.0)
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause(3.0)
-    # jump day5
+    jump day5
     #perfec : 11

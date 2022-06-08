@@ -60,6 +60,7 @@ image p8 = "BackgroundCG/Page_8.png"
 image quill = "graphics/quill.png"
 image candle = "graphics/candle.png"
 image tea = "graphics/teaLeaves.png"
+image sunflowers = "graphics/sunflowers.png"
 
 ###########################################################################################################
 
@@ -126,6 +127,9 @@ image summer Smile = "Summer/summerSmile.png"
 image celeste Neutral = "Celeste/celesteNeutral.png"
 image celeste Smile = "Celeste/celesteSmile.png"
 image celeste Upset = "Celeste/celesteUpset.png"
+image celeste NeutralB = "Celeste/celesteNeutralB.png"
+image celeste SmileB = "Celeste/celesteSmileB.png"
+image celeste UpsetB = "Celeste/celesteUpsetB.png"
 
 ############################################################songs_and_all_that_bizazz#############
 

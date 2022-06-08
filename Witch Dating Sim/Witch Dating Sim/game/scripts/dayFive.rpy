@@ -6,6 +6,7 @@ label day5:
     "I can't lose rhythm now!"
     play sound chatter volume 0.2 fadein 6.0
     "Excitement fills the air of the Commons."
+    play music overworldMusic fadein 6.0
     student1 "I heard Eluna of House Luna is going to be performing the rites!"
     student2 "I bet she's going to be incredible!"
     student1 "She's always incredible."
@@ -24,16 +25,24 @@ label day5:
     show tasha Neutral at center 
     show circe Neutral at left
     with dissolve
+    show t inactive at center
+    show k inactive at left
+    with dissolve
     m "Witches!"
     m "I hope you all are as excited for tonight's Full Moon Ritual as I am."
     m "I'd like to ask all of you to join us at the Amphitheater half past noon."
+    hide t inactive
+    show m inactive at right
     t "We'll be working together to decorate and prepare for tonight's ritual."
     t "Don't worry, we'll have snacks."
     t Smile "We're not interested in working you to the bone."
+    show t inactive at center
+    hide k inactive
     k Upset "Unless..."
     k Smile "I jest, of course."
     k Neutral "Now, everyone can go get ready-"
     k "Prepare your offering for the Full Moon ritual."
+    stop music fadeout 5.0
     k "We'll see you all soon."
 
     scene amphitheater1 with Fade(2.0, 0.0, 2.0)
@@ -162,11 +171,20 @@ label day5:
     show tasha Neutral at center 
     show circe Neutral at left
     with dissolve
+    show m inactive at right
+    show k inactive at left
+    with dissolve
     t "Alright, students, we've got a whole itinerary of activities for you all to do!"
+    hide m inactive
+    show t inactive at center
     m "Don't get too ahead of yourself though!"
     m "Make sure you have enough energy to be awake for the banquet tonight."
-    m "Our very own Eluna of House Luna will be performing them!"
+    m Smile "Our very own Eluna of House Luna will be performing them!"
+    hide t inactive
+    show m inactive at right
     t "Well, we should also thank Summer of House Solis for setting up the amphitheater so nicely."
+    hide k inactive
+    show t inactive at center
     k "Alright, enough of bragging about your own students."
     k "Away you all go!"
     scene amphitheater1 with dissolve
@@ -269,8 +287,11 @@ label day5:
     "She takes a deep breath."
     e "The Full Moon is representative of the cycles of life."
     "Eluna brings her arms up, and slowly twirls in place."
+    play sound sparkle volume 0.4 fadein 3.0
     "Purple specks of light crackle around her."
+    play music conflictMusic fadein 3.0
     e "The waxing and waning of the moon are a reminder to every individual-"
+    stop sound fadeout 3.0
     e "-to every witch-"
     e "-that our magic is only as great as the person."
     e "That our magic is only as persistent as the individual who practices."
@@ -288,72 +309,106 @@ label day5:
         e "-please continue to protect us!"
     
     hide eluna Neutral with dissolve
+    stop music fadeout 3.0
     "Eluna takes a deep breath."
     "The amphitheater is quiet."
     "All the students-"
     "-myself included-"
     "-are in awe of her performance."
+    play music cgMusic fadein 10.0
     "Then, little lights start pulsing in the Amphitheater."
     scene amphitheater3 with Dissolve(3.0)
     "What are they...?"
     if(solis == True):
+        show summer Neutral with dissolve
         s "I don't believe my eyes!"
         s "Faeries!"
         "A gentle light bobs on my hand."
-        s "Aww, one's taken a liking to you!"
+        s Smile "Aww, one's taken a liking to you!"
         "The light shape weaves and bobs around me, and then takes off away towards other students."
-        s "They're so beautiful."
+        s Neutral "They're so beautiful."
         s "..."
         s "[name], thanks for being here with me these past couple of days."
-        s "It's been a lot of fun!"
+        s Smile "It's been a lot of fun!"
         s "It's important also to focus on your studies."
         s "I hope you continue to visit me in the Greenhouse though!"
         s "I'll catch you later."
+        hide summer Neutral with Dissolve(2.0)
     if(luna == True):
         "A gentle light bobs on my hand."
         "Is it...?"
+        show eluna Neutral with dissolve
         e "Thank you faeries, for visiting us."
         e "We are indebted to you."
         "The light shape weaves and bobs around me, and then takes off away towards other students."
         "Eluna bows, exits stage, and walks towards me."
         e "What do you think of the faeries?"
-        e "I'm going to miss seeing them every Full Moon Ritual."
-        e "..."
+        e Smile "I'm going to miss seeing them every Full Moon Ritual."
+        e Neutral "..."
         e "Thank you, by the way, for having been with me these past few days."
         e "I hope you continue to focus on your studies-"
         e "-and one day you'll catch up to me."
-        e "I'm always around until graduation to help out in any way I can."
+        e Smile "I'm always around until graduation to help out in any way I can."
         e "I'll always be within reach."
-        e "I'm going to converse with the professors for a bit, and then head off."
+        e Neutral "I'm going to converse with the professors for a bit, and then head off."
         e "Don't be a stranger."
+        hide eluna Neutral with dissolve
     if(stella == True):
+        show celeste Neutral with dissolve
         c "Faeries..."
         "A gentle light bobs on my hand."
         c "They're here."
         "I attempt to make sense of the light shape on my hand."
-        c "They take the appearance of what is most comprehensible to the perceiver."
+        c Upset "They take the appearance of what is most comprehensible to the perceiver."
         c "Much like angels, their true form cannot be coherently perceived by humans."
         c "Even humans with magic in our blood cannot comprehend faeries."
         "The light shape weaves and bobs around me, and then takes off away towards other students."
-        c "Fascinating."
+        c Neutral "Fascinating."
         c "..."
         c "[name]..."
         c "Thanks for hanging out with me these past few days."
-        c "I really appreciate it."
-        c "However, after tonight, we're going to have to go back to normalcy."
-        c "I'm usually studying in the library, if you ever want to talk or hang out."
+        c Smile "I really appreciate it."
+        c Upset "However, after tonight, we're going to have to go back to normalcy."
+        c Neutral"I'm usually studying in the library, if you ever want to talk or hang out."
         c "I'll see you around."
+        hide celeset Neutral with dissolve
     "She leaves, and I'm left standing around in the Amphitheater alone."
     "A bright light approaches me..."
     "It's like it's asking for something..."
     "Should I give it something?"
     menu:
         "Tea imbued with leaves that have healing properties" if solis:
+            show tea at my_center with dissolve
             "I hand the gift provided for me when I was selected into House Solis."
+            hide tea with dissolve
+            jump genEnd
         "A candle that, when lighted, never burns out" if luna:
             "I hand the gift provided for me when I was selected into House Luna."
+            jump genEnd
         "The quill, made from a phoenix feather, used to write tomes" if stella:
             "I hand the gift provided for me when I was selected into House Stella."
+            jump genEnd
+        "A bouquet of dried sunflowers" if sunflower:
+            "I hand Summer's gift to the faerie."
         "Nothing":
-            "The light angrily bobs against my hand, and flits away."
-        
+            jump badEnd
+    
+    label badEnd:
+        "The light angrily bobs against my hand, and flits away."
+    
+    label genEnd:
+        "..."
+        "It's quiet around me."
+        "Then a light voice speaks:"
+        unknown "Your generous offering..."
+        unknown "The gift from Luminoire..."
+        unknown "..."
+        unknown "May your House be blessed upon the coming year."
+        "..."
+        "The faeries have departed, and most of the students have left."
+        scene amphitheater2 with Dissolve (2.0)
+        "I sit in comfortable silence."
+        "It's been an interesting first couple days."
+        "I hope I can continue to make good memories."
+        "I should head back to the Commons."
+        "I wonder what will happen tomorrow..."

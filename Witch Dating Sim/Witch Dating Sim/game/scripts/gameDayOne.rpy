@@ -40,6 +40,7 @@ label lunaHouseOptions:
             $ luna = True
             $ day4lunaGood = True
             $ day4solisGood = False
+            $ sunflower = False
             jump day1Luna
         "2 Luna":
             $ solis = False
@@ -47,6 +48,7 @@ label lunaHouseOptions:
             $ luna = True
             $ day4lunaGood = True
             $ day4solisGood = False
+            $ sunflower = False
             jump day2Luna
         "3 Luna":
             $ solis = False
@@ -54,6 +56,7 @@ label lunaHouseOptions:
             $ luna = True
             $ day4lunaGood = True
             $ day4solisGood = False
+            $ sunflower = False
             jump day3Luna
         "4 Luna":
             $ solis = False
@@ -61,6 +64,7 @@ label lunaHouseOptions:
             $ luna = True
             $ day4lunaGood = True
             $ day4solisGood = False
+            $ sunflower = False
             jump day4Luna
         "5 Luna":
             $ solis = False
@@ -68,6 +72,7 @@ label lunaHouseOptions:
             $ luna = True
             $ day4lunaGood = True
             $ day4solisGood = False
+            $ sunflower = False
             jump day5
 
 label stellaHouseOptions:
@@ -78,6 +83,7 @@ label stellaHouseOptions:
             $ stella = True
             $ day4lunaGood = False
             $ day4solisGood = False
+            $ sunflower = False
             jump day1Stella
         "2 Stella":
             $ luna = False
@@ -85,6 +91,7 @@ label stellaHouseOptions:
             $ stella = True
             $ day4lunaGood = False
             $ day4solisGood = False
+            $ sunflower = False
             jump day2Stella
         "3 Stella":
             $ luna = False
@@ -92,6 +99,7 @@ label stellaHouseOptions:
             $ stella = True
             $ day4lunaGood = False
             $ day4solisGood = False
+            $ sunflower = False
             jump day3Stella
         "4 Stella":
             $ luna = False
@@ -99,6 +107,7 @@ label stellaHouseOptions:
             $ stella = True
             $ day4lunaGood = False
             $ day4solisGood = False
+            $ sunflower = False
             jump day4Stella
         "5 Stella":
             $ luna = False
@@ -106,6 +115,7 @@ label stellaHouseOptions:
             $ stella = True
             $ day4lunaGood = False
             $ day4solisGood = False
+            $ sunflower = False
             jump day5
 
 label solisHouseOptions:
@@ -116,6 +126,7 @@ label solisHouseOptions:
             $ solis = True
             $ day4lunaGood = False
             $ day4solisGood = True
+            $ sunflower = False
             jump day1Solis
         "2 Solis":
             $ luna = False
@@ -123,6 +134,7 @@ label solisHouseOptions:
             $ solis = True
             $ day4lunaGood = False
             $ day4solisGood = True
+            $ sunflower = False
             jump day2Solis
         "3 Solis":
             $ luna = False
@@ -130,6 +142,7 @@ label solisHouseOptions:
             $ solis = True
             $ day4lunaGood = False
             $ day4solisGood = True
+            $ sunflower = False
             jump day3Solis
         "4 Solis":
             $ luna = False
@@ -137,6 +150,8 @@ label solisHouseOptions:
             $ solis = True
             $ day4lunaGood = False
             $ day4solisGood = True
+            $ sunflower = False
+            $ summerAP += 11
             jump day4Solis
         "5 Solis":
             $ luna = False
@@ -144,6 +159,7 @@ label solisHouseOptions:
             $ solis = True
             $ day4lunaGood = False
             $ day4solisGood = True
+            $ sunflower = False
             jump day5
 
 label quiz:
@@ -263,6 +279,7 @@ label houseSolis:
     $ solis = True
     $ day4lunaGood = False
     $ day4solisGood = False
+    $ sunflower = False
     jump day1Solis
 
 label houseLuna:
@@ -272,6 +289,7 @@ label houseLuna:
     $ luna = True
     $ day4lunaGood = False
     $ day4solisGood = False
+    $ sunflower = False
     jump day1Luna
 
 label houseStella:
@@ -281,4 +299,5 @@ label houseStella:
     $ stella = True
     $ day4lunaGood = False
     $ day4solisGood = False
+    $ sunflower = False
     jump day1Stella

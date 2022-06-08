@@ -10,12 +10,12 @@ label day2Stella:
     k Smile "Oh, [name]! Good morning!"
     k Neutral "I hope you've been getting comfortable here."
     menu: 
-        "Ah...I'm still getting used to it...":
+        "\"Ah...I'm still getting used to it...\"":
             $ celesteAP += 2
             k "That's understandable. It's only your first day, after all."
             k "But you'll do great! I just know it."
 
-        "I'm eager to learn more about everything!":
+        "\"I'm eager to learn more about everything!\"":
             $ celesteAP += 3
             k Smile "That's the spirit! I assure you that you'll take much interest in some of my lessons."
             k Neutral "It'll be fun! I can hardly wait myself..."
@@ -35,8 +35,9 @@ label day2Stella:
     with Pause(1.0)
     "I push the door open and and the first thing I see is rows upon rows of books."
     ##"Celeste notices me enter."
-    show circe Neutral at left with dissolve
-    show celeste Neutral at right with dissolve
+    show circe Neutral at left 
+    show celeste Neutral at right
+    with dissolve
     show k inactive at left
     c Neutral "Ah, good morning."
     ##"Circe flashes a smile at me."
@@ -88,7 +89,7 @@ label StellaNeu2:
     c "I can't seem to find any sources quite yet, but it's also believed that they used it to announce important things."
     c "As witches learned Florae, the general public dismissed their messages as myths."
     "Celeste blinks and gently places the book back on the table. She laughs sheepishly."
-    c Smile "Sorry, I’ve been rambling on and on, and we haven’t even gotten started on the Full Moon ritual history research!"
+    c SmileB "Sorry, I’ve been rambling on and on, and we haven’t even gotten started on the Full Moon ritual history research!"
     jump continuingStella2
 
 label StellaGood2:
