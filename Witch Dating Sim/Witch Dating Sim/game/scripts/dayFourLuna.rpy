@@ -102,7 +102,6 @@ label day4Luna:
                 $ hairclip = True
                 e Smile "It's a reminder that we're going to meet up later, okay?"
                 e "I'm holding you to it."
-            else:
             hide eluna Smile with dissolve
             "Eluna briskly walks away."
         "\"I actually have an assignment that I have to finish tonight.\"":
