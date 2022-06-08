@@ -23,6 +23,14 @@ if name == "Gamespawn" or name == "gamespawn":
         "Solis House":
             jump solisHouseOptions
 
+if name == "credits":
+    menu:
+        "Jump to credits?"
+        "Yes":
+            jump credits
+        "No":
+            jump start
+
 menu:
     "Your name is [name], correct?"
     "Yes":
