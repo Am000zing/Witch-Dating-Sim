@@ -397,16 +397,16 @@ label day5:
             "I hand Summer's gift to the faerie."
             hide sunflowers with dissolve
             jump solisEnd
-        # "A violet from the Evergarden" if violet:
-        #     show violet at my_center with dissolve
-        #     "I hand Celeste's gift to the faerie."
-        #     hide violet with dissolve
-        #     jump stellaEnd
-        # "A hairclip adorned with the sun, moon, and stars" if hairclip:
-        #     show hairclip at my_center with dissolve
-        #     "I hand Eluna's gift to the faerie."
-        #     hide hairclip with dissolve
-        #     jump lunaEnd
+        "A violet from the Evergarden" if violet:
+            #show violet at my_center with dissolve
+            "I hand Celeste's gift to the faerie."
+            #hide violet with dissolve
+            jump stellaEnd
+        "A hairclip adorned with the sun, moon, and stars" if hairclip:
+            #show hairclip at my_center with dissolve
+            "I hand Eluna's gift to the faerie."
+            #hide hairclip with dissolve
+            jump lunaEnd
         "Nothing":
             jump badEnd
     
