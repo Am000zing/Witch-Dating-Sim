@@ -383,18 +383,34 @@ label day5:
             hide tea with dissolve
             jump genEnd
         "A candle that, when lighted, never burns out" if luna:
+            show candle at my_center with dissolve
             "I hand the gift provided for me when I was selected into House Luna."
+            hide candle with dissolve
             jump genEnd
         "The quill, made from a phoenix feather, used to write tomes" if stella:
+            show quill at my_center with dissolve
             "I hand the gift provided for me when I was selected into House Stella."
+            hide quill with dissolve
             jump genEnd
         "A bouquet of dried sunflowers" if sunflower:
+            show sunflowers at my_center with dissolve
             "I hand Summer's gift to the faerie."
+            hide sunflowers with dissolve
+            jump solisEnd
         "Nothing":
             jump badEnd
     
     label badEnd:
         "The light angrily bobs against my hand, and flits away."
+        "..."
+        "It's quiet around me."
+        "..."
+        "The faeries have departed, and most of the students have left."
+        scene amphitheater2 with Dissolve (2.0)
+        "I sit in silence."
+        "It's been an interesting first couple days."
+        "I should head back to the Commons."
+        "I wonder what will come upon me tomorrow..."
     
     label genEnd:
         "..."
@@ -413,5 +429,55 @@ label day5:
         "I should head back to the Commons."
         "I wonder what will happen tomorrow..."
     
+    label solisEnd:
+        "..."
+        "It's quiet around me."
+        "Then a light voice speaks:"
+        unknown "Your generous offering..."
+        unknown "The gift from one who has their entire faith in you..."
+        unknown "..."
+        unknown "May your bonds be strengthened upon the coming year."
+        "..."
+        "The faeries have departed, and most of the students have left."
+        scene amphitheater2 with Dissolve (2.0)
+        "I sit in comfortable silence."
+        "It's been an interesting first couple days."
+        "I hope I can continue to make good memories."
+        "I should head back to the Commons."
+        "I wonder what will happen tomorrow..."
+
+    label lunaEnd:
+        "..."
+        "It's quiet around me."
+        "Then a light voice speaks:"
+        unknown "Your generous offering..."
+        unknown "The gift from one who seeks their support in you..."
+        unknown "..."
+        unknown "May your bonds be strengthened upon the coming year."
+        "..."
+        "The faeries have departed, and most of the students have left."
+        scene amphitheater2 with Dissolve (2.0)
+        "I sit in comfortable silence."
+        "It's been an interesting first couple days."
+        "I hope I can continue to make good memories."
+        "I should head back to the Commons."
+        "I wonder what will happen tomorrow..."
+
+    label stellaEnd:
+        "..."
+        "It's quiet around me."
+        "Then a light voice speaks:"
+        unknown "Your generous offering..."
+        unknown "The gift from one who absolutely trusts you..."
+        unknown "..."
+        unknown "May your bonds be strengthened upon the coming year."
+        "..."
+        "The faeries have departed, and most of the students have left."
+        scene amphitheater2 with Dissolve (2.0)
+        "I sit in comfortable silence."
+        "It's been an interesting first couple days."
+        "I hope I can continue to make good memories."
+        "I should head back to the Commons."
+        "I wonder what will happen tomorrow..."
 
     jump credits
