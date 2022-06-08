@@ -412,3 +412,6 @@ label day5:
         "I hope I can continue to make good memories."
         "I should head back to the Commons."
         "I wonder what will happen tomorrow..."
+    
+
+    jump credits

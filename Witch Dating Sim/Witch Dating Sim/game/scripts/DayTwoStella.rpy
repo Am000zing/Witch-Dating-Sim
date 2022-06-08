@@ -75,7 +75,7 @@ label StellaBad1:
     $ celesteAP += 1
     show celeste Upset
     "Celeste tenses up for a moment, taken aback."
-    c Upset "If you’re going to be a part of Stella, you have to take your studies seriously."
+    c UpsetB "If you’re going to be a part of Stella, you have to take your studies seriously."
     c "There has been evidence regarding the existence of fairies."
     c Neutral "We'd need to find out for sure."
     jump continuingStella2

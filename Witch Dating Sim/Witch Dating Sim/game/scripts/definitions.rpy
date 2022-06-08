@@ -61,6 +61,7 @@ image quill = "graphics/quill.png"
 image candle = "graphics/candle.png"
 image tea = "graphics/teaLeaves.png"
 image sunflowers = "graphics/sunflowers.png"
+image credits = "graphics/credits.png"
 
 ###########################################################################################################
 
@@ -159,3 +160,6 @@ transform my_center:
     xalign 0.5
     yalign 0.5
 
+transform my_right:
+    xalign 0.7
+    yalign 0.5
