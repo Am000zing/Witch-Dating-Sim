@@ -375,6 +375,7 @@ label day5:
     "She leaves, and I'm left standing around in the Amphitheater alone."
     "A bright light approaches me..."
     "It's like it's asking for something..."
+    stop music fadeout 5.0
     "Should I give it something?"
     menu:
         "Tea imbued with leaves that have healing properties" if solis:
