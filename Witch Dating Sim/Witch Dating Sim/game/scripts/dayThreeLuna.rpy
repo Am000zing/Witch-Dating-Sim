@@ -138,7 +138,7 @@ label libraryPath:
     ##show celesteUpsetB 
     hide c inactive
     show e inactive at left
-    c Upset "..."
+    c UpsetB "..."
     hide e inactive
     show c inactive at right
     e Smile "I'm just teasing, of course."
@@ -148,7 +148,7 @@ label libraryPath:
     hide eluna Neutral with Dissolve(2.0)
     "Eluna briskly walks away."
     hide c inactive
-    show celeste Upset at center with move
+    show celeste UpsetB at center with move
     c Neutral "How has your time been with House Luna so far?"
     c "To my understanding, Professor Morgana is one of the more stricter professors here at Luminoire."
     c "I hope she hasn't been giving you a hard time."
@@ -180,7 +180,7 @@ label libraryPath:
     c Smile "She might come off as distant when you first meet her, but she means well."
     c Neutral "She's always valued family and community, and it's really admirable how hard-working she is."
     e "[name], sorry for taking so long."
-    c "Oh!"
+    c UpsetB "Oh!"
     "Eluna enters quickly into the library."
     ##show celesteNeutralB
     show celeste Neutral at left with move
@@ -189,9 +189,9 @@ label libraryPath:
     e Neutral "What were you two up to?"
     hide c inactive
     show e inactive at right
-    c Upset "N-nothing!"
+    c UpsetB "N-nothing!"
     c "You both need to go practice for the Ritual right?"
-    c "I should go study. Professor Circe must be expecting me anyways."
+    c Neutral "I should go study. Professor Circe must be expecting me anyways."
     hide celeste Neutral with dissolve
     "Celeste runs out of the library."
     hide e inactive with dissolve

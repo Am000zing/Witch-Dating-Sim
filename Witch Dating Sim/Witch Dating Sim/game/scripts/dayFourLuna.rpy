@@ -95,6 +95,14 @@ label day4Luna:
             e "Just go out somewhere to celebrate the successes of the Full Moon Ritual, you know?"
             e "I should go back and practice."
             e Smile "I'll catch you back at the Commons!"
+            if elunaAP == 13:
+                e Neutral "Before you go-"
+                "Eluna hands me an object."
+                #show hairclip
+                $ hairclip = True
+                e Smile "It's a reminder that we're going to meet up later, okay?"
+                e "I'm holding you to it."
+            else:
             hide eluna Smile with dissolve
             "Eluna briskly walks away."
         "\"I actually have an assignment that I have to finish tonight.\"":

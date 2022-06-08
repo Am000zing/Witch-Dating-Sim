@@ -65,8 +65,9 @@ label day3Stella:
     hide t inactive
     show c inactive at left
     t Neutral "Make sure her head is screwed on, alright?"
-    hide tasha Neutral with dissolve
-    hide c inactive with dissolve
+    hide tasha Neutral 
+    hide c inactive 
+    with dissolve
     "Tasha leaves the Greenhouse, chuckling to herself."
     show celeste Neutral at center with move
     c Upset "I can't believe she heard me say that..."
@@ -104,8 +105,8 @@ label day3Stella:
     s "Well-"
     hide c inactive
     show s inactive at right
-    c Upset "No!"
-    c "Nothing happened."
+    c UpsetB "No!"
+    c Upset "Nothing happened."
     c "I'm going to be in the garden for a bit."
     stop music fadeout 6.0
     hide celeste Upset with dissolve
@@ -165,7 +166,7 @@ label day3Stella:
         c Smile "Here, I picked one for you!"
         #show violet at center
         "She hands me a vibrant violet."
-        c Neutral "Isn't this such a perfect flower?"
+        c NeutralB "Isn't this such a perfect flower?"
         char "Yeah, it's very pretty."
         "I can feel Summer peering over at us..."
         "My face feels really warm..."
@@ -193,7 +194,7 @@ label day3Stella:
     
     hide c inactive
     show s inactive at left
-    c "We should head back to the Commons."
+    c Neutral "We should head back to the Commons."
     "Celeste tightens her grip on the book."
     c "There's a lot I need to tell you!"
     stop music fadeout 6.0

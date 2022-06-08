@@ -32,7 +32,7 @@ label day4StellaBad:
     "She looks in my direction."
     #blush
     show celeste Upset with dissolve
-    c "We're in a library. Please don't do that again."
+    c UpsetB "We're in a library. Please don't do that again."
     char "A-ah, sorry."
     jump day4StellaCont
 
@@ -113,9 +113,9 @@ label day4StellaCont:
     show celeste Neutral with dissolve
     c "It's kind of romantic, don't you think?"
     c "The motivation to create something so grand and so powerful because of something like love?"
-    c "I wonder what it's like to love someone so strongly."
+    c NeutralB "I wonder what it's like to love someone so strongly."
 
-    c "Ah, I can't believe telling that story took so much time!"
+    c Neutral "Ah, I can't believe telling that story took so much time!"
     c "I really should get going to the rites prep for the Ritual."
     c "You don't need to stay with me for this."
     stop music fadeout 6.0

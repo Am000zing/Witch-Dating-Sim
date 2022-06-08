@@ -136,7 +136,7 @@ label day5:
         if(celesteAP == 11):
             c Smile "I've been enjoying myself these past few days, thanks to you."
             c Neutral "I've always preferred doing research solo-"
-            c "-But so far I've actually quite enjoyed having a fellow partner."
+            c NeutralB "-But so far I've actually quite enjoyed having a fellow partner."
             c Upset "I hope you haven't been overthinking how the Full Moon Ritual goes."
             c Neutral "Typically nothing crazy happens, although it'd be nice if something interesting actually occurred this time."
         else:
@@ -150,21 +150,21 @@ label day5:
         menu:
             "\"It wasn't much of a secret.\"":
                 $ celesteAP += 3
-                c Smile "I suppose you're right."
+                c SmileB "I suppose you're right."
                 c Neutral "After all, there's no such thing as secrets."
                 c "Only undiscovered truths."
                 hide celeste Neutral with dissolve
             "\"I thought you were just dragging me along.\"":
                 $ celesteAP += 1
-                c Upset "That would be an incredibly callous way of having someone keep me company."
+                c UpsetB "That would be an incredibly callous way of having someone keep me company."
                 c "You wouldn't think me that shallow, would you?"
-                hide celeste Upset with dissolve
+                hide celeste UpsetB with dissolve
             "\"You were more of a mystery than the fae.\"":
                 $ celesteAP += 2
                 c "I guess I really keep to myself a lot."
                 c "It's been easy being around you, though."
-                c Smile "It's nice when someone truly listens to me and returns feedback."
-                hide celeste Smile with dissolve
+                c SmileB "It's nice when someone truly listens to me and returns feedback."
+                hide celeste SmileB with dissolve
     
     "From a distance, the professors call for all the students to commune at the amphitheater."
     show morgana Neutral at right 
@@ -209,8 +209,8 @@ label day5:
         c Smile "That would be really nice..."
         c Neutral "I've never really taken part in it very actively-"
         if(celesteAP == 15):
-            c Smile "-So I'd prefer if I were with you the whole time."
-            c Neutral "If that's alright of course."
+            c SmileB "-So I'd prefer if I were with you the whole time."
+            c NeutralB "If that's alright of course."
         else:
             c Neutral "If you're okay with it, I'd like to stick with you."
         char "Of course that's alright."
@@ -367,11 +367,11 @@ label day5:
         c "..."
         c "[name]..."
         c "Thanks for hanging out with me these past few days."
-        c Smile "I really appreciate it."
+        c SmileB "I really appreciate it."
         c Upset "However, after tonight, we're going to have to go back to normalcy."
         c Neutral"I'm usually studying in the library, if you ever want to talk or hang out."
         c "I'll see you around."
-        hide celeset Neutral with dissolve
+        hide celeste Neutral with dissolve
     "She leaves, and I'm left standing around in the Amphitheater alone."
     "A bright light approaches me..."
     "It's like it's asking for something..."
@@ -397,6 +397,16 @@ label day5:
             "I hand Summer's gift to the faerie."
             hide sunflowers with dissolve
             jump solisEnd
+        # "A violet from the Evergarden" if violet:
+        #     show violet at my_center with dissolve
+        #     "I hand Celeste's gift to the faerie."
+        #     hide violet with dissolve
+        #     jump stellaEnd
+        # "A hairclip adorned with the sun, moon, and stars" if hairclip:
+        #     show hairclip at my_center with dissolve
+        #     "I hand Eluna's gift to the faerie."
+        #     hide hairclip with dissolve
+        #     jump lunaEnd
         "Nothing":
             jump badEnd
     
@@ -434,6 +444,7 @@ label day5:
         "It's quiet around me."
         "Then a light voice speaks:"
         unknown "Your generous offering..."
+        unknown "Solis..."
         unknown "The gift from one who has their entire faith in you..."
         unknown "..."
         unknown "May your bonds be strengthened upon the coming year."
@@ -451,6 +462,7 @@ label day5:
         "It's quiet around me."
         "Then a light voice speaks:"
         unknown "Your generous offering..."
+        unknown "Luna..."
         unknown "The gift from one who seeks their support in you..."
         unknown "..."
         unknown "May your bonds be strengthened upon the coming year."
@@ -468,6 +480,7 @@ label day5:
         "It's quiet around me."
         "Then a light voice speaks:"
         unknown "Your generous offering..."
+        unknown "Stella..."
         unknown "The gift from one who absolutely trusts you..."
         unknown "..."
         unknown "May your bonds be strengthened upon the coming year."

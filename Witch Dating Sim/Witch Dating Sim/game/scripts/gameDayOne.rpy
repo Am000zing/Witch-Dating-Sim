@@ -49,6 +49,8 @@ label lunaHouseOptions:
             $ day4lunaGood = True
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = True
+            $ violet = False
             jump day1Luna
         "2 Luna":
             $ solis = False
@@ -57,6 +59,8 @@ label lunaHouseOptions:
             $ day4lunaGood = True
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = True
+            $ violet = False
             jump day2Luna
         "3 Luna":
             $ solis = False
@@ -65,6 +69,8 @@ label lunaHouseOptions:
             $ day4lunaGood = True
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = True
+            $ violet = False
             jump day3Luna
         "4 Luna":
             $ solis = False
@@ -73,6 +79,8 @@ label lunaHouseOptions:
             $ day4lunaGood = True
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = True
+            $ violet = False
             jump day4Luna
         "5 Luna":
             $ solis = False
@@ -81,6 +89,8 @@ label lunaHouseOptions:
             $ day4lunaGood = True
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = True
+            $ violet = False
             jump day5
 
 label stellaHouseOptions:
@@ -92,6 +102,8 @@ label stellaHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = False
+            $ violet = True
             jump day1Stella
         "2 Stella":
             $ luna = False
@@ -100,6 +112,8 @@ label stellaHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = False
+            $ violet = True
             jump day2Stella
         "3 Stella":
             $ luna = False
@@ -108,6 +122,8 @@ label stellaHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = False
+            $ violet = True
             jump day3Stella
         "4 Stella":
             $ luna = False
@@ -116,6 +132,8 @@ label stellaHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = False
+            $ violet = True
             jump day4Stella
         "5 Stella":
             $ luna = False
@@ -124,6 +142,8 @@ label stellaHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = False
             $ sunflower = False
+            $ hairclip = False
+            $ violet = True
             jump day5
 
 label solisHouseOptions:
@@ -135,6 +155,8 @@ label solisHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = True
             $ sunflower = False
+            $ hairclip = False
+            $ violet = False
             jump day1Solis
         "2 Solis":
             $ luna = False
@@ -143,6 +165,8 @@ label solisHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = True
             $ sunflower = False
+            $ hairclip = False
+            $ violet = False
             jump day2Solis
         "3 Solis":
             $ luna = False
@@ -151,6 +175,8 @@ label solisHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = True
             $ sunflower = False
+            $ hairclip = False
+            $ violet = False
             jump day3Solis
         "4 Solis":
             $ luna = False
@@ -159,6 +185,8 @@ label solisHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = True
             $ sunflower = False
+            $ hairclip = False
+            $ violet = False
             $ summerAP += 11
             jump day4Solis
         "5 Solis":
@@ -168,6 +196,8 @@ label solisHouseOptions:
             $ day4lunaGood = False
             $ day4solisGood = True
             $ sunflower = False
+            $ hairclip = False
+            $ violet = False
             jump day5
 
 label quiz:
@@ -288,6 +318,8 @@ label houseSolis:
     $ day4lunaGood = False
     $ day4solisGood = False
     $ sunflower = False
+    $ hairclip = False
+    $ violet = False
     jump day1Solis
 
 label houseLuna:
@@ -298,6 +330,8 @@ label houseLuna:
     $ day4lunaGood = False
     $ day4solisGood = False
     $ sunflower = False
+    $ hairclip = False
+    $ violet = False
     jump day1Luna
 
 label houseStella:
@@ -308,4 +342,6 @@ label houseStella:
     $ day4lunaGood = False
     $ day4solisGood = False
     $ sunflower = False
+    $ hairclip = False
+    $ violet = False
     jump day1Stella
