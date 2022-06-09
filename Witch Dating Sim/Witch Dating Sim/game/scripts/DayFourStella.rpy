@@ -153,4 +153,4 @@ label day4StellaCont:
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause (3.0)
     #perfect: 15
-    #jump day5
+    jump day5
