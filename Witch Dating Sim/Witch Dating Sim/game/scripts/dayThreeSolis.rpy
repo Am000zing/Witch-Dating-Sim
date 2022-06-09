@@ -7,13 +7,15 @@ label day3Solis:
 
     "From the front desk, Summer spots me and waves cheerily, standing next the history instructor, Professor Circe."
     show summer Neutral with dissolve
-    s "Morning, sunshine."
-    s "Got enough sleep yesterday?"
+    s Smile "Morning, sunshine."
+    s Neutral "Got enough sleep yesterday?"
     s Smile "Prepare to be worked to the bone."
+    play music overworldMusic fadein 6.0
     s Neutral "Today, we're hitting the books!"
     show summer Neutral at right with move
-    show circe Neutral at left with dissolve
-    show s inactive at right
+    show circe Neutral at left 
+    show s inactive at right 
+    with dissolve
     k Neutral "Good morning, [name]."
     k "I've heard from Dr. Tasha that you'll be researching magical dishes."
     k "I'm here to offer my guidance in any way I can."
@@ -26,13 +28,13 @@ label day3Solis:
     show circe Neutral with dissolve
     k "Typically, the Library is reserved to my studious Stella witches..."
     k Smile "But I'll gladly make an exception for the both of you"
-    play sound whoosh volume 0.2 fadein 5.0
+    play sound whoosh volume 0.2 fadein 2.0
     "Casting a spell on the books, they begin to flow and float from the shelves, encircling, Circe, Summer, and I in the air."
     k Neutral "Besides, finding recipes for the banquet is an exciting task!"
     k "We have recipe books from ages past..."
     show circe Neutral at left with move
     show summer Neutral at right with dissolve
-    show k inactive at left
+    show k inactive at left with dissolve
     s Neutral "Oh, I think what we're looking for is much simpler than you think."
     hide k inactive
     "The books begins to spin faster and faster."
@@ -55,19 +57,21 @@ label day3Solis:
     s Smile "... Is that we're always up for a challenge!"
     hide k inactive
     show s inactive at right
-    k "Oh, my!"
-    k Smile "I can see why Doctor Tasha speaks so highly of her personal assistant."
+    k Smile "Oh, my!"
+    k "I can see why Doctor Tasha speaks so highly of her personal assistant."
     "A large recipe book titled Dorothy's Desserts descends gently into Summer's hands."
     k Neutral "I believe this book contains the recipe you seek."
     hide s inactive
     show k inactive at left
-    s Neutral  "Thank you, Professor!"
+    stop music fadeout 6.0
+    s Smile  "Thank you, Professor!"
     hide k inactive
     show s inactive at right
     k Neutral "Do be careful, it's a complicated dish."
     hide s inactive
-    hide circe Neutral with dissolve
-    hide summer Neutral with dissolve
+    hide circe Neutral 
+    hide summer Neutral
+    with dissolve 
 
     scene greenhouse with Fade (2.0, 0.0, 2.0)
     "After retrieving Volume 106 of Dorothy's Desserts, Summer and I travel back to the Greenhouse."
@@ -106,7 +110,7 @@ label day3Solis:
             s "Thank you for opening the lid - I'm sure they wanted a little bit of space to fly around."
             s Smile "And it looks like they've taken fondly to you."
             s "Good thing you didn't use any magic, these guys hate that stuff."
-            s "Tasks like these require a kind touch."
+            s Neutral "Tasks like these require a kind touch."
         "Cast a spell of telekinesis and collect honeycomb without touching the box.":
             $ summerAP += 1
             "A relatively simple spell, the lid slowly floats off the crate."
@@ -150,8 +154,10 @@ label day3Solis:
     # menu:
     #     "I consume a piece of the honeycomb myself":
     #         s "[name], NOOOOO!"
+    scene greenhouse with Dissolve(2.0)
     play sound potion volume 0.2 fadein 5.0
     "We watch as the Cauldron bubbles mixing in the ingrediencies delicately."
+    show summer Neutral with dissolve
     s "You know, [name], I'm glad you came to help me out today."
     "As I turn to look at her, Summer takes a hold of my hand."
     

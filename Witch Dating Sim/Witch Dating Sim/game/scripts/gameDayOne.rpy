@@ -3,14 +3,6 @@ $renpy.music.stop(fadeout = 5.0)
 python:
     name = renpy.input("Before we begin our journey, what is your name?")
     name.strip()
-#if name == "Leilia" or name == "leilia":
-#    $ name = "Master"
-#    menu:
-#        "Which day do you want to jump to?"
-#            "Day One":
-#                jump dayOne
-#            "Day Two":
-#                jump dayTwo
 
 if name == "Gamespawn" or name == "gamespawn":
     $ name = "Great Grandmaster"

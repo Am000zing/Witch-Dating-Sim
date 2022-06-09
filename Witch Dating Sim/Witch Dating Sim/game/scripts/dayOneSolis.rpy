@@ -24,7 +24,7 @@ label day1Solis:
     play music overworldMusic fadein 6.0
     #volume 0.5
     "This tall woman approaches me, circling around me as if I were a new specimen for her to study."
-    char "Dr. Tasha. It's an honor to meet you."
+    char "Professor Tasha! It's an honor to meet you."
 
     menu:
         "\"Luminoire Academy has accomplished so much thanks to your research in alchemy.\"" :
@@ -34,7 +34,7 @@ label day1Solis:
 
 label Schoice1neutral:
     show tasha Upset
-    "Tasha sighs, almost disappointed at the response."
+    "Professor Tasha sighs, almost disappointed at the response."
     t "Those are merely stepping stones to the real {i}\"accomplishment.\"{/i}"
     show tasha Neutral
     jump continuing1
@@ -79,7 +79,7 @@ label continuing1:
     "Summer darts off immediately."
     "I follow her down the main hall into a living area."
     stop music fadeout 6.0
-    scene Commons with Fade(2.0,0,2.0)
+    scene nCommons with Fade(2.0,1.0,3.0)
     show summer Neutral with dissolve
     s "Welcome to the Commons!"
     s Smile "Get comfy, because we'll be here all year."

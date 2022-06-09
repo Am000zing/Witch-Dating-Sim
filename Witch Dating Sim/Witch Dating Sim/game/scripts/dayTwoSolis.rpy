@@ -24,19 +24,29 @@ label day2Solis:
     t "...all provided to the academy per my request."
     show summer Neutral at left with move
     show tasha Neutral at right with dissolve
+    play music overworldMusic fadein 6.0
     ##show summerSmile at left with move
     ##show tashaNeutral at right
-
     "Tasha rounds the corner from behind the wall, caressing the large leaves of the potted plants."
+    show s inactive at left with dissolve
     t Smile "House Solis is responsible for tending to the Greenhouse with the utmost care."
+    hide s inactive
+    show t inactive at right
     s "And todaaay...you'll be harvesting leaves from the rare hare basil."
     s "While endangered in most parts of the realm, the academy provides a haven for all living things."
+    hide t inactive
+    show s inactive at left
     t Neutral "And in return, the gardens provide the magic we use to sustain the ritual."
     t "Summer, I trust you'll do well to train our new witch."
     t "I have much to attend to before the ritual."
+    hide s inactive
+    show t inactive at right
     s Smile "You can always count on me!"
+    hide t inactive
+    show s inactive at left
     t "Lovely. I leave it to you."
     hide tasha Neutral with dissolve
+    hide s inactive
     ##"Tasha leaves."
     show summer Neutral at center with move
     s Neutral "I'm going to harvest the other ingredients from the gardens."
@@ -54,9 +64,10 @@ label day2Solis:
             $ summerAP +=  1
             "From a tray nearby, I take a pair of shears and go for the base of the stem."
             show summer Upset with dissolve
-            s "WHAT ARE YOU DOING?!"
+            with hpunch
+            s UpsetB "WHAT ARE YOU DOING?!"
             "Summer snatches the shears from my hands."
-            s "Be careful with these!"
+            s Upset "Be careful with these!"
             s "You could have killed the poor thing..."
             s Neutral "Here. I'll do it."
         "Collect the fallen leaves.":
@@ -83,17 +94,18 @@ label day2Solis:
     play sound potion volume 0.2 fadein 3.0
     "At the end of the delicate process, Summer pours the powder into a mesh strainer and tosses it into a cauldron."
     show summer Smile
+    stop music fadeout 6.0
     s "At the banquet, we'll be serving this as a beverage for the ritual!"
     ##show summerNeutral
     s Neutral "Now that we're done here, let's head back to the Commons."
     hide summer Neutral with dissolve
     "I follow Summer back to the Commons"
-    scene Commons with Fade(2.0, 0.0, 2.0)
+    scene nCommons with Fade(2.0, 0.0, 2.0)
     show summer Neutral with dissolve
     s "Okay, [name]."
     s "You did alright today, but you'll have to bring your A-Game tomorrow!"
     s "Meet me in the Library tomorrow."
-    s "We're going to do some sweet research on the basics of magical agriculture."
+    s Smile "We're going to do some sweet research on the basics of magical agriculture."
     s "Goodnight!"
     scene black with Dissolve(3.0)
     show text "Day 3" with dissolve
