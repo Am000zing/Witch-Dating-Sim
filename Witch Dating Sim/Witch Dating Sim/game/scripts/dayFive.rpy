@@ -21,22 +21,22 @@ label day5:
     "The doors to the Commons open."
     "Shoulder-to-shoulder, the three professors of each House enter."
     #show all 3 professors lined up
-    show morgana Neutral at right 
-    show tasha Neutral at center 
-    show circe Neutral at left
+    show circe Neutral at right 
+    show morgana Neutral at center 
+    show tasha Neutral at left
     with dissolve
-    show t inactive at center
-    show k inactive at left
+    show t inactive at left
+    show k inactive at right
     with dissolve
     m "Witches!"
     m "I hope you all are as excited for tonight's Full Moon Ritual as I am."
     m "I'd like to ask all of you to join us at the Amphitheater half past noon."
     hide t inactive
-    show m inactive at right
+    show m inactive at center
     t "We'll be working together to decorate and prepare for tonight's ritual."
     t "Don't worry, we'll have snacks."
     t Smile "We're not interested in working you to the bone."
-    show t inactive at center
+    show t inactive at left
     hide k inactive
     k Upset "Unless..."
     k Smile "I jest, of course."
@@ -167,24 +167,24 @@ label day5:
                 hide celeste SmileB with dissolve
     
     "From a distance, the professors call for all the students to commune at the amphitheater."
-    show morgana Neutral at right 
-    show tasha Neutral at center 
-    show circe Neutral at left
+    show circe Neutral at right 
+    show morgana Neutral at center 
+    show tasha Neutral at left
     with dissolve
-    show m inactive at right
-    show k inactive at left
+    show m inactive at center
+    show k inactive at right
     with dissolve
     t "Alright, students, we've got a whole itinerary of activities for you all to do!"
     hide m inactive
-    show t inactive at center
+    show t inactive at left
     m "Don't get too ahead of yourself though!"
     m "Make sure you have enough energy to be awake for the banquet tonight."
     m Smile "Our very own Eluna of House Luna will be performing them!"
     hide t inactive
-    show m inactive at right
+    show m inactive at center
     t "Well, we should also thank Summer of House Solis for setting up the amphitheater so nicely."
     hide k inactive
-    show t inactive at center
+    show t inactive at left
     k "Alright, enough of bragging about your own students."
     k "Away you all go!"
     scene amphitheater1 with dissolve
@@ -322,7 +322,7 @@ label day5:
     if(solis == True):
         show summer Neutral with dissolve
         s "I don't believe my eyes!"
-        s "Faeries!"
+        s Smile "Faeries!"
         "A gentle light bobs on my hand."
         s Smile "Aww, one's taken a liking to you!"
         "The light shape weaves and bobs around me, and then takes off away towards other students."
@@ -433,43 +433,43 @@ label day5:
         "..."
         "It's quiet around me."
         "Then a light voice speaks:"
-        unknown "Your generous offering..."
-        unknown "The gift from Luminoire..."
-        unknown "..."
-        unknown "May your House be blessed upon the coming year."
+        unknown "{i}Your generous offering...{/i}"
+        unknown "{i}The gift from Luminoire...{/i}"
+        unknown "{i}...{/i}"
+        unknown "{i}May your House be blessed upon the coming year.{/i}"
         jump theEnd
     
     label solisEnd:
         "..."
         "It's quiet around me."
         "Then a light voice speaks:"
-        unknown "Your generous offering..."
-        unknown "Solis..."
-        unknown "The gift from one who has their entire faith in you..."
-        unknown "..."
-        unknown "May your bonds be strengthened upon the coming year."
+        unknown "{i}Your generous offering...{/i}"
+        unknown "{i}Solis...{/i}"
+        unknown "{i}The gift from one who has their entire faith in you...{/i}"
+        unknown "{i}...{/i}"
+        unknown "{i}May your bonds be strengthened upon the coming year.{/i}"
         jump theEnd
 
     label lunaEnd:
         "..."
         "It's quiet around me."
         "Then a light voice speaks:"
-        unknown "Your generous offering..."
-        unknown "Luna..."
-        unknown "The gift from one who seeks their support in you..."
-        unknown "..."
-        unknown "May your bonds be strengthened upon the coming year."
+        unknown "{i}Your generous offering...{/i}"
+        unknown "{i}Luna...{/i}"
+        unknown "{i}The gift from one who seeks their support in you...{/i}"
+        unknown "{i}...{/i}"
+        unknown "{i}May your bonds be strengthened upon the coming year.{/i}"
         jump theEnd
 
     label stellaEnd:
         "..."
         "It's quiet around me."
         "Then a light voice speaks:"
-        unknown "Your generous offering..."
-        unknown "Stella..."
-        unknown "The gift from one who absolutely trusts you..."
-        unknown "..."
-        unknown "May your bonds be strengthened upon the coming year."
+        unknown "{i}Your generous offering...{/i}"
+        unknown "{i}Stella...{/i}"
+        unknown "{i}The gift from one who absolutely trusts you...{/i}"
+        unknown "{i}...{/i}"
+        unknown "{i}May your bonds be strengthened upon the coming year.{/i}"
         jump theEnd
 
     label theEnd:

@@ -18,7 +18,7 @@ label day4Solis:
     s Neutral "Demons?"
     s "Are you okay? Are you hurt?"
     s "Why didn't you tell me earlier?"
-    "A sense of guilt washses over me as I hesitate from her sudden concern."
+    "A sense of guilt washes over me as I hesitate from her sudden concern."
     char "Oh, uh..."
     char "I was just joking, there weren't any demons."
     char "I just overslept."
@@ -50,7 +50,7 @@ label day4Solis:
     #"Tasha turns around, smiling as she noticed the two of us."
     show summer Neutral at left with move
     show tasha Neutral at right with dissolve 
-    show s inactive at left
+    show s inactive at left with dissolve
     t "Well, well, well."
     t Smile "If it isn't my dear sunshine. How's it going?"
     "She smiles and hugs Summer, who returns the embrace."
@@ -184,7 +184,7 @@ label day4SolisExtraPath:
     play music overworldMusic fadein 6.0
     show eluna Neutral at left with move
     show summer Neutral at right with dissolve
-    show e inactive at left
+    show e inactive at left with dissolve
     s "Oh! Hiya Eluna! What brings you here?"
     hide e inactive
     show s inactive at right
@@ -205,7 +205,7 @@ label day4SolisExtraPath:
     show s inactive at right
     e "Come on, [name], let's lift these together."
     stop music fadeout 5.0
-    scene amphitheater1 with Fade(2.0, 0.0, 2.0)
+    scene amphitheater1 with Fade(2.0, 1.0, 2.0)
     "Summer and I wave goodbye to Eluna and the other Luna students who came to help."
     "Summer sighs in exhaustion."
     show summer Neutral with dissolve
@@ -263,6 +263,7 @@ label day4SolisExtraPath:
         s "I used to imagine being a sunflower when I was little..."
         stop music fadeout 5.0
     else:
+        s Upset "..."
         s Neutral "Actually, never mind, this isn't the right time to tell you"
 
 
@@ -276,8 +277,8 @@ label day4SolisEnd:
     "We were so exhausted by the events of the day that we had walked back to the Commons in peaceful silence."
     show summer Neutral with dissolve
     s "..."
-    s "[name], I'll see you tomorrow for the Full Moon Ritual!"
-    hide summer Neutral with dissolve
+    s Smile "[name], I'll see you tomorrow for the Full Moon Ritual!"
+    hide summer Smile with dissolve
     "Summer and I bid our goodbyes, and leave to our respective rooms."
     scene black with Dissolve(3.0)
     show text "Day 5" with dissolve
