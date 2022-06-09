@@ -132,7 +132,7 @@ label day4Solis:
             $ summerAP += 2
             s "Thanks [name], though I'm not sure how much we can do with just the two of us."
             s "But I really appreciate that you're willing to help me."
-            scene amphitheater with Fade(2.0, 1.0, 2.0)
+            scene amphitheater1 with Fade(2.0, 1.0, 2.0)
             "It took a decent amount of time, but we got the work done early."
             "The sun's nearly set as we finish loading the final pot onto the cart."
             s "Oof, I think that was the last of them, it took longer then expected didn't it."
@@ -146,7 +146,7 @@ label day4Solis:
             "Summer smiles at you, sighing as she prepares to get back to work."
             "Ah, she didn't take it as a joke."
             "I quickly go to help her out."
-            scene amphitheater with Fade(2.0, 1.0, 2.0)
+            scene amphitheater1 with Fade(2.0, 1.0, 2.0)
             "We worked diligently."
             "We barely spoke a word the whole time."
             "As we finish setting up for the banquet we hear the performers over at the Amphitheater."
