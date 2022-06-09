@@ -52,7 +52,7 @@ We hope you enjoy!
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "THE WITCHES OF LUMINOIRE"
+define build.name = "THE_WITCHES_OF_LUMINOIRE"
 
 
 ## Sounds and music ############################################################
