@@ -101,7 +101,7 @@ label day5:
         if(day4lunaGood == True):
             char "Are you okay?"
             e Neutral "Just some stage-fright."
-            e Smile "Everyone gets it - even Professor Morgana."
+            e SmileB "Everyone gets it - even Professor Morgana."
             e Neutral "I'm less nervous now."
         else:
             e Upset "Yesterday was... weird right?"
@@ -118,8 +118,8 @@ label day5:
                 hide eluna Smile with dissolve
             "\"I don't want to be a distraction.\"":
                 $ elunaAP += 1
-                e Upset "Why would you think you'd be a distraction to me?"
-                e "I believe I'm qualified enough to know what it is I want for myself-"
+                e UpsetB "Why would you think you'd be a distraction to me?"
+                e Upset "I believe I'm qualified enough to know what it is I want for myself-"
                 e "-And to what extent I can handle my own personal troubles."
                 hide eluna Upset with dissolve
             "\"You've been working so hard for this day.\"":
@@ -198,7 +198,7 @@ label day5:
         e "[name]?"
         e "Would you like to spend some time with me before the Ritual begins?"
         char "It would be my pleasure."
-        e Smile "Splendid."
+        e SmileB "Splendid."
         e Neutral "There's an arts and crafts area where we can make our own lantern."
         e "Let's go there first!"
     if(stella == True):
@@ -303,7 +303,7 @@ label day5:
     e "Faeries of the West, with the gentleness of tall grass, a bed of flowers, a mossy path-"
     if(elunaAP == 16):
         "Eluna peers over at me."
-        e Smile "-a good friend-"
+        e SmileB "-a good friend-"
         e Neutral "-please continue to protect us!"
     else:
         e "-please continue to protect us!"

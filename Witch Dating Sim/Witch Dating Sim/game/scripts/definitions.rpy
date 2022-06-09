@@ -125,6 +125,9 @@ image s inactive = Composite(
 image eluna Neutral = "Eluna/elunaNeutral.png"
 image eluna Smile = "Eluna/elunaSmile.png"
 image eluna Upset = "Eluna/elunaUpset.png"
+image eluna NeutralB = "Eluna/elunaNeutralB.png"
+image eluna SmileB = "Eluna/elunaSmileB.png"
+image eluna UpsetB = "Eluna/elunaUpsetB.png"
 
 image summer Neutral = "Summer/summerNeutral.png"
 image summer Upset = "Summer/summerUpset.png"

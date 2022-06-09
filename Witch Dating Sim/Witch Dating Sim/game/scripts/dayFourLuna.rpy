@@ -90,8 +90,8 @@ label day4Luna:
             e Smile "I need to make sure the ritual runs smoothly!"
             e "Plus, we can always go out after it's over" #Copyedited says "... go out after the it's over."
             char "Go out?"
-            e Neutral "Ah!"
-            e "I meant like-"
+            e NeutralB "Ah!"
+            e Neutral "I meant like-"
             e "Just go out somewhere to celebrate the successes of the Full Moon Ritual, you know?"
             e "I should go back and practice."
             e Smile "I'll catch you back at the Commons!"
@@ -125,9 +125,9 @@ label day4Luna:
         "\"I'd love to, but I can't I'll meet you in the Commons.\"":
             $ day4lunaGood = False
             $ elunaAP += 1
-            e Upset "But you just got here!"
+            e UpsetB "But you just got here!"
             play sound sparkle volume 0.2 fadein 3.0
-            e "You still have an obligation to stay for class or do schoolwork."
+            e Upset "You still have an obligation to stay for class or do schoolwork."
             "The air around us feels like crackling electricity."
             e "Is there something going on?"
             stop sound fadeout 3.0
@@ -167,6 +167,6 @@ label day4Luna:
     with Pause(3.0)
     show text "0 Days Until the Full Moon Ritual..." with dissolve
     with Pause(3.0)
-    # jump day5
+    jump day5
 #perfect run: 13
     ##hide Scene with Fade

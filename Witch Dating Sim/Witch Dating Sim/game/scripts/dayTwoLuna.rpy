@@ -139,10 +139,10 @@ label day2Luna:
     e "I wanted to ask if you'd like to run lines with me tomorrow afternoon?"
     e "Some practice might help you feel a bit more confident perfoming."
     char "Oh, of course! Yes, that'd be great."
-    e "Perfect! I'll find you in the Commons tomorrow afternoon."
+    e Smile "Perfect! I'll find you in the Commons tomorrow afternoon."
     char "S-sounds good!"
     char "I'll see you then!"
-    e "Yes, goodbye."
+    e Neutral "Yes, goodbye."
     hide eluna Neutral with dissolve
     "She promptly leaves."
 
