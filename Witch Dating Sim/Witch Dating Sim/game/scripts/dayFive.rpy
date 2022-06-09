@@ -241,7 +241,7 @@ label day5:
         show e inactive at right
         m "Are you ready, Eluna?"
         hide e inactive
-        show m inactive
+        show m inactive at left
         e Smile "Ready as ever."
         hide m inactive with dissolve
         hide eluna Smile with dissolve
@@ -261,6 +261,7 @@ label day5:
                 m Smile "Good."
                 m Neutral "Go take a seat."
                 hide morgana Neutral with dissolve
+                show eluna Neutral with dissolve
             "\"I suppose so.\"":
                 $ elunaAP += 2
                 #points: 15
@@ -268,6 +269,7 @@ label day5:
                 m Neutral "Well, I suppose you should go take a seat."
                 "Professor Morgana briskly walks away."
                 hide morgana Neutral with dissolve
+                show eluna Neutral with dissolve
     else:
         "Eluna of House Luna approaches the center stage of the amphitheater."
         show morgana Neutral at left 

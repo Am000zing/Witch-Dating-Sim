@@ -122,7 +122,7 @@ label day4Luna:
             char "Yeah I'll catch you later."
             hide eluna Neutral with dissolve
             "Eluna walks back to the Amphitheater stage."
-        "\"I'd love to, but I can't I'll meet you in the Commons.\"":
+        "\"I'd love to, but I can't. I'll meet you in the Commons.\"":
             $ day4lunaGood = False
             $ elunaAP += 1
             e UpsetB "But you just got here!"

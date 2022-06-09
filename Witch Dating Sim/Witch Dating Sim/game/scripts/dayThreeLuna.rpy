@@ -62,19 +62,20 @@ label greenhousePath:
     e Neutral "I'll be right back."
     "Eluna briskly walks away."
     hide eluna Neutral with Dissolve(2.0)
+    hide s inactive with dissolve
     s Neutral "So..."
     show summer Neutral at center with move
     s "What do you think of the Academy so far?"
     s Upset "I've heard stories about how Professor Morgana can give new witches a hard time."
     s Neutral "I hope that isn't the case!"
     menu:
-        "Well...":
-            $ lunaAP += 3
+        "\"Well...\"":
+            $ elunaAP += 3
             char "Professor Morgana definitely hasn't been giving me an easy time."
             s Smile "Ahaha! Sounds like her."
             s Neutral "At least you're working closely with Eluna."
-        "It's been fine.":
-            $ lunaAP += 2
+        "\"It's been fine.\"":
+            $ elunaAP += 2
             s Smile "That's good!"
             s Neutral "Although, you shouldn't feel pressured to appear like everything's okay when it's not."
             s "You're lucky you get to work with Eluna, though."
@@ -153,7 +154,7 @@ label libraryPath:
     c "To my understanding, Professor Morgana is one of the more stricter professors here at Luminoire."
     c "I hope she hasn't been giving you a hard time."
     menu:
-        "Well...":
+        "\"Well...\"":
             $ elunaAP += 3
             char "Professor Morgana hasn't been giving me the easiest time so far."
             c "I see."
@@ -162,7 +163,7 @@ label libraryPath:
             c Smile "News spreads quite quickly across the Academy."
             c Neutral "Especially news about Eluna."
             char "Well, Eluna seems like quite the popular student."
-        "It's been fine so far.":
+        "\"It's been fine so far.\"":
             $ elunaAP += 2
             c "You don't need to lie about your experience, most of us know the truth anyways."
             char "Lying? I-"
@@ -231,7 +232,7 @@ label day3FinalPathLuna:
     char "Alright!"
     char "See you then."
     stop music fadeout 6.0
-    hide eluna Neutral with dissolve(2.0)
+    hide eluna Neutral with Dissolve(2.0)
     "That was...interesting."
     "Well, I should get going anyways."
     "I gotta make sure I'm at the Amphitheater a little earlier anyways."
