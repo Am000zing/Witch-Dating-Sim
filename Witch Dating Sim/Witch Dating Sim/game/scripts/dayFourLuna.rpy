@@ -98,8 +98,13 @@ label day4Luna:
             if elunaAP == 13:
                 e Neutral "Before you go-"
                 "Eluna hands me an object."
-                #show hairclip
+                show e inactive with dissolve
+                show hairclip at my_center with Dissolve(2.0)
+                with Pause(2.0)
                 $ hairclip = True
+                "It's a beautifully adorned hairclip."
+                hide hairclip with dissolve
+                hide e inactive with dissolve
                 e Smile "It's a reminder that we're going to meet up later, okay?"
                 e "I'm holding you to it."
             hide eluna Smile with dissolve

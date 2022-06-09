@@ -164,8 +164,12 @@ label day3Stella:
     if celesteAP == 11:
         $ cperfect = true
         c Smile "Here, I picked one for you!"
-        #show violet at center
+        show c inactive at right with dissolve
+        show violet at my_center with Dissolve(2.0)
+        $ violet = True
         "She hands me a vibrant violet."
+        hide violet with dissolve
+        hide c inactive with dissolve
         c NeutralB "Isn't this such a perfect flower?"
         char "Yeah, it's very pretty."
         "I can feel Summer peering over at us..."
@@ -176,7 +180,7 @@ label day3Stella:
     else:
         hide s inactive
         show c inactive at right
-        s Upset "Oh, you picked flowers from the garden?"
+        s UpsetB "Oh, you picked flowers from the garden?"
         hide c inactive
         show s inactive at left
         c "There were so many, I'm sure it's fine."

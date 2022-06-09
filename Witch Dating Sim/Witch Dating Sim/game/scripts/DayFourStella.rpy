@@ -133,16 +133,19 @@ label day4StellaCont:
     if celesteAP == 15:
         c "[name], wait, before you go!"
         "She shuffles through her bag then offers the item to me."
-        $ quill = True
+        show c inactive with dissolve
+        show owlQuill at my_center with Dissolve(2.0)
+        $ owl = True
         "It's a quill."
+        hide owlQuill with dissolve
         char "Oh, thank you, Celeste!"
         c "I thought you might like it."
         c "It's a quill made out of an owl's feather."
         c "After all this time, I had a really wonderful time hanging out with you."
-        c "It's the least I could do to thank you."
-        c "Alright, I have to go back to prep."
+        c Smile "It's the least I could do to thank you."
+        c Neutral "Alright, I have to go back to prep."
     else:
-        c "I'll see you at the Commons soon."
+        c "See you at the Commons soon."
     scene black with Dissolve(3.0)
     show text "Day 5" with dissolve
     play sound dingDong1 fadein 3.0 volume 0.25

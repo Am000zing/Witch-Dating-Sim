@@ -61,6 +61,9 @@ image quill = "graphics/quill.png"
 image candle = "graphics/candle.png"
 image tea = "graphics/teaLeaves.png"
 image sunflowers = "graphics/sunflowers.png"
+image violet = "graphics/violet.png"
+image hairclip = "graphics/hairclip.png"
+image owlQuill = "graphics/owlQuill.png"
 image credits = "graphics/credits.png"
 
 ###########################################################################################################
@@ -114,7 +117,7 @@ image c inactive = Composite(
 
 image sNeutral_mask = AlphaMask("the_darkness_70", "Summer/summerNeutral.png")
 image s inactive = Composite(
-    (1000,1000),
+    (950,943),
     (0,0), "Summer/summerNeutral.png",
     (0,0), "sNeutral_mask"
 )
@@ -122,9 +125,14 @@ image s inactive = Composite(
 image eluna Neutral = "Eluna/elunaNeutral.png"
 image eluna Smile = "Eluna/elunaSmile.png"
 image eluna Upset = "Eluna/elunaUpset.png"
+
 image summer Neutral = "Summer/summerNeutral.png"
 image summer Upset = "Summer/summerUpset.png"
 image summer Smile = "Summer/summerSmile.png"
+image summer NeutralB = "Summer/summerNeutralB.png"
+image summer UpsetB = "Summer/summerUpsetB.png"
+image summer SmileB = "Summer/summerSmileB.png"
+
 image celeste Neutral = "Celeste/celesteNeutral.png"
 image celeste Smile = "Celeste/celesteSmile.png"
 image celeste Upset = "Celeste/celesteUpset.png"

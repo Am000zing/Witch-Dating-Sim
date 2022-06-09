@@ -63,8 +63,8 @@ label day5:
         menu:
             "\"Hanging out with you, of course!\"":
                 $ summerAP += 2
-                s Smile "Aww, that's sweet of you to say."
-                s Neutral "Just a heads up: I'll be splitting my attention tonight."
+                s SmileB "Aww, that's sweet of you to say."
+                s Smile "Just a heads up: I'll be splitting my attention tonight."
                 s "Between serving the students at the banquet table, handling the cloying crumble, and ensuring the ritual goes smoothly..."
                 char "I didn't realize how busy you were going to be..."
                 s Upset "No no no! I'm fine."
@@ -141,8 +141,8 @@ label day5:
             c Neutral "Typically nothing crazy happens, although it'd be nice if something interesting actually occurred this time."
         else:
             c "You don't need to be too nervous about the banquet."
-            c Smile "They often play out a fancy ritual, say some words, and then sometimes something interesting happens."
-            c Neutral "I hope something interesting happens this time..."
+            c Smile "They often play out a fancy ritual, say some words, and then sometimes something happens."
+            c Neutral "I hope something interesting occurs this time..."
         char "Interesting?"
         c "Well, similar to to the story, the ritual is to maintain favor of the fae."
         c "After all, they play quite the role in how the school came to be."
@@ -329,10 +329,10 @@ label day5:
         s Neutral "They're so beautiful."
         s "..."
         s "[name], thanks for being here with me these past couple of days."
-        s Smile "It's been a lot of fun!"
-        s "It's important also to focus on your studies."
+        s SmileB "It's been a lot of fun!"
+        s Smile "It's important also to focus on your studies."
         s "I hope you continue to visit me in the Greenhouse though!"
-        s "I'll catch you later."
+        s Neutral "I'll catch you later."
         hide summer Neutral with Dissolve(2.0)
     if(luna == True):
         "A gentle light bobs on my hand."
@@ -399,14 +399,19 @@ label day5:
             hide sunflowers with dissolve
             jump solisEnd
         "A violet from the Evergarden" if violet:
-            #show violet at my_center with dissolve
+            show violet at my_center with dissolve
             "I hand Celeste's gift to the faerie."
-            #hide violet with dissolve
+            hide violet with dissolve
+            jump stellaEnd
+        "A quill from an owl's feather" if owl:
+            show owlQuill at my_center with dissolve
+            "I hand Celeste's gift to the faerie."
+            hide owlQuill with dissolve
             jump stellaEnd
         "A hairclip adorned with the sun, moon, and stars" if hairclip:
-            #show hairclip at my_center with dissolve
+            show hairclip at my_center with dissolve
             "I hand Eluna's gift to the faerie."
-            #hide hairclip with dissolve
+            hide hairclip with dissolve
             jump lunaEnd
         "Nothing":
             jump badEnd
@@ -422,6 +427,7 @@ label day5:
         "It's been an interesting first couple days."
         "I should head back to the Commons."
         "I wonder what will come upon me tomorrow..."
+        jump credits
     
     label genEnd:
         "..."
@@ -431,14 +437,7 @@ label day5:
         unknown "The gift from Luminoire..."
         unknown "..."
         unknown "May your House be blessed upon the coming year."
-        "..."
-        "The faeries have departed, and most of the students have left."
-        scene amphitheater2 with Dissolve (2.0)
-        "I sit in comfortable silence."
-        "It's been an interesting first couple days."
-        "I hope I can continue to make good memories."
-        "I should head back to the Commons."
-        "I wonder what will happen tomorrow..."
+        jump theEnd
     
     label solisEnd:
         "..."
@@ -449,14 +448,7 @@ label day5:
         unknown "The gift from one who has their entire faith in you..."
         unknown "..."
         unknown "May your bonds be strengthened upon the coming year."
-        "..."
-        "The faeries have departed, and most of the students have left."
-        scene amphitheater2 with Dissolve (2.0)
-        "I sit in comfortable silence."
-        "It's been an interesting first couple days."
-        "I hope I can continue to make good memories."
-        "I should head back to the Commons."
-        "I wonder what will happen tomorrow..."
+        jump theEnd
 
     label lunaEnd:
         "..."
@@ -467,14 +459,7 @@ label day5:
         unknown "The gift from one who seeks their support in you..."
         unknown "..."
         unknown "May your bonds be strengthened upon the coming year."
-        "..."
-        "The faeries have departed, and most of the students have left."
-        scene amphitheater2 with Dissolve (2.0)
-        "I sit in comfortable silence."
-        "It's been an interesting first couple days."
-        "I hope I can continue to make good memories."
-        "I should head back to the Commons."
-        "I wonder what will happen tomorrow..."
+        jump theEnd
 
     label stellaEnd:
         "..."
@@ -485,6 +470,9 @@ label day5:
         unknown "The gift from one who absolutely trusts you..."
         unknown "..."
         unknown "May your bonds be strengthened upon the coming year."
+        jump theEnd
+
+    label theEnd:
         "..."
         "The faeries have departed, and most of the students have left."
         scene amphitheater2 with Dissolve (2.0)
@@ -493,5 +481,4 @@ label day5:
         "I hope I can continue to make good memories."
         "I should head back to the Commons."
         "I wonder what will happen tomorrow..."
-
-    jump credits
+        jump credits
