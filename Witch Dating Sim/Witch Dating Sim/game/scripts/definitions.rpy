@@ -103,7 +103,7 @@ image circe Upset = "Circe/circeUpset.png"
 
 image eNeutral_mask = AlphaMask("the_darkness_70", "Eluna/elunaNeutral.png")
 image e inactive = Composite(
-    (1000,1000),
+    (1100,1073),
     (0,0), "Eluna/elunaNeutral.png",
     (0,0), "eNeutral_mask"
 )

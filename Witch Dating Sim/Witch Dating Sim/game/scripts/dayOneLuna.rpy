@@ -68,7 +68,7 @@ label day1Luna:
     "Morgana continues to glare at me as I hold my breath nervously."
     show e inactive at right
     m Neutral "She is this class's pride and joy..."
-    m "...so she can't be held back supporting other witchlings—"
+    m "...so she can't be held back supporting other witchlings-"
     show m inactive at left
     hide e inactive
     e Upset "Thank you, Professor Morgana."
