@@ -18,7 +18,7 @@ label day4Luna:
     m Neutral "There was something I wanted to talk to you about."
     play music conflictMusic fadein 6.0
     m "I know you aren't aware of Eluna's family name and bloodline."
-    m "She doesn't exactly make it clear wth many of her peers"
+    m "She doesn't exactly make it clear with many of her peers"
     m "She's always preferred to be on the down-low about these matters."
     m "Eluna comes from a prestigious family line of witches."
     m "I was tasked to ensure that her magical prowess would be maximized."

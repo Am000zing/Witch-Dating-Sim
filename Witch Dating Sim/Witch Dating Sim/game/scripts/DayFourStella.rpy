@@ -138,6 +138,7 @@ label day4StellaCont:
         $ owl = True
         "It's a quill."
         hide owlQuill with dissolve
+        hide c inactive with dissolve
         char "Oh, thank you, Celeste!"
         c "I thought you might like it."
         c "It's a quill made out of an owl's feather."
