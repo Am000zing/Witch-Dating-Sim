@@ -23,7 +23,7 @@ label day2Luna:
     hide m inactive
     m "Well, on your first day you also perfectly performed the introductory enchantment. On your first try, no less!"
     m Smile "...but we'll see what our new Luna witchling is capable of."
-    "Damn, Profesor Morgana is seriously giving me a hard time."
+    "Damn, Professor Morgana is seriously giving me a hard time."
 
     #I need a better key for this color coding  :sob:
     show morgana Smile at center with move
@@ -97,7 +97,7 @@ label day2Luna:
             m Upset "You just need some more practice, but I'm sure you'll get the hang of it."
         "Focus on reading the lines directly from the page.":
             $ elunaAP += 1
-            show elunaUpset at right
+            show eluna Upset at right
             "I managed to get through the lines, but it didn't really feel very impactful."
             "Eluna looks a bit annoyed."
             m Neutral "Bit dry of a performance, but I'm sure with practice you'll get the hang of it." 

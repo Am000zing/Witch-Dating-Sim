@@ -97,6 +97,8 @@ label greenhousePath:
     e "Let's get to running our lines together."
     stop music fadeout 6.0
     e "There should be no distractions or interruptions since it's closed, so this should go smoothly."
+    scene greenhouse with Fade(3.0, 0.0, 2.0)
+    with Pause(3.0)
     ##Fade scene
     jump day3FinalPathLuna
 
@@ -201,13 +203,13 @@ label libraryPath:
     e "Well, [name], let's run our lines."
     stop music fadeout 6.0
     e Smile "It's nice and quiet in the library, so this should go smoothly without interruptions."
+    scene library with Fade(3.0, 0.0, 2.0)
+    with Pause(3.0)
     ##fade Scene
     jump day3FinalPathLuna
 
 label day3FinalPathLuna:
     #Scene with Fade
-    scene library with Fade(3.0, 0.0, 2.0)
-    with Pause(3.0)
     show eluna Neutral with dissolve
     e "It's getting late."
     e "Let's clean up and call it a day, okay?"
