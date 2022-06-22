@@ -162,7 +162,7 @@ label day3Stella:
     c "The garden was especially beautiful today."
     c "I've brought some flowers with me too."
     if celesteAP == 11:
-        $ cperfect = true
+        $ cperfect = True
         c Smile "Here, I picked one for you!"
         show c inactive at right with dissolve
         show violet at my_center with Dissolve(2.0)
