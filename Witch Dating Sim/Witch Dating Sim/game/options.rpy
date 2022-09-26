@@ -54,6 +54,7 @@ We hope you enjoy!
 
 define build.name = "THE_WITCHES_OF_LUMINOIRE"
 
+define build.itch_project = "am000zing/the-witches-of-luminoire"
 
 ## Sounds and music ############################################################
 
